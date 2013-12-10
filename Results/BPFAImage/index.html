@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.87">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+   
+<title>No Title</title>
+
+
+<center><br /><br /><font size="+1"><b>Matlab code and test results for the paper: Mingyuan Zhou, Haojun Chen, John Paisley, Lu Ren, Lingbo Li, Zhengming Xing, David Dunson, Guillermo Sapiro, and Lawrence Carin, "Nonparametric Bayesian Dictionary Learning for Analysis of Noisy and Incomplete Images," <em>submitted to IEEE Trans. Image Process.</em> <a href="http://www.ece.duke.edu/~lcarin/BPFAImage_Journal_8.pdf"><font color="#FF0000">&nbsp;PDF</font> </a></b>
+</font></center>
+
+<div class="p"><!----></div>
+ <h2><a name="tth_sEc1">
+1</a>&nbsp;&nbsp;<b>Softwares</b></h2>
+
+<ol type="1">
+<li> BPFA Gray-scale and RGB image denoising code (last update 04/15/2010) can be found <a href="http://people.ee.duke.edu/~mz1/Softwares/BPFA_Denoise_04152010.zip"><font color="#0000FF">&nbsp;HERE</font></a>.
+<div class="p"><!----></div>
+</li>
+
+<li>
+BPFA Gray-scale, RGB and Hyperspectral image inpainting &amp; denoising code (last update 04/15/2010) can be found <a href="http://people.ee.duke.edu/~mz1/Softwares/BPFA_Inpainting_04152010.zip"><font color="#0000FF">&nbsp;HERE</font></a>.
+<div class="p"><!----></div>
+</li>
+</ol>
+
+<div class="p"><!----></div>
+ <h2><a name="tth_sEc2">
+2</a>&nbsp;&nbsp;<b>Nonparametric</b></h2>
+No matter the missing data ratio are 95%, 80%, 20% or 5%, no matter the noise standard deviation are 100, 75, 25 or 5, no matter the images are the gray-scale Barbara, Lena, Peppers or House, the RGB Castle, Mushroom, Kangaroo or Horses, or the hyperspectral Urban or Hill, the code listed above, with exactly the same parameters, can be used to produce state-of-the-art results for all cases. 
+
+<div class="p"><!----></div>
+The results reported in each table below are obtained with the same initialization and parameter setting, the detail can be found in the code listed above:
+
+<ul>
+<li> Results in Table 1 can be reproduced by Demo_Denoise_Gray.m
+<div class="p"><!----></div>
+</li>
+
+<li> Results in Table 2 can be reproduced by Demo_Denoise_RGB.m
+<div class="p"><!----></div>
+</li>
+
+<li> Results in Table 3 can be reproduced by Demo_Inpainting_GRAY.m
+<div class="p"><!----></div>
+</li>
+
+<li> Results in Table 4 can be reproduced by Demo_Inpainting_RGB.m
+<div class="p"><!----></div>
+</li>
+
+<li> Results in Table 5 can be reproduced by Demo_Denoise_Inpainting_GRAY.m
+<div class="p"><!----></div>
+</li>
+
+<li> Results in Table 6 can be reproduced by Demo_Inpainting_HyperSpecImage.m
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+ <h2><a name="tth_sEc3">
+3</a>&nbsp;&nbsp;<b>Test Results</b></h2>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb1">
+</a> <center>Table 1: <font size="-1">BPFA gray-scale image denoising PSNR results, using patch size 8&times;8. The test images, denoising results and learned dictionaries can be downloaded <a href="BPFA_Denoising_GrayPics_03302010.zip">HERE</a>.</font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">&#963;  </td><td align="center"><a href="Cameraman256.png">C.man</a>  </td><td align="center"><a href="house.png">House</a>     </td><td align="center"><a href="peppers256.png">Peppers</a>   </td><td align="center"><a href="montage.png">Montage</a>   </td><td align="center"><a href="Lena512.png">Lena</a>     </td><td align="center"><a href="barbara.png">Barbara</a> </td><td align="center"><a href="boat.png">Boats</a>      </td><td align="center"><a href="fingerprint.png">F.print</a>    </td><td align="center"><a href="man.png">Man</a>      </td><td align="center"><a href="couple.png">Couple</a>  </td><td align="center"><a href="hill.png">Hill</a></td></tr>
+<tr><td align="center">5       </td><td align="center"><a href="Cameraman256_5.png">37.32</a>  </td><td align="center"><a href="house_5.png">39.18</a>     </td><td align="center"><a href="peppers256_5.png">37.24</a>      </td><td align="center"><a href="montage_5.png">39.63</a>     </td><td align="center"><a href="Lena512_5.png">38.20</a>   </td><td align="center"><a href="barbara_5.png">37.94</a>   </td><td align="center"><a href="boat_5.png">36.43</a>      </td><td align="center"><a href="fingerprint_5.png">36.29</a>     </td><td align="center"><a href="man_5.png">37.07</a>   </td><td align="center"><a href="couple_5.png">36.77</a>   </td><td align="center"><a href="hill_5.png">36.24</a>   </td></tr>
+<tr><td align="center">10      </td><td align="center"><a href="Cameraman256_10.png">33.40</a>  </td><td align="center"><a href="house_10.png">36.29</a>    </td><td align="center"><a href="peppers256_10.png">34.31</a>      </td><td align="center"><a href="montage_10.png">36.43</a>     </td><td align="center"><a href="Lena512_10.png">35.62</a>   </td><td align="center"><a href="barbara_10.png">34.63</a>   </td><td align="center"><a href="boat_10.png">33.70</a>      </td><td align="center"><a href="fingerprint_10.png">32.42</a>     </td><td align="center"><a href="man_10.png">33.64</a>   </td><td align="center"><a href="couple_10.png">33.63</a>   </td><td align="center"><a href="hill_10.png">33.31</a>   </td></tr>
+<tr><td align="center">15      </td><td align="center"><a href="Cameraman256_15.png">31.34</a>  </td><td align="center"><a href="house_15.png">34.52</a>     </td><td align="center"><a href="peppers256_15.png">32.46</a>      </td><td align="center"><a href="montage_15.png">34.58</a>     </td><td align="center"><a href="Lena512_15.png">33.93</a>   </td><td align="center"><a href="barbara_15.png">32.61</a>   </td><td align="center"><a href="boat_15.png">31.97</a>      </td><td align="center"><a href="fingerprint_15.png">30.23</a>     </td><td align="center"><a href="man_15.png">31.73</a>   </td><td align="center"><a href="couple_15.png">31.73</a>   </td><td align="center"><a href="hill_15.png">31.64</a>   </td></tr>
+<tr><td align="center">20      </td><td align="center"><a href="Cameraman256_20.png">30.03</a>  </td><td align="center"><a href="house_20.png">33.25</a>     </td><td align="center"><a href="peppers256_20.png">31.10</a>      </td><td align="center"><a href="montage_20.png">33.10</a>     </td><td align="center"><a href="Lena512_20.png">32.65</a>   </td><td align="center"><a href="barbara_20.png">31.10</a>   </td><td align="center"><a href="boat_20.png">30.70</a>      </td><td align="center"><a href="fingerprint_20.png">28.72</a>     </td><td align="center"><a href="man_20.png">30.43</a>   </td><td align="center"><a href="couple_20.png">30.34</a>   </td><td align="center"><a href="hill_20.png">30.47</a>   </td></tr>
+<tr><td align="center">25      </td><td align="center"><a href="Cameraman256_25.png">28.99</a>  </td><td align="center"><a href="house_25.png">32.24</a>     </td><td align="center"><a href="peppers256_25.png">30.00</a>      </td><td align="center"><a href="montage_25.png">31.85</a>     </td><td align="center"><a href="Lena512_25.png">31.63</a>   </td><td align="center"><a href="barbara_25.png">29.88</a>   </td><td align="center"><a href="boat_25.png">29.70</a>      </td><td align="center"><a href="fingerprint_25.png">27.58</a>     </td><td align="center"><a href="man_25.png">29.46</a>   </td><td align="center"><a href="couple_25.png">29.28</a>   </td><td align="center"><a href="hill_25.png">29.57</a>   </td></tr>
+<tr><td align="center">50      </td><td align="center"><a href="Cameraman256_50.png">25.67</a>  </td><td align="center"><a href="house_50.png">28.49</a>     </td><td align="center"><a href="peppers256_50.png">26.46</a>      </td><td align="center"><a href="montage_50.png">27.53</a>     </td><td align="center"><a href="Lena512_50.png">28.29</a>   </td><td align="center"><a href="barbara_50.png">26.03</a>   </td><td align="center"><a href="boat_50.png">26.50</a>      </td><td align="center"><a href="fingerprint_50.png">24.14</a>     </td><td align="center"><a href="man_50.png">26.53</a>   </td><td align="center"><a href="couple_50.png">25.94</a>   </td><td align="center"><a href="hill_50.png">26.81</a>   </td></tr>
+<tr><td align="center">75      </td><td align="center"><a href="Cameraman256_75.png">23.48</a>  </td><td align="center"><a href="house_75.png">26.03</a>     </td><td align="center"><a href="peppers256_75.png">24.29</a>      </td><td align="center"><a href="montage_75.png">24.77</a>     </td><td align="center"><a href="Lena512_75.png">26.31</a>   </td><td align="center"><a href="barbara_75.png">23.57</a>   </td><td align="center"><a href="boat_75.png">24.61</a>      </td><td align="center"><a href="fingerprint_75.png">22.03</a>     </td><td align="center"><a href="man_75.png">24.90</a>   </td><td align="center"><a href="couple_75.png">24.15</a>   </td><td align="center"><a href="hill_75.png">25.27</a>   </td></tr>
+<tr><td align="center">100     </td><td align="center"><a href="Cameraman256_100.png">21.93</a>  </td><td align="center"><a href="house_100.png">24.37</a>     </td><td align="center"><a href="peppers256_100.png">22.73</a>      </td><td align="center"><a href="montage_100.png">22.74</a> </td><td align="center"><a href="Lena512_100.png">24.95</a>   </td><td align="center"><a href="barbara_100.png">22.13</a>   </td><td align="center"><a href="boat_100.png">23.32</a>   </td><td align="center"><a href="fingerprint_100.png">20.44</a>     </td><td align="center"><a href="man_100.png">23.76</a>   </td><td align="center"><a href="couple_100.png">23.01</a>   </td><td align="center"><a href="hill_100.png">24.22</a>   </td></tr></table>
+
+</center>
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb2">
+</a> <center>Table 2: <font size="-1">BPFA RGB image denoising PSNR results, using patch size 7&times;7. The test images, denoising results and learned dictionaries can be downloaded <a href="BPFA_Denoising_RGBPics_03302010.zip">HERE</a>.</font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">&#963;  </td><td align="center"><a href="castle.png">Castle</a>  </td><td align="center"><a href="mushroom.png">Mushroom</a>    </td><td align="center"><a href="train.png">Train</a>    </td><td align="center"><a href="horses.png">Horses</a>    </td><td align="center"><a href="kangaroo.png">Kangroo</a></td></tr>
+<tr><td align="center">5     </td><td align="center"><a href="castle_5.png">40.34</a>  </td><td align="center"><a href="mushroom_5.png">39.73</a>     </td><td align="center"><a href="train_5.png">39.38</a>      </td><td align="center"><a href="horses_5.png">39.96</a>   </td><td align="center"><a href="kangaroo_5.png">39.00</a>   </td></tr>
+<tr><td align="center">10     </td><td align="center"><a href="castle_10.png">36.28</a>  </td><td align="center"><a href="mushroom_10.png">35.70</a>    </td><td align="center"><a href="train_10.png">34.48</a>      </td><td align="center"><a href="horses_5.png">35.48</a>   </td><td align="center"><a href="kangaroo_10.png">34.21</a>    </td></tr>
+<tr><td align="center">15     </td><td align="center"><a href="castle_15.png">34.04</a>  </td><td align="center"><a href="mushroom_15.png">33.41</a>    </td><td align="center"><a href="train_15.png">31.63</a>      </td><td align="center"><a href="horses_5.png">32.98</a>   </td><td align="center"><a href="kangaroo_15.png">31.68 </a>   </td></tr>
+<tr><td align="center">20     </td><td align="center"><a href="castle_20.png">32.47</a>   </td><td align="center"><a href="mushroom_20.png">31.82</a>   </td><td align="center"><a href="train_20.png">29.71</a>      </td><td align="center"><a href="horses_5.png">31.31</a>   </td><td align="center"><a href="kangaroo_20.png">30.03 </a>      </td></tr>
+<tr><td align="center">25     </td><td align="center"><a href="castle_25.png">31.24</a>   </td><td align="center"><a href="mushroom_25.png">30.62</a>   </td><td align="center"><a href="train_25.png">28.28</a>     </td><td align="center"><a href="horses_5.png">30.11</a>   </td><td align="center"><a href="kangaroo_25.png">28.86 </a>      </td></tr></table>
+
+</center>
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb3">
+</a> <center>Table 3: <font size="-1">BPFA gray-scale image interpolation PSNR results, using patch size 8&times;8. The test images, interpolation results and learned dictionaries can be downloaded <a href="BPFA_Inpaint_GrayPics_03302010.zip">HERE</a>.</font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">data ratio   </td><td align="center"><a href="Cameraman256.png">C.man</a>  </td><td align="center"><a href="house.png">House</a>     </td><td align="center"><a href="peppers256.png">Peppers</a>     </td><td align="center"><a href="Lena512.png">Lena</a>     </td><td align="center"><a href="barbara.png">Barbara</a> </td><td align="center"><a href="boat.png">Boats</a>      </td><td align="center"><a href="fingerprint.png">F.print</a>    </td><td align="center"><a href="man.png">Man</a>      </td><td align="center"><a href="couple.png">Couple</a>  </td><td align="center"><a href="hill.png">Hill</a></td></tr>
+<tr><td align="center">20%      </td><td align="center"><a href="Cameraman256_inpaint_20.png">24.11</a>   </td><td align="center"><a href="house_inpaint_20.png">30.12</a>    </td><td align="center"><a href="peppers256_inpaint_20.png">25.92</a>     </td><td align="center"><a href="Lena512_inpaint_20.png">31.00</a>    </td><td align="center"><a href="barbara_inpaint_20.png">24.80</a>    </td><td align="center"><a href="boat_inpaint_20.png">27.81</a>     </td><td align="center"><a href="fingerprint_inpaint_20.png">26.03</a>        </td><td align="center"><a href="man_inpaint_20.png">28.24</a>   </td><td align="center"><a href="couple_inpaint_20.png">27.72</a>   </td><td align="center"><a href="hill_inpaint_20.png">29.33</a>    </td></tr>
+<tr><td align="center">30%      </td><td align="center"><a href="Cameraman256_inpaint_30.png">25.71</a>   </td><td align="center"><a href="house_inpaint_30.png">33.14</a>    </td><td align="center"><a href="peppers256_inpaint_30.png">28.19</a>       </td><td align="center"><a href="Lena512_inpaint_30.png">33.31</a>    </td><td align="center"><a href="barbara_inpaint_30.png">27.52</a>    </td><td align="center"><a href="boat_inpaint_30.png">30.00</a>     </td><td align="center"><a href="fingerprint_inpaint_30.png">09.01</a>     </td><td align="center"><a href="man_inpaint_30.png">30.06</a>   </td><td align="center"><a href="couple_inpaint_30.png">30.00</a>   </td><td align="center"><a href="hill_inpaint_30.png">31.21</a>     </td></tr>
+<tr><td align="center">50%      </td><td align="center"><a href="Cameraman256_inpaint_50.png">28.90</a>   </td><td align="center"><a href="house_inpaint_50.png">38.02</a>    </td><td align="center"><a href="peppers256_inpaint_50.png">32.58</a>                        </td><td align="center"><a href="Lena512_inpaint_50.png">36.94</a>   </td><td align="center"><a href="barbara_inpaint_50.png">33.17</a>     </td><td align="center"><a href="boat_inpaint_50.png">33.78 </a>    </td><td align="center"><a href="fingerprint_inpaint_50.png">33.53</a>     </td><td align="center"><a href="man_inpaint_50.png">33.29</a>   </td><td align="center"><a href="couple_inpaint_50.png">35.56</a>   </td><td align="center"><a href="hill_inpaint_50.png">34.23</a>     </td></tr>
+<tr><td align="center">80%      </td><td align="center"><a href="Cameraman256_inpaint_80.png">34.70</a>   </td><td align="center"><a href="house_inpaint_80.png">43.03</a>     </td><td align="center"><a href="peppers256_inpaint_80.png">37.73</a>                       </td><td align="center"><a href="Lena512_inpaint_80.png">41.27</a>   </td><td align="center"><a href="barbara_inpaint_80.png">40.76</a>    </td><td align="center"><a href="boat_inpaint_80.png">39.50</a>      </td><td align="center"><a href="fingerprint_inpaint_80.png">40.17</a>     </td><td align="center"><a href="man_inpaint_80.png">39.11</a>   </td><td align="center"><a href="couple_inpaint_80.png">38.71</a>    </td><td align="center"><a href="hill_inpaint_80.png">38.75</a>     </td></tr></table>
+
+</center>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb4">
+</a> <center>Table 4: <font size="-1">BPFA RGB image interpolation PSNR results, using patch size 7&times;7. The test images, interpolation results and learned dictionaries can be downloaded <a href="BPFA_Inpaint_RgbPics_03302010.zip">HERE</a>.</font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">data ratio  </td><td align="center"><a href="castle.png">Castle</a>  </td><td align="center"><a href="mushroom.png">Mushroom</a>    </td><td align="center"><a href="train.png">Train</a>    </td><td align="center"><a href="horses.png">Horses</a>    </td><td align="center"><a href="kangaroo.png">Kangroo</a></td></tr>
+<tr><td align="center">20%        </td><td align="center"><a href="castle_inpaint_20.png">29.12</a>  </td><td align="center"><a href="mushroom_inpaint_20.png">31.56</a>    </td><td align="center"><a href="train_inpaint_20.png">24.59</a>    </td><td align="center"><a href="horses_inpaint_20.png">29.99</a>    </td><td align="center"><a href="kangaroo_inpaint_20.png">29.59</a></td></tr>
+<tr><td align="center">30%        </td><td align="center"><a href="castle_inpaint_30.png">32.02</a>  </td><td align="center"><a href="mushroom_inpaint_30.png">34.63</a>    </td><td align="center"><a href="train_inpaint_30.png">27.00</a>    </td><td align="center"><a href="horses_inpaint_30.png">32.52</a>     </td><td align="center"><a href="kangaroo_inpaint_30.png">32.21</a></td></tr>
+<tr><td align="center">50%        </td><td align="center"><a href="castle_inpaint_50.png">36.45</a>  </td><td align="center"><a href="mushroom_inpaint_50.png">38.88</a>    </td><td align="center"><a href="train_inpaint_50.png">32.00</a>    </td><td align="center"><a href="horses_inpaint_50.png">37.27</a>     </td><td align="center"><a href="kangaroo_inpaint_50.png">37.34</a></td></tr>
+<tr><td align="center">80%        </td><td align="center"><a href="castle_inpaint_80.png">41.51</a>  </td><td align="center"><a href="mushroom_inpaint_80.png">42.56</a>    </td><td align="center"><a href="train_inpaint_80.png">40.73</a>    </td><td align="center"><a href="horses_inpaint_80.png">41.97</a>    </td><td align="center"><a href="kangaroo_inpaint_80.png">42.74</a></td></tr></table>
+
+</center>
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb5">
+</a> <center>Table 5: <font size="-1">Simultaneous image denoising and interpolation
+PSNR results for BPFA, considering the Barbara256
+image and using patch size 8&times;8. The test images, denoising &amp; interpolation results and learned dictionaries can be downloaded <a href="BPFA_inpainting_denoising_pics_03302010.zip">HERE</a>.</font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">&#963;    </td><td align="center">20%      </td><td align="center">30%         </td><td align="center">50%     </td><td align="center">80%    </td><td align="center">100%</td></tr>
+<tr><td align="center">0      </td><td align="center"><a href="barbara256_20_0.png">26.90</a>     </td><td align="center"><a href="barbara256_30_0.png">30.01</a>        </td><td align="center"><a href="barbara256_50_0.png">35.41</a>       </td><td align="center"><a href="barbara256_80_0.png">41.19</a>    </td><td align="center"><a href="barbara256_100_0.png">45.19</a>      </td></tr>
+<tr><td align="center">5      </td><td align="center"><a href="barbara256_20_5.png">26.81</a>     </td><td align="center"><a href="barbara256_30_5.png">29.73</a>        </td><td align="center"><a href="barbara256_50_5.png">33.59</a>    </td><td align="center"><a href="barbara256_80_5.png">36.75</a>   </td><td align="center"><a href="barbara256_100_5.png">38.08</a>        </td></tr>
+<tr><td align="center">10        </td><td align="center"><a href="barbara256_20_10.png">26.25</a>     </td><td align="center"><a href="barbara256_30_10.png">28.38</a>       </td><td align="center"><a href="barbara256_50_10.png">31.16</a>    </td><td align="center"><a href="barbara256_80_10.png"> 33.43</a>   </td><td align="center"><a href="barbara256_100_10.png">34.41</a>     </td></tr>
+<tr><td align="center">15        </td><td align="center"><a href="barbara256_20_15.png">25.30</a>     </td><td align="center"><a href="barbara256_30_15.png">27.00</a>       </td><td align="center"><a href="barbara256_50_15.png">29.31</a>   </td><td align="center"><a href="barbara256_80_15.png">31.25</a>    </td><td align="center"><a href="barbara256_100_15.png">32.14</a>     </td></tr>
+<tr><td align="center">20        </td><td align="center"><a href="barbara256_20_20.png">24.44</a>     </td><td align="center"><a href="barbara256_30_20.png">25.94</a>       </td><td align="center"><a href="barbara256_50_20.png">27.89</a>    </td><td align="center"><a href="barbara256_80_20.png">29.67</a>    </td><td align="center"><a href="barbara256_100_20.png">30.48</a>     </td></tr>
+<tr><td align="center">25        </td><td align="center"><a href="barbara256_20_25.png">23.74</a>     </td><td align="center"><a href="barbara256_30_25.png">25.00</a>        </td><td align="center"><a href="barbara256_50_25.png">26.80</a>   </td><td align="center"><a href="barbara256_80_25.png">28.42</a>    </td><td align="center"><a href="barbara256_100_25.png">29.20</a>         </td></tr></table>
+
+</center>
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<a name="tth_tAb6">
+</a> <center>Table 6: <font size="-1">BPFA hyperspectral image interpolation PSNR results, considering a 150 &times; 150 hyperspectral urban image with 210 spectral bands. Test results can be downloaded from <a href="Hyperspectral Urban Image Inpainting2.ppt">HERE</a></font></center>
+
+<center>
+
+<table border="1">
+<tr><td align="center">Observed data (%)          </td><td align="center">1&times;1     </td><td align="center">2&times;2    </td><td align="center">3&times;3    </td><td align="center">4&times;4 </td></tr>
+<tr><td align="center">2         </td><td align="center">15.34   </td><td align="center">21.09   </td><td align="center">22.72      </td><td align="center">23.46    </td></tr>
+<tr><td align="center">5         </td><td align="center">17.98   </td><td align="center">23.58   </td><td align="center">25.30      </td><td align="center">25.88    </td></tr>
+<tr><td align="center">10        </td><td align="center">20.41   </td><td align="center">25.27   </td><td align="center">26.36      </td><td align="center">26.68   </td></tr>
+<tr><td align="center">20        </td><td align="center">22.22   </td><td align="center">26.50   </td><td align="center">27.02      </td><td align="center">27.16    </td></tr></table>
+
+</center>
+
+
+<div class="p"><!----></div>
+
+<br /><br /><hr /><small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.87.<br />On 26 Apr 2010, 13:03.</small>
+</html>
