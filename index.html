@@ -76,7 +76,7 @@
 		<p>My research lies at the intersection of Bayesian statistics and machine learning. 
 		I am interested in developing statistical theory and methods, hierarchical models, and efficient Bayesian inference for big data. 
 		I am currently focused on the development of nonparametric Bayesian hierarchical models for count data analysis, mixture modeling (clustering, mixed-membership modeling, topic modeling), 
-		dictionary learning (feature learning, factor analysis), network modeling, and multilayer representation. 
+		dictionary learning (feature learning, factor analysis), network modeling, and multilayer deep representation. 
 		
 		<!--<p>I am building the negative binomial process family to introduce new exchangeable random partitions and novel clustering algorithms.-->
 		
@@ -99,9 +99,11 @@
 		<ul>
 		
 		<p>
-		<li> Our paper "The Poisson gamma belief network" is accepted for publication in NIPS 2015.
+		<li> Our NIPS2015 paper "<a style=" color:  blue;" href="Papers/DeepPoGamma_v4.pdf">The Poisson gamma belief network</a>" presents a Poisson-gamma-gamma-gamma... generative model that can be used to unsupervisedly extract multilayer deep representation of high-dimensional count vectors, with the network structure automatically inferred from the data given a fixed budget on the width of the first layer. When applied to deep topic models, the Poisson gamma belief network (PGBN) extracts very specific topics at the first hidden layer and increasingly more general topics at deeper hidden layers. Jointly training all the layers is simple and the code is easy to implement, as a PGBN of T layers can be broken into T subproblems that are solved with the same subroutine, with the computation mainly spent on training the first hidden layer. The extracted deep network can also be used to simulate very interpretable synthetic documents, which reflect various general aspects of the corpus that the network is trained on. 
 		</li>
-		<p>
+		
+		<p align="center">
+		<img src="images/PGBN.png"  height="180"/>
 		
 		<p>
 		<li> The paper "<a style=" color: blue;" href="http://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1075407">Priors for random count matrices derived from a family of negative binomial processes</a>" is accepted for publication in Journal of the American Statistical Association.
@@ -168,7 +170,7 @@ A random count matrix, with a Poisson distributed and potentially unbounded rand
 		 in particular, negative binomial process count and mixture models. -->
 		
 
-		<p class="credits">&copy; September 2015 Mingyuan Zhou<br />
+		<p class="credits">&copy; November 2015 Mingyuan Zhou<br />
 		</ul>
 	</div>
 </body>
