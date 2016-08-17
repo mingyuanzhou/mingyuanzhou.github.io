@@ -1,4 +1,4 @@
-function [r,p,a_tilde,b_tilde,alpha_tilde,beta_tilde,out] = NegBino_VB(x, MaxIter)
+function [r,p,a_tilde,b_tilde,alpha_tilde,beta_tilde,out] = NegBino_VB(x, MaxIter, Calculate_ELBO)
 %%
 % Matlab code. 
 % Variational Bayes inference for the negative binomial distribution.
@@ -25,13 +25,16 @@ function [r,p,a_tilde,b_tilde,alpha_tilde,beta_tilde,out] = NegBino_VB(x, MaxIte
 %     Processes," in NIPS 2012.
 %
 % [3] M. Zhou and L. Carin, "Negative Binomial Process Count
-%     and Mixture Modeling,"  arXiv:1209.3442, Sept. 2012.
+%     and Mixture Modeling,"  IEEE TPAMI, Feb. 2015.
 %
 %%
-% Coded by Mingyuan Zhou, mingyuan.zhou@duke.edu, 10/13/2012 version.
-% http://people.ee.duke.edu/~mz1/
+% Coded by Mingyuan Zhou
+% 10/13/2012 first version.
+% 11/28/2012 second version. 
+% 08/16/2016 current version.
+% http://mingyuanzhou.github.io/
 % 
-%   Copyright (C) 2012, Mingyuan Zhou.
+%   Copyright (C) 2016, Mingyuan Zhou.
 %
 %   This program is free software; you can redistribute it and/or modify
 %   it under the terms of the GNU General Public License as published by
@@ -62,9 +65,16 @@ function [r,p,a_tilde,b_tilde,alpha_tilde,beta_tilde,out] = NegBino_VB(x, MaxIte
 % 
 % r=0.3; p=0.8; x = nbinrnd(r,1-p,1,1000);
 % [r,p,a_tilde,b_tilde,alpha_tilde,beta_tilde] = NegBino_VB(x);
+if nargin<1
+    x = [zeros(1,70),ones(1,38),2*ones(1,17),3*ones(1,10),4*ones(1,9),5*ones(1,3),6*ones(1,2),7*ones(1,1)];
+end
 
 if nargin<2
-    MaxIter = 888;
+    MaxIter = 200;
+end
+
+if nargin<3
+    Calculate_ELBO = true;
 end
 
 N = length(x);      
@@ -76,8 +86,16 @@ phi_MM = 1/mu_ML*(varx/mu_ML-1);
 
 r = max(min(1/phi_MM,10),0.1);
 p = mu_ML/(mu_ML+r);
+
+if Calculate_ELBO == true
+    %choose a worse initilization to show how the ELBO improves as the
+    %interation increases
+    r=r*2;
+    p=p/2;
+end
    
 out =zeros(2,MaxIter);
+ELBO = zeros(1,MaxIter);
 figure
 for iter=1:MaxIter
         if iter==1
@@ -98,6 +116,7 @@ for iter=1:MaxIter
         beta_tilde = beta0 + N*mu_r;
         
         mu_L = CRT_Expectation(x,exp(mu_log_r));
+
         mu_log_1_p = psi(beta_tilde)-psi(alpha_tilde+beta_tilde);
         mu_p = alpha_tilde./(alpha_tilde+beta_tilde);
         
@@ -111,10 +130,27 @@ for iter=1:MaxIter
         r = mu_r;        
 
         out(:,iter)=[r;p];
+        
+        if Calculate_ELBO == true
+            mu_log_p = psi(alpha_tilde)-psi(alpha_tilde+beta_tilde);
+            Lbound = N*mu_r*mu_log_1_p + mu_log_p*sum(x)-sum(gammaln(x+1)); %+N*(mu_log_r);
+            Lbound = Lbound+ a0*log(b0) + (a0-1)*mu_log_r - b0 * mu_r - gammaln(a0);
+            Lbound = Lbound - (a_tilde*log(b_tilde) + (a_tilde-1)*mu_log_r - b_tilde * mu_r - gammaln(a_tilde));
+            Lbound = Lbound+ (alpha0-1)*mu_log_p + (beta0-1)*mu_log_1_p - betaln(alpha0,beta0);
+            Lbound = Lbound- ((alpha_tilde-1)*mu_log_p + (beta_tilde-1)*mu_log_1_p - betaln(alpha_tilde,beta_tilde));
+            %rr = gamrnd(a_tilde,1/b_tilde,10000,1);
+            rr = gamrnd(a_tilde,1/b_tilde,100000,1);
+            for i=1:N
+                Lbound  = Lbound + (sum(gammaln(x(i)+rr)-gammaln(rr)))/length(rr);
+            end
+            ELBO(iter) = Lbound;
+        end
+
         if mod(iter,10)==0
             subplot(4,1,1);plot(x,'.'); title('count data');
             subplot(4,1,2);plot(out(1,1:iter)); title('r');
             subplot(4,1,3);plot(out(2,1:iter)); title('p');
+            subplot(4,1,4);plot(ELBO(1:iter)); title('LowerBound');
             drawnow;            
         end        
 end
@@ -125,18 +161,18 @@ figure;
 subplot(1,2,1); plot(max(r-1,0):0.01:r+1,gampdf(max(r-1,0):0.01:r+1,a_tilde,1/b_tilde)); title('Q(r)');
 subplot(1,2,2); plot(0:0.01:1,betapdf(0:0.01:1,alpha_tilde,beta_tilde)); title('Q(p)');
 
-function LsumE= CRT_Expectation(x,r)
+function LsumE = CRT_Expectation(x,r)
 %  Using Corollary A.2 in 
 %  [3] M. Zhou and L. Carin, "Negative Binomial Process Count
 %     and Mixture Modeling,"  arXiv:1209.3442, Sept. 2012.
 %  to calculate \sum_{i=1}^N <L_i> in Equation (30) of 
 %  [1] M. Zhou, L. Li, D. Dunson and L. Carin, "Lognormal and
 %     Gamma Mixed Negative Binomial Regression," in ICML 2012.
-
-LsumE=0;
-Prob = r./(r+(0:(max(x)-1)));
-for i=1:length(x);
-    if x(i)>0
-        LsumE = LsumE + sum(Prob(1:x(i)));
-    end
-end
+LsumE = r*sum(psi(nonzeros(x)+r)-psi(r));
+% LsumE=0;
+% Prob = r./(r+(0:(max(x)-1)));
+% for i=1:length(x);
+%     if x(i)>0
+%         LsumE = LsumE + sum(Prob(1:x(i)));
+%     end
+% end
