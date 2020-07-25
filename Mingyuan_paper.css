@@ -1,0 +1,160 @@
+/*
+Original design: Basic Profile (v2.0 - Sep 11, 2012) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/basic-profile/
+*/
+/*
+Modified by Mingyuan Zhou for personal use
+*/
+
+*{margin:0; padding:0;}
+body {background:#fff url(background.jpg) top center no-repeat; color:#303030; font:98% Calibri,Helvetica,sans-serif; line-height:1.6em;}
+a {color:#001A57; text-decoration:underline;}
+a:hover {text-decoration:underline;}
+p,ul,ol,dl {margin:0 0 30px 0;}
+/* h1 {color:#888; font-size:3.2em; line-height:1.1em; letter-spacing:-3px; margin:20px 0 0 0;}*/
+/* h1 a {color:#239a23; text-transform:none;}*/
+h1 {color:#001A57; font-size:1.3em; line-height:0.8em; letter-spacing:1px; margin:10px 0 0 0;}
+h2 {font-size:1.5em; color:#CC5500; margin:0 0 20px; letter-spacing:-1px; border-bottom:2px solid #eee;}
+h3 {font-size:1.5em; margin:10px 0 15px 0; letter-spacing:-1px; border-bottom:2px solid #eee;}
+h1,h2,h3 {font-weight:700; line-height:1.4em;}
+#wrap {color:#303030; margin:40px auto; padding:0; width:980px;}
+#content 
+{
+	text-align:left; 
+	/*width:800px; */
+	padding-left:18em;
+	padding-right:10em;
+}
+#sidebar 
+{
+	float:left; 
+	width:210px; 
+	padding-left:1.5em; 
+	border-left:2px  #ccc; 
+	color: #CC5500
+}
+#sidebar ul 
+{
+	list-style:none; 
+	margin:0; 
+	padding:10px 0 0 0; 
+	border-top:1px  #eee;  
+}
+/*#sidebar ul {list-style:none; margin:0; padding:10px 0 0 0; border-top:1px solid #eee;}*/
+#sidebar li 
+{
+	list-style:none; 
+	font-size:1.2em; 
+	margin:0 0 10px 0px; 
+	padding:0 0 10px 0; 
+	color:#888; 
+	border-bottom:1px solid #eee; 
+}
+#sidebar li a {font-size:1.0em;}
+#sidebar h2 {font-size: 1.0em;}
+.slogan {color:#888; font-size:1.4em; font-weight:700; margin:0 0 20px 0; letter-spacing:-1px;}
+.readmore {text-align:right; margin:0 20px 30px 0;}
+.timestamp {display:block; font-weight:700; color:#888; text-align:right; width:150px; padding:20px 20px 20px 0; float:left; margin:0 20px 20px 0; border-right:2px solid #eee;}
+.timestamp a {font-weight:normal;}
+.credits {display:block; clear:left; font-size:0.9em; color:#aaa; margin:20px 0;}
+.credits a {color:#888;}
+.clear {clear:both;}
+
+
+
+#bibbase_header a {
+    text-decoration: none;
+}
+
+#bibbase_header i {
+    width: 16px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.bibbase_group {
+    /* background-color: #D0D0E0; */
+    background-color: #E0E0E0;
+    font-style: italic;
+    font-size: larger;
+    text-shadow: 0px 0px 3px #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+    padding: 5px 40px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.bibbase_group_body {
+    margin-left: 20px;
+}
+
+
+img.bibbase_icon {
+    width: 20px;
+    max-height: 16px;
+    vertical-align: text-top;
+    
+
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6+ */
+}
+
+img.bibbase_icon:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+
+
+/* span.bibbase_icon_text { */
+/*     display: none; */
+/* } */
+
+.bibbase_code {
+    width: 80%
+}
+
+.comment {
+    font-size: smaller;
+    font-style: italic;
+    color: gray;
+}
+
+.recommended {
+    color: green;
+}
+
+/* bootstrap */
+
+.bibbase_msg {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#bibbase_embed_modal {
+    width: 70%;
+    left: 15%;
+    margin: 0;
+}
+
+.bibbase.well {
+    margin: 20px;
+    overflow-wrap: break-word;
+}
+
+.bibbase.link {
+    text-decoration: none;
+}
+
+.bibbase_paper_content {
+    font-size: smaller;
+}
