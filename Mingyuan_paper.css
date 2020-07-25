@@ -146,10 +146,6 @@ img.bibbase_icon:hover {
     margin: 0;
 }
 
-.bibbase.well {
-    margin: 20px;
-    overflow-wrap: break-word;
-}
 
 .bibbase.link {
     text-decoration: none;
