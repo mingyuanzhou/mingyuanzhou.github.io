@@ -43,7 +43,8 @@
 	<div id="content">
 		<h2>Selected Publications</h2>
 		<p>
-		<script src="https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib&jsonp=1&#038;theme=simple&authorFirst=1&fullnames=1"></script>
+		<?php $contents = file_get_contents("https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib"); print_r($contents); ?>
+		<!--<script src="https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib&jsonp=1&#038;theme=simple&authorFirst=1&fullnames=1"></script>-->
 		<br />
 		<p class="credits">&copy; June 2020 Mingyuan Zhou<br />
 	</div>
