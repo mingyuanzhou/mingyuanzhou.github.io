@@ -8,6 +8,27 @@
   box-sizing: border-box;
   border: white;
 }
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  	float:left; 
+	width:210px; 
+	padding-left:1.5em; 
+	border-left:2px  #ccc; 
+	color: #CC5500
+}
+
+.right {
+  width: 75%;
+  padding-left:4em;
+}
+
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -41,7 +62,7 @@
 			mingyuan.zhou@mccombs.utexas.edu<br></font>
 		</ul>
   </div>
-  <div id="content">
+  <div class="column right">
     <h2>Selected Publications</h2>
 		<p>
 		<script src="https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib&jsonp=1&#038;theme=simple&authorFirst=1&fullnames=1&css=Mingyuan.css"></script>
