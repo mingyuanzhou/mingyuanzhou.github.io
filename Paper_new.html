@@ -9,7 +9,7 @@
 	count and mixture modeling, Duke University, University of Texas at Austin" />
 	<meta name="Mingyuan Zhou" content="Research and teaching" />
 	<link rel="stylesheet" type="text/css" href="Mingyuan.css" title="Basic Profile" media="all" />
-	<script src="src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+	<script src="Papers/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
     <bibtex src="https://mingyuanzhou.github.io/Mingyuan_Zhou.bib"></bibtex>
     
 	
@@ -141,8 +141,10 @@
 		<div class="bibtex_topics"> </div>
 
 		<div class="bibtex_structure">
-		  <div class="group year" extra="ASC number">
-			  <div class="templates"></div>
+		<div class="sort year" extra="ASC number">
+		  <div class="group year" extra="DESC string">
+			  	<div class="templates"></div>
+			</div>
 		  </div>
 		</div>
 		
@@ -187,15 +189,7 @@
 					<span class="if url_code" style="margin-left: 20px">
 						<a class="url_code" style="color:blue; font-size:15px">Code</a>
 					</span>
-					<span style="margin-left: 20px">
-					<button onclick="myFunction()" style="margin-left: 20px; border: none">[abstract]</button>
-					<div id="myDIV" style="display:none">
-						<span class="abstract"></span>
-					</div>
-					<button onclick="myFunction1()" style="margin-left: 20px; border: none">[bib]</button>
-					<div id="myDIV1" style="display:none">
-						<pre><span class="bibtexraw noread"></span>
-					</div>
+					
 				  </div>
 				</li></ul>
 	
@@ -208,7 +202,7 @@
 	<script>
 	function myFunction() {
 	  var x = document.getElementById("myDIV");
-	  if (x.style.display === "none") {
+	  if (x.style.display == "none") {
 		x.style.display = "block";
 	  } else {
 		x.style.display = "none";
@@ -219,7 +213,7 @@
 	<script>
 	function myFunction1() {
 	  var x = document.getElementById("myDIV1");
-	  if (x.style.display === "none") {
+	  if (x.style.display == "none") {
 		x.style.display = "block";
 	  } else {
 		x.style.display = "none";
