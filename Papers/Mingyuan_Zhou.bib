@@ -1,3 +1,24 @@
+
+@InProceedings{zhou2011dependent,
+  title = 	 {Dependent Hierarchical Beta Process for Image Interpolation and Denoising},
+  author = 	 {Mingyuan Zhou and Hongxia Yang and Guillermo Sapiro and David Dunson and Lawrence Carin},
+  booktitle = 	 {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {883--891},
+  year = 	 {2011},
+  editor = 	 {Geoffrey Gordon and David Dunson and Miroslav Dudík},
+  volume = 	 {15},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Fort Lauderdale, FL, USA},
+  month = 	 {11--13 Apr},
+  publisher = 	 {PMLR},
+  url_paper = 	 {http://proceedings.mlr.press/v15/zhou11a/zhou11a.pdf},
+  url_link = 	 {http://proceedings.mlr.press/v15/zhou11a.html},
+  url_slide		= {Papers/dHBP_AISTATS2011_MingyuanZhou_04122011.pdf}
+  url_video		= {http://videolectures.net/aistats2011_zhou_dependent/}
+  abstract = 	 {A dependent hierarchical beta process (dHBP) is developed as a prior for data that may be represented in terms of a sparse set of latent features, with covariate-dependent feature usage. The dHBP is applicable to general covariates and data models, imposing that signals with similar covariates are likely to be manifested in terms of similar features. Coupling the dHBP with the Bernoulli process, and upon marginalizing out the dHBP, the model may be interpreted as a covariate-dependent hierarchical Indian buffet process. As applications, we consider interpolation and denoising of an image, with covariates defined by the location of image patches within an image. Two types of noise models are considered: (i) typical white Gaussian noise; and (ii) spiky noise of arbitrary amplitude, distributed uniformly at random. In these examples, the features correspond to the atoms of a dictionary, learned based upon the data under test (without a priori training data). State-of-the-art performance is demonstrated, with efficient inference using hybrid Gibbs, Metropolis-Hastings and slice sampling.},
+  note            = {(Oral presentation)},
+}
+
 @incollection{zhou2009non,
 title 			= {Non-Parametric {B}ayesian Dictionary Learning for Sparse Image Representations},
 author 			= {Zhou, Mingyuan and Haojun Chen and Lu Ren and Sapiro, Guillermo and Carin, Lawrence and John W. Paisley},
@@ -11,6 +32,7 @@ url_link		= {http://papers.nips.cc/paper/3851-non-parametric-bayesian-dictionary
 url_code		= {Softwares/BPFA_Denoising_Inpainting_codes_Inference_10292009.zip}
 url_slide		= {Papers/MingyuanZhou_NIPS_12082009.pdf}
 url_video		= {http://videolectures.net/mingyuan_zhou/}
+abstract 		={Non-parametric Bayesian techniques are considered for learning dictionaries for sparse image representations, with applications in denoising, inpainting and compressive sensing (CS). The beta process is employed as a prior for learning the dictionary, and this non-parametric method naturally infers an appropriate dictionary size. The Dirichlet process and a probit stick-breaking process are also considered to exploit structure within an image. The proposed method can learn a sparse dictionary in situ; training images may be exploited if available, but they are not required. Further, the noise variance need not be known, and can be non-stationary. Another virtue of the proposed method is that sequential inference can be readily employed, thereby allowing scaling to large images. Several example results are presented, using both Gibbs and variational Bayesian inference, with comparisons to other state-of-the-art approaches.},
 note            = {(Oral presentation)},
 }
 
