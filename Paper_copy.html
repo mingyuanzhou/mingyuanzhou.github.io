@@ -1,3 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+    <a href="index.html"><img src="images/Mingyuan.jpg"  height="230" alt="Sample logotype" /></a>
+		<h1><a style="text-decoration: none" href="index.html">Mingyuan Zhou</a></h1>
+		
+		<ul>
+			<li><a href="Paper.html">Publications</a></li>
+			<li><a href="Group.html">Research Group</a></li>
+			<li><a href="Code.html">Software</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="http://scholar.google.com/citations?user=LXwCIisAAAAJ&hl=en">Google Scholar</a></li>
+			<li><a href="http://videolectures.net/mingyuan_zhou">Video Lectures</a></li>
+			<li><a href="CV_MingyuanZhou.pdf">CV</a></li>
+			<font size="2">IROM Dept., University of Texas<br>
+			2110 Speedway Stop B6500<br>
+			Austin, TX 78712<br>
+			Office: CBA 6.458<br>
+			Phone: +1 512-232-6763 <br></font>
+			<font size="1">
+			mingyuan.zhou@mccombs.utexas.edu<br></font>
+		</ul>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Selected Publications</h2>
+		<p>
+		<script src="https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib&jsonp=1&#038;theme=simple&authorFirst=1&fullnames=1&css=Mingyuan.css"></script>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!--
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 2.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
