@@ -29,28 +29,7 @@
 	    h1.header {margin-left:8px;}
 	    h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
     </style>-->
-    
-    
-    <style>
-		#myDIV {
-  			width: 100%;
-  			padding: 50px 0;
-  			text-align: left;
-  			background-color: lightblue;
-  			margin-top: 20px;
-		}
-	</style>
-
-    <style>
-		#myDIV1 {
-  		width: 100%;
-  		padding: 50px 0;
-  		text-align: left;
-  		background-color: lightblue;
-  		margin-top: 20px;
-		}
-	</style>
-	
+    	
 	
 	<script>
 		$(function() {
@@ -78,7 +57,6 @@
 </head>
 
 <body>
-
 
 
 	<div id="sidebar">
@@ -129,7 +107,7 @@
 		
 		
 		<input type="text" class="bibtex_search" list="suggests">
-		<button type="submit" class="bibtex_print">Save</button>
+		<button type="submit" class="bibtex_print">Search</button>
 
 		 <datalist id="suggests">
 			 <option value="@author=">
@@ -180,6 +158,9 @@
 					<span class="if url_appendix" style="margin-left: 20px">
 						<a class="url_appendix" style="color:blue; font-size:15px">Appendix</a>
 					</span>
+					<span class="if url_arxiv" style="margin-left: 20px">
+						<a class="url_arxiv" style="color:blue; font-size:15px">ArXiv</a>
+					</span>
 					<span class="if url_slide" style="margin-left: 20px">
 						<a class="url_slide" style="color:blue; font-size:15px">Slides</a>
 					</span>
@@ -199,27 +180,6 @@
 	<p class="credits">&copy; June 2020 Mingyuan Zhou<br />
 	</div>
 
-	<script>
-	function myFunction() {
-	  var x = document.getElementById("myDIV");
-	  if (x.style.display == "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	</script>
-
-	<script>
-	function myFunction1() {
-	  var x = document.getElementById("myDIV1");
-	  if (x.style.display == "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	</script>
 
 </body>
 </html>
