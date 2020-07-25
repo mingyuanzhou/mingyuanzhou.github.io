@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Mingyuan.css" title="Basic Profile" media="all" />
+
 <style>
-* {
+*{
   box-sizing: border-box;
+  border: white;
 }
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 </style>
+
 </head>
 <body>
 
 
 <div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <div id="sidebar">
     <a href="index.html"><img src="images/Mingyuan.jpg"  height="230" alt="Sample logotype" /></a>
 		<h1><a style="text-decoration: none" href="index.html">Mingyuan Zhou</a></h1>
 		
@@ -57,7 +41,7 @@
 			mingyuan.zhou@mccombs.utexas.edu<br></font>
 		</ul>
   </div>
-  <div class="column right" style="background-color:#bbb;">
+  <div id="content">
     <h2>Selected Publications</h2>
 		<p>
 		<script src="https://bibbase.org/show?bib=https%3A%2F%2Fmingyuanzhou.github.io%2FMingyuan_Zhou.bib&jsonp=1&#038;theme=simple&authorFirst=1&fullnames=1&css=Mingyuan.css"></script>
