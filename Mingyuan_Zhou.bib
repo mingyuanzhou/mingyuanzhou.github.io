@@ -1,4 +1,96 @@
 
+@article{zhou2018nonparametric,
+  title={Nonparametric Bayesian negative binomial factor analysis},
+  author={Zhou, Mingyuan and others},
+  journal={Bayesian Analysis},
+  volume={13},
+  number={4},
+  pages={1065--1093},
+  year={2018},
+  publisher={International Society for Bayesian Analysis},
+  url_link={https://projecteuclid.org/euclid.ba/1510801993},
+  url_pdf={Papers/NBFA_v10.pdf},
+  url_arxiv={http://arxiv.org/abs/1604.07464},
+  url_code={https://GitHub.com/mingyuanzhou/NBFA},
+  abstract={A common approach to analyze a covariate-sample count matrix, an element of which represents how many times a covariate appears in a sample, is to factorize it under the Poisson likelihood. We show its limitation in capturing the tendency for a covariate present in a sample to both repeat itself and excite related ones. To address this limitation, we construct negative binomial factor analysis (NBFA) to factorize the matrix under the negative binomial likelihood, and relate it to a Dirichlet-multinomial distribution based mixed-membership model. To support countably infinite factors, we propose the hierarchical gamma-negative binomial process. By exploiting newly proved connections between discrete distributions, we construct two blocked and a collapsed Gibbs sampler that all adaptively truncate their number of factors, and demonstrate that the blocked Gibbs sampler developed under a compound Poisson representation converges fast and has low computational complexity. Example results show that NBFA has a distinct mechanism in adjusting its number of inferred factors according to the sample lengths, and provides clear advantages in parsimonious representation, predictive power, and computational complexity over previously proposed discrete latent variable models, which either completely ignore burstiness, or model only the burstiness of the covariates but not that of the factors.}
+}
+
+
+@inproceedings{cong2017deep,
+  title = 	 {Deep Latent {D}irichlet Allocation with Topic-Layer-Adaptive Stochastic Gradient {R}iemannian {MCMC}},
+  author = 	 {Yulai Cong and Bo Chen and Hongwei Liu and Mingyuan Zhou},
+  booktitle = 	 {International Conference on Machine Learning},
+  pages = 	 {864--873},
+  year = 	 {2017},
+  editor = 	 {Doina Precup and Yee Whye Teh},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {International Convention Centre, Sydney, Australia},
+  month = 	 {06--11 Aug},
+  publisher = 	 {PMLR},
+  url_pdf = 	 {Papers/DLDA_TLASGR_v12.pdf},
+  url_link = 	 {http://proceedings.mlr.press/v70/cong17a.html},
+  url_arxiv={https://arxiv.org/abs/1706.01724},
+  url_slide={Papers/DLDA_ICML2017_slides.pdf},
+  url_poster={Papers/DLDA_ICML2017_poster.pdf},
+  url_code={https://GitHub.com/mingyuanzhou/DeepLDA_TLASGR_MCMC},
+  abstract = 	 {It is challenging to develop stochastic gradient based scalable inference for deep discrete latent variable models (LVMs), due to the difficulties in not only computing the gradients, but also adapting the step sizes to different latent factors and hidden layers. For the Poisson gamma belief network (PGBN), a recently proposed deep discrete LVM, we derive an alternative representation that is referred to as deep latent Dirichlet allocation (DLDA). Exploiting data augmentation and marginalization techniques, we derive a block-diagonal Fisher information matrix and its inverse for the simplex-constrained global model parameters of DLDA. Exploiting that Fisher information matrix with stochastic gradient MCMC, we present topic-layer-adaptive stochastic gradient Riemannian (TLASGR) MCMC that jointly learns simplex-constrained global parameters across all layers and topics, with topic and layer specific learning rates. State-of-the-art results are demonstrated on big data sets.}
+}
+
+
+@article{dadaneh2018bnp,
+  title={BNP-Seq: Bayesian nonparametric differential expression analysis of sequencing count data},
+  author={Dadaneh, Siamak Zamani and Qian, Xiaoning and Zhou, Mingyuan},
+  journal={Journal of the American Statistical Association},
+  volume={113},
+  number={521},
+  pages={81--94},
+  year={2018},
+  publisher={Taylor \& Francis},
+  url_link={http://dx.doi.org/10.1080/01621459.2017.1328358},
+  url_pdf={Papers/BNPseq_v12_arXiv.pdf},
+  url_arxiv={http://arxiv.org/abs/1608.03991},
+  url_code={https://GitHub.com/siamakz/BNPseq},
+  url_abstract={We perform differential expression analysis of high-throughput sequencing count data under a Bayesian nonparametric framework, removing sophisticated ad-hoc pre-processing steps commonly required in existing algorithms. We propose to use the gamma (beta) negative binomial process, which takes into account different sequencing depths using sample-specific negative binomial probability (dispersion) parameters, to detect differentially expressed genes by comparing the posterior distributions of gene-specific negative binomial dispersion (probability) parameters. These model parameters are inferred by borrowing statistical strength across both the genes and samples. Extensive experiments on both simulated and real-world RNA sequencing count data show that the proposed differential expression analysis algorithms clearly outperform previously proposed ones in terms of the areas under both the receiver operating characteristic and precision-recall curves.}
+}
+
+
+@article{cong2017fast,
+  title={Fast simulation of hyperplane-truncated multivariate normal distributions},
+  author={Cong, Yulai and Chen, Bo and Zhou, Mingyuan},
+  journal={Bayesian Analysis},
+  volume={12},
+  number={4},
+  pages={1017--1037},
+  year={2017},
+  publisher={International Society for Bayesian Analysis},
+  url_link={https://projecteuclid.org/euclid.ba/1488337478},
+  url_pdf= {Papers/MVN_Hyperplanes_v9.pdf},
+  url_arxiv={http://arxiv.org/abs/1607.04751},
+  url_code={https://github.com/BoChenGroup/Fast-simulation-of-hyperplane-truncated-multivariate-normal-distribution},
+  abstract={
+  We introduce a fast and easy-to-implement simulation algorithm for a multivariate normal distribution truncated on the intersection of a set of hyperplanes, and further generalize it to efficiently simulate random variables from a multivariate normal distribution whose covariance (precision) matrix can be decomposed as a positive-definite matrix minus (plus) a low-rank symmetric matrix. Example results illustrate the correctness and efficiency of the proposed simulation algorithms.}	
+}
+
+
+
+@inproceedings{schein2016poisson,
+title = {Poisson-gamma dynamical systems},
+author = {Schein, Aaron and Wallach, Hanna and Zhou, Mingyuan},
+booktitle = {Advances in Neural Information Processing Systems},
+editor = {D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R. Garnett},
+pages = {5005--5013},
+year = {2016},
+publisher = {Curran Associates, Inc.},
+url_link={https://papers.nips.cc/paper/6083-poisson-gamma-dynamical-systems},
+url_pdf = {Papers/ScheinZhouWallach2016_paper.pdf},
+url_code = {https://GitHub.com/aschein/pgds">Python Code in GitHub},
+url_slide={Papers/ScheinZhouWallach2016_slides.pdf},
+url_poster={Papers/ScheinZhouWallach2016_poster.pdf},
+note = {(Oral Presentation)},
+abstract = {This paper presents a dynamical system based on the Poisson-Gamma construction for sequentially observed multivariate count data. Inherent to the model is a novel Bayesian nonparametric prior that ties and shrinks parameters in a powerful way. We develop theory about the model's infinite limit and its steady-state. The model's inductive bias is demonstrated on a variety of real-world datasets where it is shown to learn interpretable structure and have superior predictive performance.}
+}
+
 
 @article{zhou2016softplus,
   title={Softplus regressions and convex polytopes},
