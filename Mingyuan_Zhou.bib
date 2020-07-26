@@ -34,7 +34,7 @@
 
 
 @inproceedings{schein2016bayesian,
-  title = 	 {Bayesian Poisson Tucker Decomposition for Learning the Structure of International Relations},
+  title = 	 {Bayesian {P}oisson {T}ucker Decomposition for Learning the Structure of International Relations},
   author = 	 {Aaron Schein and Mingyuan Zhou and David Blei and Hanna Wallach},
   booktitle = 	 {International Conference on Machine Learning},
   pages = 	 {2810--2819},
@@ -64,16 +64,16 @@
   url_pdf={Papers/DeepPoGamma_Journal_v5.pdf},
   url_arxiv={http://arxiv.org/abs/1512.03081},
   url_slide={Papers/GBN_ISBA_201606.pdf},
-  url_code = "https://GitHub.com/mingyuanzhou/GBN}, 
+  url_code ={https://GitHub.com/mingyuanzhou/GBN}, 
   abstract = {To infer multilayer deep representations of high-dimensional discrete and nonnegative real vectors, we propose an augmentable gamma belief network (GBN) that factorizes each of its hidden layers into the product of a sparse connection weight matrix and the nonnegative real hidden units of the next layer. The GBN's hidden layers are jointly trained with an upward-downward Gibbs sampler that solves each layer with the same subroutine. The gamma-negative binomial process combined with a layer-wise training strategy allows inferring the width of each layer given a fixed budget on the width of the first layer. Example results illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the GBN can add more layers to improve its performance in both unsupervisedly extracting features and predicting heldout data. For exploratory data analysis, we extract trees and subnetworks from the learned deep network to visualize how the very specific factors discovered at the first hidden layer and the increasingly more general factors discovered at deeper hidden layers are related to each other, and we generate synthetic data by propagating random variables through the deep network from the top hidden layer back to the bottom data layer.}
 }
 
 
 
 @inproceedings{zhou2015poisson,
-  title={The Poisson gamma belief network},
+  title={The {P}oisson gamma belief network},
   author = {Zhou, Mingyuan and Cong, Yulai and Chen, Bo},
-   booktitle = {Advances in Neural Information Processing Systems 28},
+   booktitle = {Advances in Neural Information Processing Systems},
   editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
   pages = {3043--3051},
   year = {2015},
@@ -82,7 +82,7 @@
   url_pdf={Papers/DeepPoGamma_v5.pdf},
   url_arxiv={http://arxiv.org/abs/1511.02199},
   url_poster={Papers/PGBN_NIPS2015_Poster.pdf},
-  url_code = "https://GitHub.com/mingyuanzhou/GBN},
+  url_code ={https://GitHub.com/mingyuanzhou/GBN},
   abstract={To infer a multilayer representation of high-dimensional count vectors, we propose the Poisson gamma belief network (PGBN) that factorizes each of its layers into the product of a connection weight matrix and the nonnegative real hidden units of the next layer. The PGBN's hidden layers are jointly trained with an upward-downward Gibbs sampler, each iteration of which upward samples Dirichlet distributed connection weight vectors starting from the first layer (bottom data layer), and then downward samples gamma distributed hidden units starting from the top hidden layer. The gamma-negative binomial process combined with a layer-wise training strategy allows the PGBN to infer the width of each layer given a fixed budget on the width of the first layer. The PGBN with a single hidden layer reduces to Poisson factor analysis. Example results on text analysis illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the PGBN, whose hidden units are imposed with correlated gamma priors, can add more layers to increase its performance gains over Poisson factor analysis, given the same limit on the width of the first layer.}
 }
 
@@ -102,12 +102,11 @@
   url_arxiv={http://arxiv.org/abs/1404.3331},
   url_slide={Papers/NBP_Count_Matrix_201506.pdf},
   url_code={https://GitHub.com/mingyuanzhou/NBP_random_count_matrices},
-   abstract = { ABSTRACTWe define a family of probability distributions for random count matrices with a potentially unbounded number of rows and columns. The three distributions we consider are derived from the gamma-Poisson, gamma-negative binomial, and beta-negative binomial processes, which we refer to generically as a family of negative-binomial processes. Because the models lead to closed-form update equations within the context of a Gibbs sampler, they are natural candidates for nonparametric Bayesian priors over count matrices. A key aspect of our analysis is the recognition that although the random count matrices within the family are defined by a row-wise construction, their columns can be shown to be independent and identically distributed (iid). This fact is used to derive explicit formulas for drawing all the columns at once. Moreover, by analyzing these matricesâ combinatorial structure, we describe how to sequentially construct a column-iidÂ random count matrix one row at a time, and derive the predictive distribution of a new row count vector with previously unseen features. We describe the similarities and differences between the three priors, and argue that the greater flexibility of the gamma- and beta-negative binomial processesâespecially their ability to model over-dispersed, heavy-tailed count dataâmakes these well suited to a wide variety of real-world applications. As an example of our framework, we construct a naive-Bayes text classifier to categorize a count vector to one of several existing random count matrices of different categories. The classifier supports an unbounded number of features and, unlike most existing methods, it does not require a predefined finite vocabulary to be shared by all the categories, and needs neither feature selection nor parameter tuning. Both the gamma- and beta-negative binomial processes are shown to significantly outperform the gamma-Poisson process when applied to document categorization, with comparable performance to other state-of-the-art supervised text classification algorithms. Supplementary materials for this article are available online.}
 }
 
 
 
-@InProceedings{Acharya2015gamma,
+@InProceedings{10.1007/978-3-319-23528-8_18,
 author={Acharya, Ayan
 and Teffer, Dean
 and Henderson, Jette
@@ -129,7 +128,7 @@ pages={283--299},
 abstract={Developing models to discover, analyze, and predict clusters within networked entities is an area of active and diverse research. However, many of the existing approaches do not take into consideration pertinent auxiliary information. This paper introduces Joint Gamma Process Poisson Factorization (J-GPPF) to jointly model network and side-information. J-GPPF naturally fits sparse networks, accommodates separately-clustered side information in a principled way, and effectively addresses the computational challenges of analyzing large networks. Evaluated with hold-out link prediction performance on sparse networks (both synthetic and real-world) with side information, J-GPPF is shown to clearly outperform algorithms that only model the network adjacency matrix.},
 isbn={978-3-319-23528-8},
 url_link={https://link.springer.com/chapter/10.1007/978-3-319-23528-8_18},
-url_pdf={Papers/acth15.pdf}
+url_pdf={Papers/acth15.pdf},
 }
 
 
@@ -139,7 +138,7 @@ url_pdf={Papers/acth15.pdf}
 url_link={https://ieeexplore.ieee.org/document/7362890/similar#similar},
 url_pdf={Papers/EPM_EUROSIPCO2015.pdf},
 url_slide = {EPM_EUSIPCO_201509.pdf},
-note={(Invited special session paper)}
+note={(Invited special session paper)},
 }
 
 @inproceedings{zhou2015infinite,
@@ -158,7 +157,7 @@ note={(Invited special session paper)}
   url_link = 	 {http://proceedings.mlr.press/v38/zhou15a.html},
   url_code={https://GitHub.com/mingyuanzhou/EPM},
   url_poster={Papers/EPM_AISTATS2015_Poster.pdf},
-  abstract = 	 {A hierarchical gamma process infinite edge partition model is proposed to factorize the binary adjacency matrix of an unweighted undirected relational network under a  Bernoulli-Poisson link. The model describes  both homophily and stochastic equivalence, and is scalable to  big sparse networks by focusing its computation on  pairs of linked nodes. It can not only discover overlapping communities and inter-community interactions, but also predict missing edges. A simplified version omitting inter-community interactions is also provided and we reveal its  interesting connections to existing models. The number of communities is automatically inferred in a nonparametric Bayesian manner, and efficient  inference via Gibbs sampling is derived using novel data augmentation techniques. Experimental results on four real networks demonstrate the models’ scalability and state-of-the-art performance.}
+  abstract = 	 {A hierarchical gamma process infinite edge partition model is proposed to factorize the binary adjacency matrix of an unweighted undirected relational network under a  Bernoulli-Poisson link. The model describes  both homophily and stochastic equivalence, and is scalable to  big sparse networks by focusing its computation on  pairs of linked nodes. It can not only discover overlapping communities and inter-community interactions, but also predict missing edges. A simplified version omitting inter-community interactions is also provided and we reveal its  interesting connections to existing models. The number of communities is automatically inferred in a nonparametric Bayesian manner, and efficient  inference via Gibbs sampling is derived using novel data augmentation techniques. Experimental results on four real networks demonstrate the models’ scalability and state-of-the-art performance.},
 }
 
 
@@ -196,7 +195,7 @@ url_pdf={Papers/BNBP_Collapsed_v7_arXiv.pdf},
 url_poster={Papers/BNBP_NIPS2014_Poster.pdf},
 url_code = {https://GitHub.com/mingyuanzhou/BNBP_collapsed},
 url_arxiv={http://arxiv.org/abs/1410.7812},
-Abstract={The beta-negative binomial process (BNBP), an integer-valued stochastic process, is employed to partition a count vector into a latent random count matrix. As the marginal probability distribution of the BNBP that governs the exchangeable random partitions of grouped data has not yet been developed, current inference for the BNBP has to truncate the number of atoms of the beta process. This paper introduces an exchangeable partition probability function to explicitly describe how the BNBP clusters the data points of each group into a random number of exchangeable partitions, which are shared across all the groups. A fully collapsed Gibbs sampler is developed for the BNBP, leading to a novel nonparametric Bayesian topic model that is distinct from existing ones, with simple implementation, fast convergence, good mixing, and state-of-the-art predictive performance.}
+Abstract={The beta-negative binomial process (BNBP), an integer-valued stochastic process, is employed to partition a count vector into a latent random count matrix. As the marginal probability distribution of the BNBP that governs the exchangeable random partitions of grouped data has not yet been developed, current inference for the BNBP has to truncate the number of atoms of the beta process. This paper introduces an exchangeable partition probability function to explicitly describe how the BNBP clusters the data points of each group into a random number of exchangeable partitions, which are shared across all the groups. A fully collapsed Gibbs sampler is developed for the BNBP, leading to a novel nonparametric Bayesian topic model that is distinct from existing ones, with simple implementation, fast convergence, good mixing, and state-of-the-art predictive performance.},
 }
 
 	
@@ -213,7 +212,7 @@ Abstract={The beta-negative binomial process (BNBP), an integer-valued stochasti
   url_link={http://ieeexplore.ieee.org/document/6809161/},
   url_pdf={http://arxiv.org/abs/1209.5019},
   url_arxiv={http://arxiv.org/abs/1209.5019},
-  abstract={Super-resolution methods form high-resolution images from low-resolution images. In this paper, we develop a new Bayesian nonparametric model for super-resolution. Our method uses a beta-Bernoulli process to learn a set of recurring visual patterns, called dictionary elements, from the data. Because it is nonparametric, the number of elements found is also determined from the data. We test the results on both benchmark and natural images, comparing with several other models from the research literature. We perform large-scale human evaluation experiments to assess the visual quality of the results. In a first implementation, we use Gibbs sampling to approximate the posterior. However, this algorithm is not feasible for large-scale data. To circumvent this, we then develop an online variational Bayes (VB) algorithm. This algorithm finds high quality dictionaries in a fraction of the time needed by the Gibbs sampler.}
+  abstract={Super-resolution methods form high-resolution images from low-resolution images. In this paper, we develop a new Bayesian nonparametric model for super-resolution. Our method uses a beta-Bernoulli process to learn a set of recurring visual patterns, called dictionary elements, from the data. Because it is nonparametric, the number of elements found is also determined from the data. We test the results on both benchmark and natural images, comparing with several other models from the research literature. We perform large-scale human evaluation experiments to assess the visual quality of the results. In a first implementation, we use Gibbs sampling to approximate the posterior. However, this algorithm is not feasible for large-scale data. To circumvent this, we then develop an online variational Bayes (VB) algorithm. This algorithm finds high quality dictionaries in a fraction of the time needed by the Gibbs sampler.},
 }
 		
 
@@ -230,7 +229,7 @@ Abstract={The beta-negative binomial process (BNBP), an integer-valued stochasti
   url_pdf= {Papers/Mingyuan_PAMI_9.pdf},
   url_arxiv = {http://arxiv.org/abs/1209.3442},
   url_code={Softwares/NBP_PFA_v1.zip},
-  abstract={The seemingly disjoint problems of count and mixture modeling are united under the negative binomial (NB) process. A gamma process is employed to model the rate measure of a Poisson process, whose normalization provides a random probability measure for mixture modeling and whose marginalization leads to an NB process for count modeling. A draw from the NB process consists of a Poisson distributed finite number of distinct atoms, each of which is associated with a logarithmic distributed number of data samples. We reveal relationships between various count- and mixture-modeling distributions and construct a Poisson-logarithmic bivariate distribution that connects the NB and Chinese restaurant table distributions. Fundamental properties of the models are developed, and we derive efficient Bayesian inference. It is shown that with augmentation and normalization, the NB process and gamma-NB process can be reduced to the Dirichlet process and hierarchical Dirichlet process, respectively. These relationships highlight theoretical, structural, and computational advantages of the NB process. A variety of NB processes, including the beta-geometric, beta-NB, marked-beta-NB, marked-gamma-NB and zero-inflated-NB processes, with distinct sharing mechanisms, are also constructed. These models are applied to topic modeling, with connections made to existing algorithms under Poisson factor analysis. Example results show the importance of inferring both the NB dispersion and probability parameters.}
+  abstract={The seemingly disjoint problems of count and mixture modeling are united under the negative binomial (NB) process. A gamma process is employed to model the rate measure of a Poisson process, whose normalization provides a random probability measure for mixture modeling and whose marginalization leads to an NB process for count modeling. A draw from the NB process consists of a Poisson distributed finite number of distinct atoms, each of which is associated with a logarithmic distributed number of data samples. We reveal relationships between various count- and mixture-modeling distributions and construct a Poisson-logarithmic bivariate distribution that connects the NB and Chinese restaurant table distributions. Fundamental properties of the models are developed, and we derive efficient Bayesian inference. It is shown that with augmentation and normalization, the NB process and gamma-NB process can be reduced to the Dirichlet process and hierarchical Dirichlet process, respectively. These relationships highlight theoretical, structural, and computational advantages of the NB process. A variety of NB processes, including the beta-geometric, beta-NB, marked-beta-NB, marked-gamma-NB and zero-inflated-NB processes, with distinct sharing mechanisms, are also constructed. These models are applied to topic modeling, with connections made to existing algorithms under Poisson factor analysis. Example results show the importance of inferring both the NB dispersion and probability parameters.},
 }
 
 
@@ -250,7 +249,7 @@ Url_slide = {Papers/NBP_NIPS2012_Slides_Mingyuan_12052012.pdf},
 Url_Poster = {Papers/NBP_NIPS2012_Poster_MingyuanZhou_12052012.pdf},
 Url_Code = {Softwares/NBP_PFA_v1.zip},
 Note= {(Spotlight oral presentation)},
-Abstract={By developing data augmentation methods unique to the negative binomial (NB) distribution, we unite seemingly disjoint count and mixture models under the NB process framework. We develop fundamental properties of the models and derive efficient Gibbs sampling inference. We show that the gamma-NB process can be reduced to the hierarchical Dirichlet process with normalization, highlighting its unique theoretical, structural and computational advantages. A variety of NB processes with distinct sharing mechanisms are constructed and applied to topic modeling, with connections to existing algorithms, showing the importance of inferring both the NB dispersion and probability parameters.}
+Abstract={By developing data augmentation methods unique to the negative binomial (NB) distribution, we unite seemingly disjoint count and mixture models under the NB process framework. We develop fundamental properties of the models and derive efficient Gibbs sampling inference. We show that the gamma-NB process can be reduced to the hierarchical Dirichlet process with normalization, highlighting its unique theoretical, structural and computational advantages. A variety of NB processes with distinct sharing mechanisms are constructed and applied to topic modeling, with connections to existing algorithms, showing the importance of inferring both the NB dispersion and probability parameters.},
 }
 
 
@@ -275,7 +274,7 @@ Abstract={By developing data augmentation methods unique to the negative binomia
   Url_Video = {http://techtalks.tv/talks/lognormal-and-gamma-mixed-negative-binomial-regression/57332/},
   Url_Link= {https://icml.cc/Conferences/2012/papers/665.pdf},
   Url_Poster= {Papers/LGNB_ICML2012_Poster_MingyuanZhou_06272012.pdf},
-  Abstract = {In regression analysis of counts, a lack of simple and efficient algorithms for posterior computation has made Bayesian approaches appear unattractive and thus underdeveloped. We propose a lognormal and gamma mixed negative binomial (NB) regression model for counts, and present efficient closed-form Bayesian inference; unlike conventional Poisson models, the proposed approach has two free parameters to include two different kinds of dispersion, and allows the incorporation of prior information, such as sparsity in the regression coefficients. By placing a gamma distribution prior on the NB dispersion parameter r, and connecting a lognormal distribution prior with the logit of the NB probability parameter p, efficient Gibbs sampling and variational Bayes inference are both developed. The closed-form updates are obtained by exploiting conditional conjugacy via both a compound Poisson representation and a Polya-Gamma distribution based data augmentation approach. The proposed Bayesian inference can be implemented routinely, while being easily generalizable to more complex settings involving multivariate dependence structures. The algorithms are illustrated using real examples.}
+  Abstract = {In regression analysis of counts, a lack of simple and efficient algorithms for posterior computation has made Bayesian approaches appear unattractive and thus underdeveloped. We propose a lognormal and gamma mixed negative binomial (NB) regression model for counts, and present efficient closed-form Bayesian inference; unlike conventional Poisson models, the proposed approach has two free parameters to include two different kinds of dispersion, and allows the incorporation of prior information, such as sparsity in the regression coefficients. By placing a gamma distribution prior on the NB dispersion parameter r, and connecting a lognormal distribution prior with the logit of the NB probability parameter p, efficient Gibbs sampling and variational Bayes inference are both developed. The closed-form updates are obtained by exploiting conditional conjugacy via both a compound Poisson representation and a Polya-Gamma distribution based data augmentation approach. The proposed Bayesian inference can be implemented routinely, while being easily generalizable to more complex settings involving multivariate dependence structures. The algorithms are illustrated using real examples.},
 }
 
 
@@ -314,7 +313,7 @@ Abstract={By developing data augmentation methods unique to the negative binomia
   pages=      {625--632},
   Url_Link= {http://www.icml-2011.org/papers/375_icmlpaper.pdf},
   Url_PDF= {http://www.icml-2011.org/papers/375_icmlpaper.pdf},
-  Abstract={A new nonparametric Bayesian model is developed to integrate dictionary learning and topic model into a unified framework. The model is employed to analyze partially annotated images, with the dictionary learning performed directly on image patches. Efficient inference is performed with a Gibbs slice sampler, and encouraging results are reported on widely used datasets.}
+  Abstract={A new nonparametric Bayesian model is developed to integrate dictionary learning and topic model into a unified framework. The model is employed to analyze partially annotated images, with the dictionary learning performed directly on image patches. Efficient inference is performed with a Gibbs slice sampler, and encouraging results are reported on widely used datasets.},
 }
 
 @article{xing2012dictionary,
@@ -381,3 +380,7 @@ Abstract={By developing data augmentation methods unique to the negative binomia
 	Url_Video = {http://videolectures.net/mingyuan_zhou/},
 	Year = {2009}
 	}
+
+
+
+
