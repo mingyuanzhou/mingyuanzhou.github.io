@@ -31,15 +31,6 @@ th, td {
 th {
   text-align: left;
 }
-span.first_title {
-    margin-top: 20px;
-    margin-left: 12px;
-    font-weight: bold;
-    font-size:24px;
-    color: #221461;
-    /*The change*/
-    display:inline-block; /*or display:block;*/
-}
 </style>
 	
 	<style>
@@ -60,17 +51,6 @@ span.first_title {
     </style>-->
     	
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('.btn').click(function() {
-      $('.btn').each(function() {
-        $(this).next().hide();
-      });
-      $(this).next().toggle();
-    });
-  });
-</script>
 
 
 	<title>Mingyuan Zhou</title>
@@ -134,15 +114,16 @@ span.first_title {
 			 <option value="@title=">
 			 <option value="@year=">
 			 <option value="@journal=">
+			 <option value="@booktitle=">
 		 </datalist>
 
 		<div class="bibtex_topics"> </div>
 
 		<div class="bibtex_structure">
 			<div class="sort year" extra="DESC number">
-		  		<!--<div class="group year" extra="DESC string">-->
+		  		<div class="group year" extra="DESC string">
 			  		<div class="templates"></div>
-				
+				</div>
 		  </div>
 		</div>
 		
@@ -204,11 +185,14 @@ span.first_title {
 							<th class="if url_slide" style="margin-left: 20px">
 								<a class="url_slide" style="color:blue; font-size:15px">Slides</a>
 							</th>
+							<th class="if url_poster" style="margin-left: 20px">
+								<a class="url_poster" style="color:blue; font-size:15px">Slides</a>
+							</th>
 							<th class="if url_video" style="margin-left: 20px">
 								<a class="url_video" style="color:blue; font-size:15px">Video</a>
 							</th>
 							<th class="if url_code" style="margin-left: 20px">
-								<a class="url_code" style="color:blue; font-size:15px">Code</a>
+								<a class="url_code" style="color:#CC5500; font-size:15px">Code</a>
 							</th>
 							<th>	
 								<details>
