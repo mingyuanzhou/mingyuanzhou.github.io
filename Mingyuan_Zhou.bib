@@ -7,7 +7,8 @@
   url={Papers/GGP-LDS-ArXiv_v1.pdf},
   pdf={Papers/GGP-LDS-ArXiv_v1.pdf},
   url_arxiv={https://arxiv.org/abs/},
-  abstract={We introduce graph gamma process (GGP) linear dynamical systems to model  real-valued multivariate time series. For temporal pattern discovery, the latent representation under the model is used to decompose the time series into a parsimonious set of multivariate sub-sequences. In each sub-sequence, different data dimensions often share similar temporal patterns but may exhibit distinct magnitudes, and hence allowing the superposition of all sub-sequences to exhibit diverse behaviors at different data dimensions. We further generalize the proposed model by replacing the Gaussian observation layer with the negative binomial distribution to model multivariate count time series. Generated from the proposed GGP is an infinite dimensional directed sparse random graph, which is constructed by taking the logical OR operation of countably infinite binary adjacency matrices that share the same set of countably infinite nodes. Each of these adjacency matrices is associated with a weight to indicate its activation strength, and places a finite number of edges between a finite subset of nodes belonging to the same node community.  We use the generated random graph, whose number of nonzero-degree nodes is finite, to define both the sparsity pattern and dimension of the latent state transition matrix of a (generalized) linear dynamical system. The activation strength of each node community relative to the overall activation strength is used to extract a multivariate sub-sequence, revealing the data pattern captured by the corresponding community. On both synthetic and real-world time series, the proposed nonparametric Bayesian dynamic models, which are initialized at random,  consistently exhibit  good  predictive performance in comparison to a variety of baseline models, revealing interpretable latent state transition patterns and decomposing the time series into distinctly behaved sub-sequences.}
+  abstract={We introduce graph gamma process (GGP) linear dynamical systems to model  real-valued multivariate time series. For temporal pattern discovery, the latent representation under the model is used to decompose the time series into a parsimonious set of multivariate sub-sequences. In each sub-sequence, different data dimensions often share similar temporal patterns but may exhibit distinct magnitudes, and hence allowing the superposition of all sub-sequences to exhibit diverse behaviors at different data dimensions. We further generalize the proposed model by replacing the Gaussian observation layer with the negative binomial distribution to model multivariate count time series. Generated from the proposed GGP is an infinite dimensional directed sparse random graph, which is constructed by taking the logical OR operation of countably infinite binary adjacency matrices that share the same set of countably infinite nodes. Each of these adjacency matrices is associated with a weight to indicate its activation strength, and places a finite number of edges between a finite subset of nodes belonging to the same node community.  We use the generated random graph, whose number of nonzero-degree nodes is finite, to define both the sparsity pattern and dimension of the latent state transition matrix of a (generalized) linear dynamical system. The activation strength of each node community relative to the overall activation strength is used to extract a multivariate sub-sequence, revealing the data pattern captured by the corresponding community. On both synthetic and real-world time series, the proposed nonparametric Bayesian dynamic models, which are initialized at random, 
+consistently exhibit  good  predictive performance in comparison to a variety of baseline models, revealing interpretable latent state transition patterns and decomposing the time series into distinctly behaved sub-sequences.}
 }
 
 	
@@ -68,7 +69,8 @@
   author    = {Chen, Wenchao and Chen, Bo and Liu, Yicheng and Zhao, Qianru and Zhou, Mingyuan},
   booktitle = {JICAI 2020: International Joint Conference on
                Artificial Intelligence},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  publisher = {International Joint Conferences on Artificial Intelligence Organization}, 
+           
   editor    = {Christian Bessiere},
   pages     = {2029--2036},
   year      = {2020},
@@ -290,7 +292,7 @@ abstract={Mutual Information (MI) plays an important role in representation lear
 }
 
 
-@incollection{schein2019poisso,
+@inproceedings{schein2019poisso,
 title = {Poisson-Randomized Gamma Dynamical Systems},
 author = {Schein, Aaron and Linderman, Scott and Zhou, Mingyuan and Blei, David and Wallach, Hanna},
 booktitle = {NeurIPS 2019: Advances in Neural Information Processing Systems},
@@ -308,7 +310,7 @@ abstract={This paper presents the Poisson-randomized gamma dynamical system (PRG
 
 
 
-@incollection{hasanzadeh2019semi,
+@inproceedings{hasanzadeh2019semi,
 title = {Semi-Implicit Graph Variational Auto-Encoders},
 author = {Hasanzadeh, Arman and Hajiramezanali, Ehsan and Narayanan, Krishna and Duffield, Nick and Zhou, Mingyuan and Qian, Xiaoning},
 booktitle = {NeurIPS 2019: Advances in Neural Information Processing Systems 32},
@@ -325,7 +327,7 @@ abstract={Semi-implicit graph variational auto-encoder (SIG-VAE) is proposed to 
 
 
 
-@incollection{Hajiramezanali2019variational,
+@inproceedings{Hajiramezanali2019variational,
 title = {Variational Graph Recurrent Neural Networks},
 author = {Hajiramezanali, Ehsan and Hasanzadeh, Arman and Narayanan, Krishna and Duffield, Nick and Zhou, Mingyuan and Qian, Xiaoning},
 booktitle = {NeurIPS 2019: Advances in Neural Information Processing Systems 32},
@@ -452,7 +454,7 @@ abstract={Combining Bayesian nonparametrics and a forward model selection strate
 
 
 
-@incollection{zhang2018nonparametric,
+@inproceedings{zhang2018nonparametric,
 title = {Nonparametric {B}ayesian {L}omax delegate racing for survival analysis with competing risks},
 author = {Zhang, Quan and Zhou, Mingyuan},
 booktitle = {NeurIPS 2018: Advances in Neural Information Processing Systems},
@@ -528,43 +530,132 @@ abstract={It is important to learn various types of classifiers given training d
 
 
 
-@InProceedings{yin2018semi,  
-title = 	 {Semi-Implicit Variational Inference},  
-author = 	 {Yin, Mingzhang and Zhou, Mingyuan},  
-booktitle = 	 {ICML 2018: International Conference on Machine Learning},  
-pages = 	 {5660--5669},  
-year = 	 {2018},  
-editor = 	 {Dy, Jennifer and Krause, Andreas},  
-volume = 	 {80},  
-series = 	 {Proceedings of Machine Learning Research},  
-address = 	 {Stockholmsmässan, Stockholm Sweden},  
-month = 	 {10--15 Jul},  publisher = 	 {PMLR},  pdf = 	 {Papers/SIVI.pdf},  url = 	 {http://proceedings.mlr.press/v80/yin18b.html},  url_arxiv={http://arxiv.org/abs/1805.11183},  url_slide={Papers/SIVI_ICML2018_slides.pdf},  url_poster={Papers/SIVI_ICML2018_poster.pdf},  url_slide_additional={Papers/VB_Bordeaux_July3_2018.pdf},  url_code={https://GitHub.com/mingzhang-yin/SIVI},  abstract = 	 {Semi-implicit variational inference (SIVI) is introduced to expand the commonly used analytic variational distribution family, by mixing the variational parameter with a flexible distribution. This mixing distribution can assume any density function, explicit or not, as long as independent random samples can be generated via reparameterization. Not only does SIVI expand the variational family to incorporate highly flexible variational distributions, including implicit ones that have no analytic density functions, but also sandwiches the evidence lower bound (ELBO) between a lower bound and an upper bound, and further derives an asymptotically exact surrogate ELBO that is amenable to optimization via stochastic gradient ascent. With a substantially expanded variational family and a novel optimization algorithm, SIVI is shown to closely match the accuracy of MCMC in inferring the posterior in a variety of Bayesian inference tasks.}
+@InProceedings{yin2018semi, 
+
+title = 	 {Semi-Implicit Variational Inference}, 
+
+author = 	 {Yin, Mingzhang and Zhou, Mingyuan}, 
+
+booktitle = 	 {ICML 2018: International Conference on Machine Learning}, 
+
+pages = 	 {5660--5669}, 
+
+year = 	 {2018}, 
+
+editor = 	 {Dy, Jennifer and Krause, Andreas}, 
+
+volume = 	 {80}, 
+
+series = 	 {Proceedings of Machine Learning Research}, 
+
+address = 	 {Stockholmsmässan, Stockholm Sweden}, 
+
+month = 	 {10--15 Jul}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/SIVI.pdf}, 
+url = 	 {http://proceedings.mlr.press/v80/yin18b.html}, 
+url_arxiv={http://arxiv.org/abs/1805.11183}, 
+url_slide={Papers/SIVI_ICML2018_slides.pdf}, 
+url_poster={Papers/SIVI_ICML2018_poster.pdf}, 
+url_slide_additional={Papers/VB_Bordeaux_July3_2018.pdf}, 
+url_code={https://GitHub.com/mingzhang-yin/SIVI}, 
+abstract = 	 {Semi-implicit variational inference (SIVI) is introduced to expand the commonly used analytic variational distribution family, by mixing the variational parameter with a flexible distribution. This mixing distribution can assume any density function, explicit or not, as long as independent random samples can be generated via reparameterization. Not only does SIVI expand the variational family to incorporate highly flexible variational distributions, including implicit ones that have no analytic density functions, but also sandwiches the evidence lower bound (ELBO) between a lower bound and an upper bound, and further derives an asymptotically exact surrogate ELBO that is amenable to optimization via stochastic gradient ascent. With a substantially expanded variational family and a novel optimization algorithm, SIVI is shown to closely match the accuracy of MCMC in inferring the posterior in a variety of Bayesian inference tasks.}
 }
 
 
 
-@InProceedings{zhao2018inter,  title = 	 {Inter and Intra Topic Structure Learning with Word Embeddings},  author = 	 {Zhao, He and Du, Lan and Buntine, Wray and Zhou, Mingyuan},  booktitle = 	 {ICML 2018: International Conference on Machine Learning},  pages = 	 {5892--5901},  year = 	 {2018},  editor = 	 {Dy, Jennifer and Krause, Andreas},  volume = 	 {80},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {Stockholmsmässan, Stockholm Sweden},  month = 	 {10--15 Jul},  publisher = 	 {PMLR},  pdf = 	 {Papers/WEDTM_ICML2018.pdf},  url = 	 {http://proceedings.mlr.press/v80/zhao18a.html},  url_code=	{https://GitHub.com/ethanhezhao/WEDTM},  abstract = 	 {One important task of topic modeling for text analysis is interpretability. By discovering structured topics one is able to yield improved interpretability as well as modeling accuracy. In this paper, we propose a novel topic model with a deep structure that explores both inter-topic and intra-topic structures informed by word embeddings. Specifically, our model discovers inter topic structures in the form of topic hierarchies and discovers intra topic structures in the form of sub-topics, each of which is informed by word embeddings and captures a fine-grained thematic aspect of a normal topic. Extensive experiments demonstrate that our model achieves the state-of-the-art performance in terms of perplexity, document classification, and topic quality. Moreover, with topic hierarchies and sub-topics, the topics discovered in our model are more interpretable, providing an illuminating means to understand text data.}
+@InProceedings{zhao2018inter, 
+title = 	 {Inter and Intra Topic Structure Learning with Word Embeddings}, 
+author = 	 {Zhao, He and Du, Lan and Buntine, Wray and Zhou, Mingyuan}, 
+booktitle = 	 {ICML 2018: International Conference on Machine Learning}, 
+pages = 	 {5892--5901}, 
+year = 	 {2018}, 
+editor = 	 {Dy, Jennifer and Krause, Andreas}, 
+volume = 	 {80}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {Stockholmsmässan, Stockholm Sweden}, 
+month = 	 {10--15 Jul}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/WEDTM_ICML2018.pdf}, 
+url = 	 {http://proceedings.mlr.press/v80/zhao18a.html}, 
+url_code=	{https://GitHub.com/ethanhezhao/WEDTM}, 
+abstract = 	 {One important task of topic modeling for text analysis is interpretability. By discovering structured topics one is able to yield improved interpretability as well as modeling accuracy. In this paper, we propose a novel topic model with a deep structure that explores both inter-topic and intra-topic structures informed by word embeddings. Specifically, our model discovers inter topic structures in the form of topic hierarchies and discovers intra topic structures in the form of sub-topics, each of which is informed by word embeddings and captures a fine-grained thematic aspect of a normal topic. Extensive experiments demonstrate that our model achieves the state-of-the-art performance in terms of perplexity, document classification, and topic quality. Moreover, with topic hierarchies and sub-topics, the topics discovered in our model are more interpretable, providing an illuminating means to understand text data.}
 }
 
 	
-@inproceedings{acharya2018dual,  title={A Dual {M}arkov Chain Topic Model for Dynamic Environments},  author={Acharya, Ayan and Ghosh, Joydeep and Zhou, Mingyuan},  booktitle={KDD 2018: Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},  pages={1099--1108},  year={2018},  pdf={Papers/Ayan_KDD2018.pdf},  url={https://www.kdd.org/kdd2018/accepted-papers/view/a-dual-markov-chain-topic-model-for-dynamic-environments},  url_video={https://www.youtube.com/watch?v=GBio_I-rAGc},  organization={ACM},  abstract={The abundance of digital text has led to extensive research on topic models that reason about documents using latent representations. Since for many online or streaming textual sources such as news outlets, the number, and nature of topics change over time, there have been several efforts that attempt to address such situations using dynamic versions of topic models. Unfortunately, existing approaches encounter more complex inferencing when their model parameters are varied over time, resulting in high computation complexity and performance degradation. This paper introduces the DM-DTM, a dual Markov chain dynamic topic model, for characterizing a corpus that evolves over time. This model uses a gamma Markov chain and a Dirichlet Markov chain to allow the topic popularities and word-topic assignments, respectively, to vary smoothly over time. Novel applications of the Negative-Binomial augmentation trick result in simple, efficient, closed-form updates of all the required conditional posteriors, resulting in far lower computational requirements as well as less sensitivity to initial conditions, as compared to existing approaches. Moreover, via a gamma process prior, the number of desired topics is inferred directly from the data rather than being pre-specified and can vary as the data changes. Empirical comparisons using multiple real-world corpora demonstrate a clear superiority of DM-DTM over strong baselines for both static and dynamic topic models.}
+@inproceedings{acharya2018dual, 
+title={A Dual {M}arkov Chain Topic Model for Dynamic Environments}, 
+author={Acharya, Ayan and Ghosh, Joydeep and Zhou, Mingyuan}, 
+booktitle={KDD 2018: Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}, 
+pages={1099--1108}, 
+year={2018}, 
+pdf={Papers/Ayan_KDD2018.pdf}, 
+url={https://www.kdd.org/kdd2018/accepted-papers/view/a-dual-markov-chain-topic-model-for-dynamic-environments}, 
+url_video={https://www.youtube.com/watch?v=GBio_I-rAGc}, 
+organization={ACM}, 
+abstract={The abundance of digital text has led to extensive research on topic models that reason about documents using latent representations. Since for many online or streaming textual sources such as news outlets, the number, and nature of topics change over time, there have been several efforts that attempt to address such situations using dynamic versions of topic models. Unfortunately, existing approaches encounter more complex inferencing when their model parameters are varied over time, resulting in high computation complexity and performance degradation. This paper introduces the DM-DTM, a dual Markov chain dynamic topic model, for characterizing a corpus that evolves over time. This model uses a gamma Markov chain and a Dirichlet Markov chain to allow the topic popularities and word-topic assignments, respectively, to vary smoothly over time. Novel applications of the Negative-Binomial augmentation trick result in simple, efficient, closed-form updates of all the required conditional posteriors, resulting in far lower computational requirements as well as less sensitivity to initial conditions, as compared to existing approaches. Moreover, via a gamma process prior, the number of desired topics is inferred directly from the data rather than being pre-specified and can vary as the data changes. Empirical comparisons using multiple real-world corpora demonstrate a clear superiority of DM-DTM over strong baselines for both static and dynamic topic models.}
 }
 
 
-@article{dadaneh2018bayesian,    author = {Dadaneh, Siamak Zamani and Zhou, Mingyuan and Qian, Xiaoning},    title = "{Bayesian Negative Binomial Regression for Differential Expression with Confounding Factors}",    journal = {Bioinformatics},    volume = {34},    number = {19},    pages = {3349-3356},    year = {2018},    month = {04},    abstract = "{Rapid adoption of high-throughput sequencing technologies has enabled better understanding of genome-wide molecular profile changes associated with phenotypic differences in biomedical studies. Often, these changes are due to multiple interacting factors. Existing methods are mostly considering differential expression across two conditions studying one main factor without considering other confounding factors. In addition, they are often coupled with essential sophisticated ad-hoc pre-processing steps such as normalization, restricting their adaptability to general experimental setups. Complex multi-factor experimental design to accurately decipher genotype-phenotype relationships signifies the need for developing effective statistical tools for genome-scale sequencing data profiled under multi-factor conditions.We have developed a novel Bayesian negative binomial regression (BNB-R) method for the analysis of RNA sequencing (RNA-seq) count data. In particular, the natural model parameterization removes the needs for the normalization step, while the method is capable of tackling complex experimental design involving multi-variate dependence structures. Efficient Bayesian inference of model parameters is obtained by exploiting conditional conjugacy via novel data augmentation techniques. Comprehensive studies on both synthetic and real-world RNA-seq data demonstrate the superior performance of BNB-R in terms of the areas under both the receiver operating characteristic and precision-recall curves.BNB-R is implemented in R language and is available at https://github.com/siamakz/BNBR.Supplementary data are available at Bioinformatics online.}",    issn = {1367-4803},    doi = {10.1093/bioinformatics/bty330},    url={https://doi.org/10.1093/bioinformatics/bty330},
-pdf={https://academic.oup.com/bioinformatics/article-pdf/34/19/3349/25839666/bty330.pdf},  url_code={https://GitHub.com/siamakz/BNBR}
+@article{dadaneh2018bayesian, 
+  author = {Dadaneh, Siamak Zamani and Zhou, Mingyuan and Qian, Xiaoning}, 
+  title = "{Bayesian Negative Binomial Regression for Differential Expression with Confounding Factors}", 
+  journal = {Bioinformatics}, 
+  volume = {34}, 
+  number = {19}, 
+  pages = {3349-3356}, 
+  year = {2018}, 
+  month = {04}, 
+  abstract = "{Rapid adoption of high-throughput sequencing technologies has enabled better understanding of genome-wide molecular profile changes associated with phenotypic differences in biomedical studies. Often, these changes are due to multiple interacting factors. Existing methods are mostly considering differential expression across two conditions studying one main factor without considering other confounding factors. In addition, they are often coupled with essential sophisticated ad-hoc pre-processing steps such as normalization, restricting their adaptability to general experimental setups. Complex multi-factor experimental design to accurately decipher genotype-phenotype relationships signifies the need for developing effective statistical tools for genome-scale sequencing data profiled under multi-factor conditions.We have developed a novel Bayesian negative binomial regression (BNB-R) method for the analysis of RNA sequencing (RNA-seq) count data. In particular, the natural model parameterization removes the needs for the normalization step, while the method is capable of tackling complex experimental design involving multi-variate dependence structures. Efficient Bayesian inference of model parameters is obtained by exploiting conditional conjugacy via novel data augmentation techniques. Comprehensive studies on both synthetic and real-world RNA-seq data demonstrate the superior performance of BNB-R in terms of the areas under both the receiver operating characteristic and precision-recall curves.BNB-R is implemented in R language and is available at https://github.com/siamakz/BNBR.Supplementary data are available at Bioinformatics online.}", 
+  issn = {1367-4803}, 
+  doi = {10.1093/bioinformatics/bty330}, 
+  url={https://doi.org/10.1093/bioinformatics/bty330},
+pdf={https://academic.oup.com/bioinformatics/article-pdf/34/19/3349/25839666/bty330.pdf}, 
+url_code={https://GitHub.com/siamakz/BNBR}
 }
 
 
-@article{hajiramezanali2018differential,  title={Differential Expression Analysis of Dynamical Sequencing Count Data with a Gamma {M}arkov Chain},  author={Hajiramezanali, Ehsan and Dadaneh, Siamak Zamani and de Figueiredo, Paul and Sze, Sing-Hoi and Zhou, Mingyuan and Qian, Xiaoning},  journal={arXiv preprint arXiv:1803.02527},  url={https://arxiv.org/abs/1803.02527},  pdf={https://arxiv.org/abs/1803.02527.pdf},  year={2018}
+@article{hajiramezanali2018differential, 
+title={Differential Expression Analysis of Dynamical Sequencing Count Data with a Gamma {M}arkov Chain}, 
+author={Hajiramezanali, Ehsan and Dadaneh, Siamak Zamani and de Figueiredo, Paul and Sze, Sing-Hoi and Zhou, Mingyuan and Qian, Xiaoning}, 
+journal={arXiv preprint arXiv:1803.02527}, 
+url={https://arxiv.org/abs/1803.02527}, 
+pdf={https://arxiv.org/abs/1803.02527.pdf}, 
+year={2018}
 }
 
 
-@article{zamani2018covariate,  author = {Zamani Dadaneh, Siamak and Zhou, Mingyuan and Qian, Xiaoning},    title = "{Covariate-Dependent Negative Binomial Factor Analysis of {RNA} Sequencing Data}",    journal = {Bioinformatics},    volume = {34},    number = {13},    pages = {i61-i69},    year = {2018},    month = {06},    abstract = "{High-throughput sequencing technologies, in particular RNA sequencing (RNA-seq), have become the basic practice for genomic studies in biomedical research. In addition to studying genes individually, for example, through differential expression analysis, investigating co-ordinated expression variations of genes may help reveal the underlying cellular mechanisms to derive better understanding and more effective prognosis and intervention strategies. Although there exists a variety of co-expression network based methods to analyze microarray data for this purpose, instead of blindly extending these methods for microarray data that may introduce unnecessary bias, it is crucial to develop methods well adapted to RNA-seq data to identify the functional modules of genes with similar expression patterns.We have developed a fully Bayesian covariate-dependent negative binomial factor analysis (dNBFA) method—dNBFA—for RNA-seq count data, to capture coordinated gene expression changes, while considering effects from covariates reflecting different influencing factors. Unlike existing co-expression network based methods, our proposed model does not require multiple ad-hoc choices on data processing, transformation, as well as co-expression measures and can be directly applied to RNA-seq data. Furthermore, being capable of incorporating covariate information, the proposed method can tackle setups with complex confounding factors in different experiment designs. Finally, the natural model parameterization removes the need for a normalization preprocessing step, as commonly adopted to compensate for the effect of sequencing-depth variations. Efficient Bayesian inference of model parameters is derived by exploiting conditional conjugacy via novel data augmentation techniques. Experimental results on several real-world RNA-seq datasets on complex diseases suggest dNBFA as a powerful tool for discovering the gene modules with significant differential expression and meaningful biological insight.dNBFA is implemented in R language and is available at https://github.com/siamakz/dNBFA.}",    issn = {1367-4803},    doi = {10.1093/bioinformatics/bty237},    url = {https://doi.org/10.1093/bioinformatics/bty237},    pdf = {https://academic.oup.com/bioinformatics/article-pdf/34/13/i61/25098240/bty237.pdf},    url_code={https://GitHub.com/siamakz/dNBFA}
+@article{zamani2018covariate, 
+author = {Zamani Dadaneh, Siamak and Zhou, Mingyuan and Qian, Xiaoning}, 
+  title = "{Covariate-Dependent Negative Binomial Factor Analysis of {RNA} Sequencing Data}", 
+  journal = {Bioinformatics}, 
+  volume = {34}, 
+  number = {13}, 
+  pages = {i61-i69}, 
+  year = {2018}, 
+  month = {06}, 
+  abstract = "{High-throughput sequencing technologies, in particular RNA sequencing (RNA-seq), have become the basic practice for genomic studies in biomedical research. In addition to studying genes individually, for example, through differential expression analysis, investigating co-ordinated expression variations of genes may help reveal the underlying cellular mechanisms to derive better understanding and more effective prognosis and intervention strategies. Although there exists a variety of co-expression network based methods to analyze microarray data for this purpose, instead of blindly extending these methods for microarray data that may introduce unnecessary bias, it is crucial to develop methods well adapted to RNA-seq data to identify the functional modules of genes with similar expression patterns.We have developed a fully Bayesian covariate-dependent negative binomial factor analysis (dNBFA) method—dNBFA—for RNA-seq count data, to capture coordinated gene expression changes, while considering effects from covariates reflecting different influencing factors. Unlike existing co-expression network based methods, our proposed model does not require multiple ad-hoc choices on data processing, transformation, as well as co-expression measures and can be directly applied to RNA-seq data. Furthermore, being capable of incorporating covariate information, the proposed method can tackle setups with complex confounding factors in different experiment designs. Finally, the natural model parameterization removes the need for a normalization preprocessing step, as commonly adopted to compensate for the effect of sequencing-depth variations. Efficient Bayesian inference of model parameters is derived by exploiting conditional conjugacy via novel data augmentation techniques. Experimental results on several real-world RNA-seq datasets on complex diseases suggest dNBFA as a powerful tool for discovering the gene modules with significant differential expression and meaningful biological insight.dNBFA is implemented in R language and is available at https://github.com/siamakz/dNBFA.}", 
+  issn = {1367-4803}, 
+  doi = {10.1093/bioinformatics/bty237}, 
+  url = {https://doi.org/10.1093/bioinformatics/bty237}, 
+  pdf = {https://academic.oup.com/bioinformatics/article-pdf/34/13/i61/25098240/bty237.pdf}, 
+  url_code={https://GitHub.com/siamakz/dNBFA}
 }
 
 
-@article{zhang2018permuted,  author  = {Quan Zhang and Mingyuan Zhou},  title   = {Permuted and Augmented Stick-Breaking {B}ayesian Multinomial Regression},  journal = {Journal of Machine Learning Research},  year    = {2018},  volume  = {18},  number  = {204},  pages   = {1-33},  url     = {http://jmlr.org/papers/v18/17-409.html},  pdf = {Papers/paSB_MultReg_v16.pdf},  url_slide={Papers/paSB_MultReg_slides_v2.pdf},  url_arxiv={https://arxiv.org/abs/1612.09413},  abstract={To model categorical response variables given their covariates, we propose a permuted and augmented stick-breaking (paSB) construction that one-to-one maps the observed categories to randomly permuted latent sticks. This new construction transforms multinomial regression into regression analysis of stick-specific binary random variables that are mutually independent given their covariate-dependent stick success probabilities, which are parameterized by the regression coefficients of their corresponding categories. The paSB construction allows transforming an arbitrary cross-entropy-loss binary classifier into a Bayesian multinomial one. Specifically, we parameterize the negative logarithms of the stick failure probabilities with a family of covariate-dependent softplus functions to construct nonparametric Bayesian multinomial softplus regression, and transform Bayesian support vector machine (SVM) into Bayesian multinomial SVM. These Bayesian multinomial regression models are not only capable of providing probability estimates, quantifying uncertainty, increasing robustness, and producing nonlinear classification decision boundaries, but also amenable to posterior simulation. Example results demonstrate their attractive properties and performance.}
+@article{zhang2018permuted, 
+author  = {Quan Zhang and Mingyuan Zhou}, 
+title   = {Permuted and Augmented Stick-Breaking {B}ayesian Multinomial Regression}, 
+journal = {Journal of Machine Learning Research}, 
+year    = {2018}, 
+volume  = {18}, 
+number  = {204}, 
+pages   = {1-33}, 
+url     = {http://jmlr.org/papers/v18/17-409.html}, 
+pdf = {Papers/paSB_MultReg_v16.pdf}, 
+url_slide={Papers/paSB_MultReg_slides_v2.pdf}, 
+url_arxiv={https://arxiv.org/abs/1612.09413}, 
+abstract={To model categorical response variables given their covariates, we propose a permuted and augmented stick-breaking (paSB) construction that one-to-one maps the observed categories to randomly permuted latent sticks. This new construction transforms multinomial regression into regression analysis of stick-specific binary random variables that are mutually independent given their covariate-dependent stick success probabilities, which are parameterized by the regression coefficients of their corresponding categories. The paSB construction allows transforming an arbitrary cross-entropy-loss binary classifier into a Bayesian multinomial one. Specifically, we parameterize the negative logarithms of the stick failure probabilities with a family of covariate-dependent softplus functions to construct nonparametric Bayesian multinomial softplus regression, and transform Bayesian support vector machine (SVM) into Bayesian multinomial SVM. These Bayesian multinomial regression models are not only capable of providing probability estimates, quantifying uncertainty, increasing robustness, and producing nonlinear classification decision boundaries, but also amenable to posterior simulation. Example results demonstrate their attractive properties and performance.}
 }
 
 
@@ -582,7 +673,22 @@ abstract={To train an inference network jointly with a deep generative topic mod
 }
 
 
-@inproceedings{kalantari2018nonparametric,  title = 	 {Nonparametric {B}ayesian Sparse Graph Linear Dynamical Systems},  author = 	 {Rahi Kalantari and Joydeep Ghosh and Mingyuan Zhou},  booktitle = 	 {AISTATS 2018: International Conference on Artificial Intelligence and Statistics},  pages = 	 {1952--1960},  year = 	 {2018},  editor = 	 {Amos Storkey and Fernando Perez-Cruz},  volume = 	 {84},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {Playa Blanca, Lanzarote, Canary Islands},  month = 	 {09--11 Apr},  publisher = 	 {PMLR},  pdf = 	 {Papers/BerPo_LDS_v4.pdf},  url = 	 {http://proceedings.mlr.press/v84/kalantari18a.html},  url_arxiv=	{https://arxiv.org/abs/1802.07434},  abstract = 	 {A nonparametric Bayesian sparse graph linear dynamical system (SGLDS) is proposed to model sequentially observed multivariate data. SGLDS uses the Bernoulli-Poisson link together with a gamma process to generate an infinite dimensional sparse random graph to model state transitions. Depending on the sparsity pattern of the corresponding row and column of the graph affinity matrix, a latent state of SGLDS can be categorized as either a non-dynamic state or a dynamic one. A normal-gamma construction is used to shrink the energy captured by the non-dynamic states, while the dynamic states can be further categorized into live, absorbing, or noise-injection states, which capture different types of dynamical components of the underlying time series. The state-of-the-art performance of SGLDS is demonstrated with experiments on both synthetic and real data.}
+@inproceedings{kalantari2018nonparametric, 
+title = 	 {Nonparametric {B}ayesian Sparse Graph Linear Dynamical Systems}, 
+author = 	 {Rahi Kalantari and Joydeep Ghosh and Mingyuan Zhou}, 
+booktitle = 	 {AISTATS 2018: International Conference on Artificial Intelligence and Statistics}, 
+pages = 	 {1952--1960}, 
+year = 	 {2018}, 
+editor = 	 {Amos Storkey and Fernando Perez-Cruz}, 
+volume = 	 {84}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {Playa Blanca, Lanzarote, Canary Islands}, 
+month = 	 {09--11 Apr}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/BerPo_LDS_v4.pdf}, 
+url = 	 {http://proceedings.mlr.press/v84/kalantari18a.html}, 
+url_arxiv=	{https://arxiv.org/abs/1802.07434}, 
+abstract = 	 {A nonparametric Bayesian sparse graph linear dynamical system (SGLDS) is proposed to model sequentially observed multivariate data. SGLDS uses the Bernoulli-Poisson link together with a gamma process to generate an infinite dimensional sparse random graph to model state transitions. Depending on the sparsity pattern of the corresponding row and column of the graph affinity matrix, a latent state of SGLDS can be categorized as either a non-dynamic state or a dynamic one. A normal-gamma construction is used to shrink the energy captured by the non-dynamic states, while the dynamic states can be further categorized into live, absorbing, or noise-injection states, which capture different types of dynamical components of the underlying time series. The state-of-the-art performance of SGLDS is demonstrated with experiments on both synthetic and real data.}
 }
 
 	
@@ -624,26 +730,92 @@ abstract={Tumors are heterogeneous. A tumor sample usually consists of a set of 
 
 
 
-@article{zhou2018discussion,  title={Discussion on" Sparse Graphs using Exchangeable Random Measures" by Francois Caron and Emily B. Fox},  author={Zhou, Mingyuan},  journal={arXiv preprint arXiv:1802.07721},  url={https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssb.12233},  pdf={Papers/Zhou_Discussion_CaronFox_JRSSB.pdf},  url_arxiv={https://arxiv.org/pdf/1802.07721},  journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+@article{zhou2018discussion, 
+title={Discussion on" Sparse Graphs using Exchangeable Random Measures" by Francois Caron and Emily B. Fox}, 
+author={Zhou, Mingyuan}, 
+journal={arXiv preprint arXiv:1802.07721}, 
+url={https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssb.12233}, 
+pdf={Papers/Zhou_Discussion_CaronFox_JRSSB.pdf}, 
+url_arxiv={https://arxiv.org/pdf/1802.07721}, 
+journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
 volume = {79},
 number = {5},
-pages = {1295-1366},  year={2018},  abstract={This is a discussion on "Sparse graphs using exchangeable random measures" by Francois Caron and Emily B. Fox, published in Journal of the Royal Statistical Society, Series B, 2017.}
+pages = {1295-1366}, 
+year={2018}, 
+abstract={This is a discussion on "Sparse graphs using exchangeable random measures" by Francois Caron and Emily B. Fox, published in Journal of the Royal Statistical Society, Series B, 2017.}
 }
 
 
-@article{zhou2018nonparametric,  title={Nonparametric Bayesian Negative Binomial Factor Analysis},  author={Zhou, Mingyuan},  journal={Bayesian Analysis},  volume={13},  number={4},  pages={1065--1093},  year={2018},  publisher={International Society for Bayesian Analysis},  url={https://projecteuclid.org/euclid.ba/1510801993},  pdf={Papers/NBFA_v10.pdf},  url_arxiv={http://arxiv.org/abs/1604.07464},  url_code={https://GitHub.com/mingyuanzhou/NBFA},  abstract={A common approach to analyze a covariate-sample count matrix, an element of which represents how many times a covariate appears in a sample, is to factorize it under the Poisson likelihood. We show its limitation in capturing the tendency for a covariate present in a sample to both repeat itself and excite related ones. To address this limitation, we construct negative binomial factor analysis (NBFA) to factorize the matrix under the negative binomial likelihood, and relate it to a Dirichlet-multinomial distribution based mixed-membership model. To support countably infinite factors, we propose the hierarchical gamma-negative binomial process. By exploiting newly proved connections between discrete distributions, we construct two blocked and a collapsed Gibbs sampler that all adaptively truncate their number of factors, and demonstrate that the blocked Gibbs sampler developed under a compound Poisson representation converges fast and has low computational complexity. Example results show that NBFA has a distinct mechanism in adjusting its number of inferred factors according to the sample lengths, and provides clear advantages in parsimonious representation, predictive power, and computational complexity over previously proposed discrete latent variable models, which either completely ignore burstiness, or model only the burstiness of the covariates but not that of the factors.}
+@article{zhou2018nonparametric, 
+title={Nonparametric Bayesian Negative Binomial Factor Analysis}, 
+author={Zhou, Mingyuan}, 
+journal={Bayesian Analysis}, 
+volume={13}, 
+number={4}, 
+pages={1065--1093}, 
+year={2018}, 
+publisher={International Society for Bayesian Analysis}, 
+url={https://projecteuclid.org/euclid.ba/1510801993}, 
+pdf={Papers/NBFA_v10.pdf}, 
+url_arxiv={http://arxiv.org/abs/1604.07464}, 
+url_code={https://GitHub.com/mingyuanzhou/NBFA}, 
+abstract={A common approach to analyze a covariate-sample count matrix, an element of which represents how many times a covariate appears in a sample, is to factorize it under the Poisson likelihood. We show its limitation in capturing the tendency for a covariate present in a sample to both repeat itself and excite related ones. To address this limitation, we construct negative binomial factor analysis (NBFA) to factorize the matrix under the negative binomial likelihood, and relate it to a Dirichlet-multinomial distribution based mixed-membership model. To support countably infinite factors, we propose the hierarchical gamma-negative binomial process. By exploiting newly proved connections between discrete distributions, we construct two blocked and a collapsed Gibbs sampler that all adaptively truncate their number of factors, and demonstrate that the blocked Gibbs sampler developed under a compound Poisson representation converges fast and has low computational complexity. Example results show that NBFA has a distinct mechanism in adjusting its number of inferred factors according to the sample lengths, and provides clear advantages in parsimonious representation, predictive power, and computational complexity over previously proposed discrete latent variable models, which either completely ignore burstiness, or model only the burstiness of the covariates but not that of the factors.}
 }
 
 
-@inproceedings{cong2017deep,  title = 	 {Deep Latent {D}irichlet Allocation with Topic-Layer-Adaptive Stochastic Gradient {R}iemannian {MCMC}},  author = 	 {Yulai Cong and Bo Chen and Hongwei Liu and Mingyuan Zhou},  booktitle = 	 {ICML 2017: International Conference on Machine Learning},  pages = 	 {864--873},  year = 	 {2017},  editor = 	 {Doina Precup and Yee Whye Teh},  volume = 	 {70},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {International Convention Centre, Sydney, Australia},  month = 	 {06--11 Aug},  publisher = 	 {PMLR},  pdf = 	 {Papers/DLDA_TLASGR_v12.pdf},  url = 	 {http://proceedings.mlr.press/v70/cong17a.html},  url_arxiv={https://arxiv.org/abs/1706.01724},  url_slide={Papers/DLDA_ICML2017_slides.pdf},  url_poster={Papers/DLDA_ICML2017_poster.pdf},  url_code={https://GitHub.com/mingyuanzhou/DeepLDA_TLASGR_MCMC},  abstract = 	 {It is challenging to develop stochastic gradient based scalable inference for deep discrete latent variable models (LVMs), due to the difficulties in not only computing the gradients, but also adapting the step sizes to different latent factors and hidden layers. For the Poisson gamma belief network (PGBN), a recently proposed deep discrete LVM, we derive an alternative representation that is referred to as deep latent Dirichlet allocation (DLDA). Exploiting data augmentation and marginalization techniques, we derive a block-diagonal Fisher information matrix and its inverse for the simplex-constrained global model parameters of DLDA. Exploiting that Fisher information matrix with stochastic gradient MCMC, we present topic-layer-adaptive stochastic gradient Riemannian (TLASGR) MCMC that jointly learns simplex-constrained global parameters across all layers and topics, with topic and layer specific learning rates. State-of-the-art results are demonstrated on big data sets.}
+@inproceedings{cong2017deep, 
+title = 	 {Deep Latent {D}irichlet Allocation with Topic-Layer-Adaptive Stochastic Gradient {R}iemannian {MCMC}}, 
+author = 	 {Yulai Cong and Bo Chen and Hongwei Liu and Mingyuan Zhou}, 
+booktitle = 	 {ICML 2017: International Conference on Machine Learning}, 
+pages = 	 {864--873}, 
+year = 	 {2017}, 
+editor = 	 {Doina Precup and Yee Whye Teh}, 
+volume = 	 {70}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {International Convention Centre, Sydney, Australia}, 
+month = 	 {06--11 Aug}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/DLDA_TLASGR_v12.pdf}, 
+url = 	 {http://proceedings.mlr.press/v70/cong17a.html}, 
+url_arxiv={https://arxiv.org/abs/1706.01724}, 
+url_slide={Papers/DLDA_ICML2017_slides.pdf}, 
+url_poster={Papers/DLDA_ICML2017_poster.pdf}, 
+url_code={https://GitHub.com/mingyuanzhou/DeepLDA_TLASGR_MCMC}, 
+abstract = 	 {It is challenging to develop stochastic gradient based scalable inference for deep discrete latent variable models (LVMs), due to the difficulties in not only computing the gradients, but also adapting the step sizes to different latent factors and hidden layers. For the Poisson gamma belief network (PGBN), a recently proposed deep discrete LVM, we derive an alternative representation that is referred to as deep latent Dirichlet allocation (DLDA). Exploiting data augmentation and marginalization techniques, we derive a block-diagonal Fisher information matrix and its inverse for the simplex-constrained global model parameters of DLDA. Exploiting that Fisher information matrix with stochastic gradient MCMC, we present topic-layer-adaptive stochastic gradient Riemannian (TLASGR) MCMC that jointly learns simplex-constrained global parameters across all layers and topics, with topic and layer specific learning rates. State-of-the-art results are demonstrated on big data sets.}
 }
 
 
-@article{dadaneh2018bnp,  title={BNP-Seq: Bayesian Nonparametric Differential Expression Analysis of Sequencing Count Data},  author={Dadaneh, Siamak Zamani and Qian, Xiaoning and Zhou, Mingyuan},  journal={Journal of the American Statistical Association},  volume={113},  number={521},  pages={81--94},  year={2018},  publisher={Taylor \& Francis},  url={http://dx.doi.org/10.1080/01621459.2017.1328358},  pdf={Papers/BNPseq_v12_arXiv.pdf},  url_arxiv={http://arxiv.org/abs/1608.03991},  url_code={https://GitHub.com/siamakz/BNPseq},  url_abstract={We perform differential expression analysis of high-throughput sequencing count data under a Bayesian nonparametric framework, removing sophisticated ad-hoc pre-processing steps commonly required in existing algorithms. We propose to use the gamma (beta) negative binomial process, which takes into account different sequencing depths using sample-specific negative binomial probability (dispersion) parameters, to detect differentially expressed genes by comparing the posterior distributions of gene-specific negative binomial dispersion (probability) parameters. These model parameters are inferred by borrowing statistical strength across both the genes and samples. Extensive experiments on both simulated and real-world RNA sequencing count data show that the proposed differential expression analysis algorithms clearly outperform previously proposed ones in terms of the areas under both the receiver operating characteristic and precision-recall curves.}
+@article{dadaneh2018bnp, 
+title={BNP-Seq: Bayesian Nonparametric Differential Expression Analysis of Sequencing Count Data}, 
+author={Dadaneh, Siamak Zamani and Qian, Xiaoning and Zhou, Mingyuan}, 
+journal={Journal of the American Statistical Association}, 
+volume={113}, 
+number={521}, 
+pages={81--94}, 
+year={2018}, 
+publisher={Taylor \& Francis}, 
+url={http://dx.doi.org/10.1080/01621459.2017.1328358}, 
+pdf={Papers/BNPseq_v12_arXiv.pdf}, 
+url_arxiv={http://arxiv.org/abs/1608.03991}, 
+url_code={https://GitHub.com/siamakz/BNPseq}, 
+url_abstract={We perform differential expression analysis of high-throughput sequencing count data under a Bayesian nonparametric framework, removing sophisticated ad-hoc pre-processing steps commonly required in existing algorithms. We propose to use the gamma (beta) negative binomial process, which takes into account different sequencing depths using sample-specific negative binomial probability (dispersion) parameters, to detect differentially expressed genes by comparing the posterior distributions of gene-specific negative binomial dispersion (probability) parameters. These model parameters are inferred by borrowing statistical strength across both the genes and samples. Extensive experiments on both simulated and real-world RNA sequencing count data show that the proposed differential expression analysis algorithms clearly outperform previously proposed ones in terms of the areas under both the receiver operating characteristic and precision-recall curves.}
 }
 
 
-@article{cong2017fast,  title={Fast Simulation of Hyperplane-Truncated Multivariate Normal Distributions},  author={Cong, Yulai and Chen, Bo and Zhou, Mingyuan},  journal={Bayesian Analysis},  volume={12},  number={4},  pages={1017--1037},  year={2017},  publisher={International Society for Bayesian Analysis},  url={https://projecteuclid.org/euclid.ba/1488337478},  pdf= {Papers/MVN_Hyperplanes_v9.pdf},  url_arxiv={http://arxiv.org/abs/1607.04751},  url_code={https://github.com/BoChenGroup/Fast-simulation-of-hyperplane-truncated-multivariate-normal-distribution},  abstract={  We introduce a fast and easy-to-implement simulation algorithm for a multivariate normal distribution truncated on the intersection of a set of hyperplanes, and further generalize it to efficiently simulate random variables from a multivariate normal distribution whose covariance (precision) matrix can be decomposed as a positive-definite matrix minus (plus) a low-rank symmetric matrix. Example results illustrate the correctness and efficiency of the proposed simulation algorithms.}	
+@article{cong2017fast, 
+title={Fast Simulation of Hyperplane-Truncated Multivariate Normal Distributions}, 
+author={Cong, Yulai and Chen, Bo and Zhou, Mingyuan}, 
+journal={Bayesian Analysis}, 
+volume={12}, 
+number={4}, 
+pages={1017--1037}, 
+year={2017}, 
+publisher={International Society for Bayesian Analysis}, 
+url={https://projecteuclid.org/euclid.ba/1488337478}, 
+pdf= {Papers/MVN_Hyperplanes_v9.pdf}, 
+url_arxiv={http://arxiv.org/abs/1607.04751}, 
+url_code={https://github.com/BoChenGroup/Fast-simulation-of-hyperplane-truncated-multivariate-normal-distribution}, 
+abstract={  We introduce a fast and easy-to-implement simulation algorithm for a multivariate normal distribution truncated on the intersection of a set of hyperplanes, and further generalize it to efficiently simulate random variables from a multivariate normal distribution whose covariance (precision) matrix can be decomposed as a positive-definite matrix minus (plus) a low-rank symmetric matrix. Example results illustrate the correctness and efficiency of the proposed simulation algorithms.}	
 }
 
 
@@ -665,13 +837,32 @@ abstract = {This paper presents a dynamical system based on the Poisson-Gamma co
 }
 
 
-@article{zhou2016softplus,  title={Softplus Regressions and Convex Polytopes},  author={Zhou, Mingyuan},  journal={arXiv:1608.06383},  year={2016},  url={https://arxiv.org/abs/1608.06383},  pdf={Papers/softplus_regression_v14.pdf},  url_arxiv={https://arxiv.org/abs/1608.06383},  abstract={To construct flexible nonlinear predictive distributions, the paper introduces a family of softplus function based regression models that convolve, stack, or combine both operations by convolving countably infinite stacked gamma distributions, whose scales depend on the covariates. Generalizing logistic regression that uses a single hyperplane to partition the covariate space into two halves, softplus regressions employ multiple hyperplanes to construct a confined space, related to a single convex polytope defined by the intersection of multiple half-spaces or a union of multiple convex polytopes, to separate one class from the other. The gamma process is introduced to support the convolution of countably infinite (stacked) covariate-dependent gamma distributions. For Bayesian inference, Gibbs sampling derived via novel data augmentation and marginalization techniques is used to deconvolve and/or demix the highly complex nonlinear predictive distribution. Example results demonstrate that softplus regressions provide flexible nonlinear decision boundaries, achieving classification accuracies comparable to that of kernel support vector machine while requiring significant less computation for out-of-sample prediction.}
+@article{zhou2016softplus, 
+title={Softplus Regressions and Convex Polytopes}, 
+author={Zhou, Mingyuan}, 
+journal={arXiv:1608.06383}, 
+year={2016}, 
+url={https://arxiv.org/abs/1608.06383}, 
+pdf={Papers/softplus_regression_v14.pdf}, 
+url_arxiv={https://arxiv.org/abs/1608.06383}, 
+abstract={To construct flexible nonlinear predictive distributions, the paper introduces a family of softplus function based regression models that convolve, stack, or combine both operations by convolving countably infinite stacked gamma distributions, whose scales depend on the covariates. Generalizing logistic regression that uses a single hyperplane to partition the covariate space into two halves, softplus regressions employ multiple hyperplanes to construct a confined space, related to a single convex polytope defined by the intersection of multiple half-spaces or a union of multiple convex polytopes, to separate one class from the other. The gamma process is introduced to support the convolution of countably infinite (stacked) covariate-dependent gamma distributions. For Bayesian inference, Gibbs sampling derived via novel data augmentation and marginalization techniques is used to deconvolve and/or demix the highly complex nonlinear predictive distribution. Example results demonstrate that softplus regressions provide flexible nonlinear decision boundaries, achieving classification accuracies comparable to that of kernel support vector machine while requiring significant less computation for out-of-sample prediction.}
 }
 
 
 
 
-@article{zhou2017frequency,  title={Frequency of Frequencies Distributions and Size-Dependent Exchangeable Random Partitions},  author={Zhou, Mingyuan and Favaro, Stefano and Walker, Stephen G},  journal={Journal of the American Statistical Association},  pages={1--13},  year={2017},  publisher={Taylor \& Francis},  url={http://www.tandfonline.com/doi/full/10.1080/01621459.2016.1222290},  pdf={Papers/dEPPF_v18.pdf},  url_arxiv={http://arxiv.org/abs/1608.00264},  url_code={https://GitHub.com/mingyuanzhou/FoF_EPPF},  abstract={Motivated by the fundamental problem of modeling the frequency of frequencies (FoF) distribution, this article introduces the concept of a cluster structure to define a probability function that governs the joint distribution of a random count and its exchangeable random partitions. A cluster structure, naturally arising from a completely random measure mixed Poisson process, allows the probability distribution of the random partitions of a subset of a population to be dependent on the population size, a distinct and motivated feature that makes it more flexible than a partition structure. This allows it to model an entire FoF distribution whose structural properties change as the population size varies. An FoF vector can be simulated by drawing an infinite number of Poisson random variables, or by a stick-breaking construction with a finite random number of steps. A generalized negative binomial process model is proposed to generate a cluster structure, where in the prior the number of clusters is finite and Poisson distributed, and the cluster sizes follow a truncated negative binomial distribution. We propose a simple Gibbs sampling algorithm to extrapolate the FoF vector of a population given the FoF vector of a sample taken without replacement from the population. We illustrate our results and demonstrate the advantages of the proposed models through the analysis of real text, genomic, and survey data. Supplementary materials for this article are available online.}
+@article{zhou2017frequency, 
+title={Frequency of Frequencies Distributions and Size-Dependent Exchangeable Random Partitions}, 
+author={Zhou, Mingyuan and Favaro, Stefano and Walker, Stephen G}, 
+journal={Journal of the American Statistical Association}, 
+pages={1--13}, 
+year={2017}, 
+publisher={Taylor \& Francis}, 
+url={http://www.tandfonline.com/doi/full/10.1080/01621459.2016.1222290}, 
+pdf={Papers/dEPPF_v18.pdf}, 
+url_arxiv={http://arxiv.org/abs/1608.00264}, 
+url_code={https://GitHub.com/mingyuanzhou/FoF_EPPF}, 
+abstract={Motivated by the fundamental problem of modeling the frequency of frequencies (FoF) distribution, this article introduces the concept of a cluster structure to define a probability function that governs the joint distribution of a random count and its exchangeable random partitions. A cluster structure, naturally arising from a completely random measure mixed Poisson process, allows the probability distribution of the random partitions of a subset of a population to be dependent on the population size, a distinct and motivated feature that makes it more flexible than a partition structure. This allows it to model an entire FoF distribution whose structural properties change as the population size varies. An FoF vector can be simulated by drawing an infinite number of Poisson random variables, or by a stick-breaking construction with a finite random number of steps. A generalized negative binomial process model is proposed to generate a cluster structure, where in the prior the number of clusters is finite and Poisson distributed, and the cluster sizes follow a truncated negative binomial distribution. We propose a simple Gibbs sampling algorithm to extrapolate the FoF vector of a population given the FoF vector of a sample taken without replacement from the population. We illustrate our results and demonstrate the advantages of the proposed models through the analysis of real text, genomic, and survey data. Supplementary materials for this article are available online.}
 }
 
 
@@ -679,21 +870,74 @@ abstract = {This paper presents a dynamical system based on the Poisson-Gamma co
 
 
 
-@inproceedings{schein2016bayesian,  title = 	 {Bayesian {P}oisson {T}ucker Decomposition for Learning the Structure of International Relations},  author = 	 {Aaron Schein and Mingyuan Zhou and David Blei and Hanna Wallach},  booktitle = 	 {ICML 2016: International Conference on Machine Learning},  pages = 	 {2810--2819},  year = 	 {2016},  editor = 	 {Maria Florina Balcan and Kilian Q. Weinberger},  volume = 	 {48},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {New York, New York, USA},  month = 	 {20--22 Jun},  publisher = 	 {PMLR},  pdf = 	 {Papers/ScheinZhouBleiWallach2016_paper.pdf},  url = 	 {http://proceedings.mlr.press/v48/schein16.html},  url_arxiv={https://arxiv.org/abs/1606.01855},  abstract = 	 {We introduce Bayesian Poisson Tucker decomposition (BPTD) for modeling country–country interaction event data. These data consist of interaction events of the form “country i took action a toward country j at time t.” BPTD discovers overlapping country–community memberships, including the number of latent communities. In addition, it discovers directed community–community interaction networks that are specific to “topics” of action types and temporal “regimes.” We show that BPTD yields an efficient MCMC inference algorithm and achieves better predictive performance than related models. We also demonstrate that it discovers interpretable latent structure that agrees with our knowledge of international relations.}
+@inproceedings{schein2016bayesian, 
+title = 	 {Bayesian {P}oisson {T}ucker Decomposition for Learning the Structure of International Relations}, 
+author = 	 {Aaron Schein and Mingyuan Zhou and David Blei and Hanna Wallach}, 
+booktitle = 	 {ICML 2016: International Conference on Machine Learning}, 
+pages = 	 {2810--2819}, 
+year = 	 {2016}, 
+editor = 	 {Maria Florina Balcan and Kilian Q. Weinberger}, 
+volume = 	 {48}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {New York, New York, USA}, 
+month = 	 {20--22 Jun}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/ScheinZhouBleiWallach2016_paper.pdf}, 
+url = 	 {http://proceedings.mlr.press/v48/schein16.html}, 
+url_arxiv={https://arxiv.org/abs/1606.01855}, 
+abstract = 	 {We introduce Bayesian Poisson Tucker decomposition (BPTD) for modeling country–country interaction event data. These data consist of interaction events of the form “country i took action a toward country j at time t.” BPTD discovers overlapping country–community memberships, including the number of latent communities. In addition, it discovers directed community–community interaction networks that are specific to “topics” of action types and temporal “regimes.” We show that BPTD yields an efficient MCMC inference algorithm and achieves better predictive performance than related models. We also demonstrate that it discovers interpretable latent structure that agrees with our knowledge of international relations.}
 }
 
 
-@article{zhou2016augmentable,  title={Augmentable Gamma Belief Networks},  author={Zhou, Mingyuan and Cong, Yulai and Chen, Bo},  journal={Journal of Machine Learning Research},  volume={17},  number={163},  pages={1--44},  year={2016},  url={http://jmlr.org/papers/v17/15-633.html},  pdf={Papers/DeepPoGamma_Journal_v5.pdf},  url_arxiv={http://arxiv.org/abs/1512.03081},  url_slide={Papers/GBN_ISBA_201606.pdf},  url_code ={https://GitHub.com/mingyuanzhou/GBN},   abstract = {To infer multilayer deep representations of high-dimensional discrete and nonnegative real vectors, we propose an augmentable gamma belief network (GBN) that factorizes each of its hidden layers into the product of a sparse connection weight matrix and the nonnegative real hidden units of the next layer. The GBN's hidden layers are jointly trained with an upward-downward Gibbs sampler that solves each layer with the same subroutine. The gamma-negative binomial process combined with a layer-wise training strategy allows inferring the width of each layer given a fixed budget on the width of the first layer. Example results illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the GBN can add more layers to improve its performance in both unsupervisedly extracting features and predicting heldout data. For exploratory data analysis, we extract trees and subnetworks from the learned deep network to visualize how the very specific factors discovered at the first hidden layer and the increasingly more general factors discovered at deeper hidden layers are related to each other, and we generate synthetic data by propagating random variables through the deep network from the top hidden layer back to the bottom data layer.}
+@article{zhou2016augmentable, 
+title={Augmentable Gamma Belief Networks}, 
+author={Zhou, Mingyuan and Cong, Yulai and Chen, Bo}, 
+journal={Journal of Machine Learning Research}, 
+volume={17}, 
+number={163}, 
+pages={1--44}, 
+year={2016}, 
+url={http://jmlr.org/papers/v17/15-633.html}, 
+pdf={Papers/DeepPoGamma_Journal_v5.pdf}, 
+url_arxiv={http://arxiv.org/abs/1512.03081}, 
+url_slide={Papers/GBN_ISBA_201606.pdf}, 
+url_code ={https://GitHub.com/mingyuanzhou/GBN}, 
+ abstract = {To infer multilayer deep representations of high-dimensional discrete and nonnegative real vectors, we propose an augmentable gamma belief network (GBN) that factorizes each of its hidden layers into the product of a sparse connection weight matrix and the nonnegative real hidden units of the next layer. The GBN's hidden layers are jointly trained with an upward-downward Gibbs sampler that solves each layer with the same subroutine. The gamma-negative binomial process combined with a layer-wise training strategy allows inferring the width of each layer given a fixed budget on the width of the first layer. Example results illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the GBN can add more layers to improve its performance in both unsupervisedly extracting features and predicting heldout data. For exploratory data analysis, we extract trees and subnetworks from the learned deep network to visualize how the very specific factors discovered at the first hidden layer and the increasingly more general factors discovered at deeper hidden layers are related to each other, and we generate synthetic data by propagating random variables through the deep network from the top hidden layer back to the bottom data layer.}
 }
 
 
 
-@inproceedings{zhou2015poisson,  title={The {P}oisson gamma belief network},  author = {Zhou, Mingyuan and Cong, Yulai and Chen, Bo},   booktitle = {NeurIPS 2015: Advances in Neural Information Processing Systems},  editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},  pages = {3043--3051},  year = {2015},     url={https://papers.nips.cc/paper/5645-the-poisson-gamma-belief-network},  pdf={Papers/DeepPoGamma_v5.pdf},  url_arxiv={http://arxiv.org/abs/1511.02199},  url_poster={Papers/PGBN_NIPS2015_Poster.pdf},  url_code ={https://GitHub.com/mingyuanzhou/GBN},  abstract={To infer a multilayer representation of high-dimensional count vectors, we propose the Poisson gamma belief network (PGBN) that factorizes each of its layers into the product of a connection weight matrix and the nonnegative real hidden units of the next layer. The PGBN's hidden layers are jointly trained with an upward-downward Gibbs sampler, each iteration of which upward samples Dirichlet distributed connection weight vectors starting from the first layer (bottom data layer), and then downward samples gamma distributed hidden units starting from the top hidden layer. The gamma-negative binomial process combined with a layer-wise training strategy allows the PGBN to infer the width of each layer given a fixed budget on the width of the first layer. The PGBN with a single hidden layer reduces to Poisson factor analysis. Example results on text analysis illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the PGBN, whose hidden units are imposed with correlated gamma priors, can add more layers to increase its performance gains over Poisson factor analysis, given the same limit on the width of the first layer.}
+@inproceedings{zhou2015poisson, 
+title={The {P}oisson gamma belief network}, 
+author = {Zhou, Mingyuan and Cong, Yulai and Chen, Bo}, 
+ booktitle = {NeurIPS 2015: Advances in Neural Information Processing Systems}, 
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett}, 
+pages = {3043--3051}, 
+year = {2015}, 
+   url={https://papers.nips.cc/paper/5645-the-poisson-gamma-belief-network}, 
+pdf={Papers/DeepPoGamma_v5.pdf}, 
+url_arxiv={http://arxiv.org/abs/1511.02199}, 
+url_poster={Papers/PGBN_NIPS2015_Poster.pdf}, 
+url_code ={https://GitHub.com/mingyuanzhou/GBN}, 
+abstract={To infer a multilayer representation of high-dimensional count vectors, we propose the Poisson gamma belief network (PGBN) that factorizes each of its layers into the product of a connection weight matrix and the nonnegative real hidden units of the next layer. The PGBN's hidden layers are jointly trained with an upward-downward Gibbs sampler, each iteration of which upward samples Dirichlet distributed connection weight vectors starting from the first layer (bottom data layer), and then downward samples gamma distributed hidden units starting from the top hidden layer. The gamma-negative binomial process combined with a layer-wise training strategy allows the PGBN to infer the width of each layer given a fixed budget on the width of the first layer. The PGBN with a single hidden layer reduces to Poisson factor analysis. Example results on text analysis illustrate interesting relationships between the width of the first layer and the inferred network structure, and demonstrate that the PGBN, whose hidden units are imposed with correlated gamma priors, can add more layers to increase its performance gains over Poisson factor analysis, given the same limit on the width of the first layer.}
 }
 
 	
 
-@article{zhou2016priors,  title={Priors for Random Count Matrices Derived from a Family of Negative Binomial Processes},  author={Zhou, Mingyuan and Padilla, Oscar Hernan Madrid and Scott, James G},  journal={Journal of the American Statistical Association},  volume={111},  number={515},  pages={1144--1156},  year={2016},  publisher={Taylor \& Francis},  url={https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1075407},  pdf={Papers/NBP_VectorMatrix_Journal_revise3_ArXiv.pdf},  url_arxiv={http://arxiv.org/abs/1404.3331},  url_slide={Papers/NBP_Count_Matrix_201506.pdf},  url_code={https://GitHub.com/mingyuanzhou/NBP_random_count_matrices},
+@article{zhou2016priors, 
+title={Priors for Random Count Matrices Derived from a Family of Negative Binomial Processes}, 
+author={Zhou, Mingyuan and Padilla, Oscar Hernan Madrid and Scott, James G}, 
+journal={Journal of the American Statistical Association}, 
+volume={111}, 
+number={515}, 
+pages={1144--1156}, 
+year={2016}, 
+publisher={Taylor \& Francis}, 
+url={https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1075407}, 
+pdf={Papers/NBP_VectorMatrix_Journal_revise3_ArXiv.pdf}, 
+url_arxiv={http://arxiv.org/abs/1404.3331}, 
+url_slide={Papers/NBP_Count_Matrix_201506.pdf}, 
+url_code={https://GitHub.com/mingyuanzhou/NBP_random_count_matrices},
 }
 
 
@@ -726,24 +970,68 @@ pdf={Papers/acth15.pdf},
 
 
 
-@INPROCEEDINGS{7362890,  author={Mingyuan Zhou},  booktitle={European Signal Processing Conference (EUSIPCO)},   title={Nonparametric Bayesian Matrix Factorization for Assortative Networks},   year={2015},  volume={},  number={},  pages={2776-2780},  abstract={We describe in detail the gamma process edge partition model that is well suited to analyze assortative relational networks. The model links the binary edges of an undirected and unweighted relational network with a latent factor model via the Bernoulli-Poisson link, and uses the gamma process to support a potentially infinite number of latent communities. The communities are allowed to overlap with each other, with a community's overlapping parts assumed to be more densely connected than its non-overlapping ones. The model is evaluated with synthetic data to illustrate its ability to model as-sortative networks and its restriction on modeling dissortative ones.},  keywords={Bayes methods;matrix decomposition;social networking (online);stochastic processes;Bernoulli-Poisson link;latent factor model;unweighted relational network;binary edges;assortative relational networks;gamma process edge partition model;nonparametric Bayesian matrix factorization;Predator prey systems;Bayes methods;Computational modeling;Analytical models;Data models;Mathematical model;Europe;Gamma process;factor analysis;Bernoulli-Poisson link;overlapping community detection;link prediction},  doi={10.1109/EUSIPCO.2015.7362890},  ISSN={2076-1465},  month={Aug},
+@INPROCEEDINGS{7362890, 
+author={Mingyuan Zhou}, 
+booktitle={European Signal Processing Conference (EUSIPCO)}, 
+ title={Nonparametric Bayesian Matrix Factorization for Assortative Networks}, 
+ year={2015}, 
+volume={}, 
+number={}, 
+pages={2776-2780}, 
+abstract={We describe in detail the gamma process edge partition model that is well suited to analyze assortative relational networks. The model links the binary edges of an undirected and unweighted relational network with a latent factor model via the Bernoulli-Poisson link, and uses the gamma process to support a potentially infinite number of latent communities. The communities are allowed to overlap with each other, with a community's overlapping parts assumed to be more densely connected than its non-overlapping ones. The model is evaluated with synthetic data to illustrate its ability to model as-sortative networks and its restriction on modeling dissortative ones.}, 
+keywords={Bayes methods;matrix decomposition;social networking (online);stochastic processes;Bernoulli-Poisson link;latent factor model;unweighted relational network;binary edges;assortative relational networks;gamma process edge partition model;nonparametric Bayesian matrix factorization;Predator prey systems;Bayes methods;Computational modeling;Analytical models;Data models;Mathematical model;Europe;Gamma process;factor analysis;Bernoulli-Poisson link;overlapping community detection;link prediction}, 
+doi={10.1109/EUSIPCO.2015.7362890}, 
+ISSN={2076-1465}, 
+month={Aug},
 url={https://ieeexplore.ieee.org/document/7362890/similar#similar},
 pdf={Papers/EPM_EUROSIPCO2015.pdf},
 url_slide = {EPM_EUSIPCO_201509.pdf},
 note={(Invited special session paper)},
 }
 
-@inproceedings{zhou2015infinite,  title = 	 {Infinite Edge Partition Models for Overlapping Community Detection and Link Prediction},  author = 	 {Mingyuan Zhou},  booktitle = 	 {AISTATS 2015: International Conference on Artificial Intelligence and Statistics},  pages = 	 {1135--1143},  year = 	 {2015},  editor = 	 {Guy Lebanon and S. V. N. Vishwanathan},  volume = 	 {38},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {San Diego, California, USA},  month = 	 {09--12 May},  publisher = 	 {PMLR},  pdf = 	 {Papers/EPM_AISTATS2015_v8_1.pdf},  url = 	 {http://proceedings.mlr.press/v38/zhou15a.html},  url_code={https://GitHub.com/mingyuanzhou/EPM},  url_poster={Papers/EPM_AISTATS2015_Poster.pdf},  abstract = 	 {A hierarchical gamma process infinite edge partition model is proposed to factorize the binary adjacency matrix of an unweighted undirected relational network under a  Bernoulli-Poisson link. The model describes  both homophily and stochastic equivalence, and is scalable to  big sparse networks by focusing its computation on  pairs of linked nodes. It can not only discover overlapping communities and inter-community interactions, but also predict missing edges. A simplified version omitting inter-community interactions is also provided and we reveal its  interesting connections to existing models. The number of communities is automatically inferred in a nonparametric Bayesian manner, and efficient  inference via Gibbs sampling is derived using novel data augmentation techniques. Experimental results on four real networks demonstrate the models’ scalability and state-of-the-art performance.},
+@inproceedings{zhou2015infinite, 
+title = 	 {Infinite Edge Partition Models for Overlapping Community Detection and Link Prediction}, 
+author = 	 {Mingyuan Zhou}, 
+booktitle = 	 {AISTATS 2015: International Conference on Artificial Intelligence and Statistics}, 
+pages = 	 {1135--1143}, 
+year = 	 {2015}, 
+editor = 	 {Guy Lebanon and S. V. N. Vishwanathan}, 
+volume = 	 {38}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {San Diego, California, USA}, 
+month = 	 {09--12 May}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/EPM_AISTATS2015_v8_1.pdf}, 
+url = 	 {http://proceedings.mlr.press/v38/zhou15a.html}, 
+url_code={https://GitHub.com/mingyuanzhou/EPM}, 
+url_poster={Papers/EPM_AISTATS2015_Poster.pdf}, 
+abstract = 	 {A hierarchical gamma process infinite edge partition model is proposed to factorize the binary adjacency matrix of an unweighted undirected relational network under a  Bernoulli-Poisson link. The model describes  both homophily and stochastic equivalence, and is scalable to  big sparse networks by focusing its computation on  pairs of linked nodes. It can not only discover overlapping communities and inter-community interactions, but also predict missing edges. A simplified version omitting inter-community interactions is also provided and we reveal its  interesting connections to existing models. The number of communities is automatically inferred in a nonparametric Bayesian manner, and efficient  inference via Gibbs sampling is derived using novel data augmentation techniques. Experimental results on four real networks demonstrate the models’ scalability and state-of-the-art performance.},
 }
 
 
-@inproceedings{acharya2015nonparametric,  title = 	 {Nonparametric {B}ayesian Factor Analysis for Dynamic Count Matrices},  author = 	 {Ayan Acharya and Joydeep Ghosh and Mingyuan Zhou},  booktitle = 	 {AISTATS 2015: International Conference on Artificial Intelligence and Statistics},  pages = 	 {1--9},  year = 	 {2015},  editor = 	 {Guy Lebanon and S. V. N. Vishwanathan},  volume = 	 {38},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {San Diego, California, USA},  month = 	 {09--12 May},  publisher = 	 {PMLR},  pdf = 	 {Papers/GP_DPFA_AISTATS2015_v6.pdf},  url = 	 {http://proceedings.mlr.press/v38/acharya15.html},  url_arxiv={http://arxiv.org/abs/1512.08996},  abstract = 	 {A gamma process dynamic Poisson factor analysis model is proposed to factorize a dynamic count matrix, whose columns are sequentially observed count vectors. The model builds a novel  Markov chain that sends the latent gamma random variables at time (t-1) as the shape parameters of those at time t, which are linked to observed or latent counts under the Poisson likelihood.  The significant challenge of inferring the gamma shape parameters is fully addressed, using unique data augmentation and marginalization techniques for the negative binomial distribution. The same nonparametric Bayesian model also applies to the factorization of a dynamic binary matrix, via a Bernoulli-Poisson link that connects a binary observation to a latent count, with closed-form conditional posteriors for the latent counts and efficient computation for sparse observations. We apply the model to text and music analysis, with state-of-the-art results.},
+@inproceedings{acharya2015nonparametric, 
+title = 	 {Nonparametric {B}ayesian Factor Analysis for Dynamic Count Matrices}, 
+author = 	 {Ayan Acharya and Joydeep Ghosh and Mingyuan Zhou}, 
+booktitle = 	 {AISTATS 2015: International Conference on Artificial Intelligence and Statistics}, 
+pages = 	 {1--9}, 
+year = 	 {2015}, 
+editor = 	 {Guy Lebanon and S. V. N. Vishwanathan}, 
+volume = 	 {38}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {San Diego, California, USA}, 
+month = 	 {09--12 May}, 
+publisher = 	 {PMLR}, 
+pdf = 	 {Papers/GP_DPFA_AISTATS2015_v6.pdf}, 
+url = 	 {http://proceedings.mlr.press/v38/acharya15.html}, 
+url_arxiv={http://arxiv.org/abs/1512.08996}, 
+abstract = 	 {A gamma process dynamic Poisson factor analysis model is proposed to factorize a dynamic count matrix, whose columns are sequentially observed count vectors. The model builds a novel  Markov chain that sends the latent gamma random variables at time (t-1) as the shape parameters of those at time t, which are linked to observed or latent counts under the Poisson likelihood.  The significant challenge of inferring the gamma shape parameters is fully addressed, using unique data augmentation and marginalization techniques for the negative binomial distribution. The same nonparametric Bayesian model also applies to the factorization of a dynamic binary matrix, via a Bernoulli-Poisson link that connects a binary observation to a latent count, with closed-form conditional posteriors for the latent counts and efficient computation for sparse observations. We apply the model to text and music analysis, with state-of-the-art results.},
 }
 
 
 
 
-@inproceedings{zhou2014beta,  title={Beta-Negative Binomial Process and Exchangeable Random Partitions for Mixed-Membership Modeling},
+@inproceedings{zhou2014beta, 
+title={Beta-Negative Binomial Process and Exchangeable Random Partitions for Mixed-Membership Modeling},
 author = {Zhou, Mingyuan},
 booktitle = {NeurIPS 2014: Advances in Neural Information Processing Systems},
 editor = {Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence and K. Q. Weinberger},
@@ -759,14 +1047,57 @@ Abstract={The beta-negative binomial process (BNBP), an integer-valued stochasti
 
 	
 		
-@article{polatkan2015bayesian,  title={A {B}ayesian Nonparametric Approach to Image Super-Resolution},  author={Polatkan, Gungor and Zhou, Mingyuan and Carin, Lawrence and Blei, David and Daubechies, Ingrid},  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  volume={37},  number={2},  pages={346--358},  year={2015},  publisher={IEEE},  url={http://ieeexplore.ieee.org/document/6809161/},  pdf={http://arxiv.org/abs/1209.5019},  url_arxiv={http://arxiv.org/abs/1209.5019},  abstract={Super-resolution methods form high-resolution images from low-resolution images. In this paper, we develop a new Bayesian nonparametric model for super-resolution. Our method uses a beta-Bernoulli process to learn a set of recurring visual patterns, called dictionary elements, from the data. Because it is nonparametric, the number of elements found is also determined from the data. We test the results on both benchmark and natural images, comparing with several other models from the research literature. We perform large-scale human evaluation experiments to assess the visual quality of the results. In a first implementation, we use Gibbs sampling to approximate the posterior. However, this algorithm is not feasible for large-scale data. To circumvent this, we then develop an online variational Bayes (VB) algorithm. This algorithm finds high quality dictionaries in a fraction of the time needed by the Gibbs sampler.},
+@article{polatkan2015bayesian, 
+title={A {B}ayesian Nonparametric Approach to Image Super-Resolution}, 
+author={Polatkan, Gungor and Zhou, Mingyuan and Carin, Lawrence and Blei, David and Daubechies, Ingrid}, 
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+volume={37}, 
+number={2}, 
+pages={346--358}, 
+year={2015}, 
+publisher={IEEE}, 
+url={http://ieeexplore.ieee.org/document/6809161/}, 
+pdf={http://arxiv.org/abs/1209.5019}, 
+url_arxiv={http://arxiv.org/abs/1209.5019}, 
+abstract={Super-resolution methods form high-resolution images from low-resolution images. In this paper, we develop a new Bayesian nonparametric model for super-resolution. Our method uses a beta-Bernoulli process to learn a set of recurring visual patterns, called dictionary elements, from the data. Because it is nonparametric, the number of elements found is also determined from the data. We test the results on both benchmark and natural images, comparing with several other models from the research literature. We perform large-scale human evaluation experiments to assess the visual quality of the results. In a first implementation, we use Gibbs sampling to approximate the posterior. However, this algorithm is not feasible for large-scale data. To circumvent this, we then develop an online variational Bayes (VB) algorithm. This algorithm finds high quality dictionaries in a fraction of the time needed by the Gibbs sampler.},
 }
 		
 
-@article{zhou2015negative,  title={Negative Binomial Process Count and Mixture Modeling},  author={Zhou, Mingyuan and Carin, Lawrence},  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  volume={37},  number={2},  pages={307--320},  year={2015},  publisher={IEEE},  url = {https://ieeexplore.ieee.org/document/6636308},  pdf= {Papers/Mingyuan_PAMI_9.pdf},  url_arxiv = {http://arxiv.org/abs/1209.3442},  url_code={Softwares/NBP_PFA_v1.zip},  abstract={The seemingly disjoint problems of count and mixture modeling are united under the negative binomial (NB) process. A gamma process is employed to model the rate measure of a Poisson process, whose normalization provides a random probability measure for mixture modeling and whose marginalization leads to an NB process for count modeling. A draw from the NB process consists of a Poisson distributed finite number of distinct atoms, each of which is associated with a logarithmic distributed number of data samples. We reveal relationships between various count- and mixture-modeling distributions and construct a Poisson-logarithmic bivariate distribution that connects the NB and Chinese restaurant table distributions. Fundamental properties of the models are developed, and we derive efficient Bayesian inference. It is shown that with augmentation and normalization, the NB process and gamma-NB process can be reduced to the Dirichlet process and hierarchical Dirichlet process, respectively. These relationships highlight theoretical, structural, and computational advantages of the NB process. A variety of NB processes, including the beta-geometric, beta-NB, marked-beta-NB, marked-gamma-NB and zero-inflated-NB processes, with distinct sharing mechanisms, are also constructed. These models are applied to topic modeling, with connections made to existing algorithms under Poisson factor analysis. Example results show the importance of inferring both the NB dispersion and probability parameters.},
+@article{zhou2015negative, 
+
+title={Negative Binomial Process Count and Mixture Modeling}, 
+
+author={Zhou, Mingyuan and Carin, Lawrence}, 
+
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+volume={37}, 
+number={2}, 
+
+pages={307--320}, 
+
+year={2015}, 
+
+publisher={IEEE}, 
+
+url = {https://ieeexplore.ieee.org/document/6636308}, 
+
+pdf= {Papers/Mingyuan_PAMI_9.pdf}, 
+
+url_arxiv = {http://arxiv.org/abs/1209.3442}, 
+
+url_code={Softwares/NBP_PFA_v1.zip}, 
+abstract={The seemingly disjoint problems of count and mixture modeling are united under the negative binomial (NB) process. A gamma process is employed to model the rate measure of a Poisson process, whose normalization provides a random probability measure for mixture modeling and whose marginalization leads to an NB process for count modeling. A draw from the NB process consists of a Poisson distributed finite number of distinct atoms, each of which is associated with a logarithmic distributed number of data samples. We reveal relationships between various count- and mixture-modeling distributions and construct a Poisson-logarithmic bivariate distribution that connects the NB and Chinese restaurant table distributions. Fundamental properties of the models are developed, and we derive efficient Bayesian inference. It is shown that with augmentation and normalization, the NB process and gamma-NB process can be reduced to the Dirichlet process and hierarchical Dirichlet process, respectively. These relationships highlight theoretical, structural, and computational advantages of the NB process. A variety of NB processes, including the beta-geometric, beta-NB, marked-beta-NB, marked-gamma-NB and zero-inflated-NB processes, with distinct sharing mechanisms, are also constructed. These models are applied to topic modeling, with connections made to existing algorithms under Poisson factor analysis. Example results show the importance of inferring both the NB dispersion and probability parameters.},
 }
 
-
+@phdthesis{zhou2013nonparametric,
+  title={Nonparametric {B}ayesian Dictionary Learning and Count and Mixture Modeling},
+  author={Zhou, Mingyuan},
+  year={2013},
+  school={Duke University},
+  url={https://hdl.handle.net/10161/7204},
+pdf={https://dukespace.lib.duke.edu/dspace/bitstream/handle/10161/7204/Zhou_duke_0066D_11883.pdf?sequence=1&isAllowed=y},
+abstract={Analyzing the ever-increasing data of unprecedented scale, dimensionality, diversity, and complexity poses considerable challenges to conventional approaches of statistical modeling. Bayesian nonparametrics constitute a promising research direction, in that such techniques can fit the data with a model that can grow with complexity to match the data. In this dissertation we consider nonparametric Bayesian modeling with completely random measures, a family of pure-jump stochastic processes with nonnegative increments. In particular, we study dictionary learning for sparse image representation using the beta process and the dependent hierarchical beta process, and we present the negative binomial process, a novel nonparametric Bayesian prior that unites the seemingly disjoint problems of count and mixture modeling. We show a wide variety of successful applications of our nonparametric Bayesian latent variable models to real problems in science and engineering, including count modeling, text analysis, image processing, compressive sensing, and computer vision.}
+}
 
 
 @inproceedings{zhou2012augment,
@@ -787,16 +1118,78 @@ Abstract={By developing data augmentation methods unique to the negative binomia
 
 
 
-@inproceedings{zhou2012lognormal,  author =    {Mingyuan Zhou and Lingbo Li and David Dunson and Lawrence Carin},  title =     {Lognormal and Gamma Mixed Negative Binomial Regression},  booktitle = {ICML 2012: International Conference on Machine Learning},  series =    {ICML '12},  year =      {2012},  editor =    {John Langford and Joelle Pineau},  location =  {Edinburgh, Scotland, GB},  isbn =      {978-1-4503-1285-1},  month =     {July},  publisher = {Omnipress},  address =   {New York, NY, USA},  pages=      {1343--1350},  Url_Paper= {Papers/Mingyuan_ICML_2012.pdf},  Url_Appendix={Papers/Mingyuan_LGNB_Appendix.pdf},  Url_Code = {Softwares/LGNB_Regression_v0.zip},  Url_Slide = {Papers/LGNB_MingyuanZhou_06272012.pdf},  Url_Video = {http://techtalks.tv/talks/lognormal-and-gamma-mixed-negative-binomial-regression/57332/},  url= {https://icml.cc/Conferences/2012/papers/665.pdf},  Url_Poster= {Papers/LGNB_ICML2012_Poster_MingyuanZhou_06272012.pdf},  Abstract = {In regression analysis of counts, a lack of simple and efficient algorithms for posterior computation has made Bayesian approaches appear unattractive and thus underdeveloped. We propose a lognormal and gamma mixed negative binomial (NB) regression model for counts, and present efficient closed-form Bayesian inference; unlike conventional Poisson models, the proposed approach has two free parameters to include two different kinds of dispersion, and allows the incorporation of prior information, such as sparsity in the regression coefficients. By placing a gamma distribution prior on the NB dispersion parameter r, and connecting a lognormal distribution prior with the logit of the NB probability parameter p, efficient Gibbs sampling and variational Bayes inference are both developed. The closed-form updates are obtained by exploiting conditional conjugacy via both a compound Poisson representation and a Polya-Gamma distribution based data augmentation approach. The proposed Bayesian inference can be implemented routinely, while being easily generalizable to more complex settings involving multivariate dependence structures. The algorithms are illustrated using real examples.},
+@inproceedings{zhou2012lognormal, 
+
+author =    {Mingyuan Zhou and Lingbo Li and David Dunson and Lawrence Carin}, 
+title =     {Lognormal and Gamma Mixed Negative Binomial Regression}, 
+
+booktitle = {ICML 2012: International Conference on Machine Learning}, 
+
+series =    {ICML '12}, 
+year =      {2012}, 
+
+editor =    {John Langford and Joelle Pineau}, 
+location =  {Edinburgh, Scotland, GB}, 
+isbn =      {978-1-4503-1285-1}, 
+
+month =     {July}, 
+publisher = {Omnipress}, 
+
+address =   {New York, NY, USA}, 
+
+pages=      {1343--1350}, 
+
+Url_Paper= {Papers/Mingyuan_ICML_2012.pdf}, 
+Url_Appendix={Papers/Mingyuan_LGNB_Appendix.pdf}, 
+
+Url_Code = {Softwares/LGNB_Regression_v0.zip}, 
+Url_Slide = {Papers/LGNB_MingyuanZhou_06272012.pdf}, 
+
+Url_Video = {http://techtalks.tv/talks/lognormal-and-gamma-mixed-negative-binomial-regression/57332/}, 
+url= {https://icml.cc/Conferences/2012/papers/665.pdf}, 
+
+Url_Poster= {Papers/LGNB_ICML2012_Poster_MingyuanZhou_06272012.pdf}, 
+
+Abstract = {In regression analysis of counts, a lack of simple and efficient algorithms for posterior computation has made Bayesian approaches appear unattractive and thus underdeveloped. We propose a lognormal and gamma mixed negative binomial (NB) regression model for counts, and present efficient closed-form Bayesian inference; unlike conventional Poisson models, the proposed approach has two free parameters to include two different kinds of dispersion, and allows the incorporation of prior information, such as sparsity in the regression coefficients. By placing a gamma distribution prior on the NB dispersion parameter r, and connecting a lognormal distribution prior with the logit of the NB probability parameter p, efficient Gibbs sampling and variational Bayes inference are both developed. The closed-form updates are obtained by exploiting conditional conjugacy via both a compound Poisson representation and a Polya-Gamma distribution based data augmentation approach. The proposed Bayesian inference can be implemented routinely, while being easily generalizable to more complex settings involving multivariate dependence structures. The algorithms are illustrated using real examples.},
 }
 
 
 
-@InProceedings{zhou2011beta,  title = 	 {Beta-Negative Binomial Process and Poisson Factor Analysis},  author = 	 {Mingyuan Zhou and Lauren Hannah and David Dunson and Lawrence Carin},  booktitle = 	 {AISTATS 2011: International Conference on Artificial Intelligence and Statistics},  pages = 	 {1462--1471},  year = 	 {2012},  editor = 	 {Neil D. Lawrence and Mark Girolami},  volume = 	 {22},  series = 	 {Proceedings of Machine Learning Research},  address = 	 {La Palma, Canary Islands},  month = 	 {21--23 Apr},  publisher = 	 {PMLR},  Url_Code = {Softwares/NBP_PFA_v1.zip},  pdf = 	 {Papers/AISTATS2012_NegBinoBeta_PFA_v19.pdf},  Url_Poster = {Papers/BNBP_AISTATS2012_Poster_MingyuanZhou_04122012_Tall.pdf},  url = 	 {http://proceedings.mlr.press/v22/zhou12c.html},  abstract = 	 {A beta-negative binomial (BNB) process is proposed, leading to a beta-gamma-Poisson process, which may be viewed as a “multi-scoop” generalization of the beta-Bernoulli process. The BNB process is augmented into a beta-gamma-gamma-Poisson hierarchical structure, and applied as a nonparametric Bayesian prior for an infinite Poisson factor analysis model. A finite approximation for the beta process Levy random measure is constructed for convenient implementation. Efficient MCMC computations are performed with data augmentation and marginalization techniques. Encouraging results are shown on document count matrix factorization.}
+@InProceedings{zhou2011beta, 
+title = 	 {Beta-Negative Binomial Process and Poisson Factor Analysis}, 
+author = 	 {Mingyuan Zhou and Lauren Hannah and David Dunson and Lawrence Carin}, 
+booktitle = 	 {AISTATS 2011: International Conference on Artificial Intelligence and Statistics}, 
+pages = 	 {1462--1471}, 
+year = 	 {2012}, 
+editor = 	 {Neil D. Lawrence and Mark Girolami}, 
+volume = 	 {22}, 
+series = 	 {Proceedings of Machine Learning Research}, 
+address = 	 {La Palma, Canary Islands}, 
+month = 	 {21--23 Apr}, 
+publisher = 	 {PMLR}, 
+Url_Code = {Softwares/NBP_PFA_v1.zip}, 
+pdf = 	 {Papers/AISTATS2012_NegBinoBeta_PFA_v19.pdf}, 
+Url_Poster = {Papers/BNBP_AISTATS2012_Poster_MingyuanZhou_04122012_Tall.pdf}, 
+url = 	 {http://proceedings.mlr.press/v22/zhou12c.html}, 
+abstract = 	 {A beta-negative binomial (BNB) process is proposed, leading to a beta-gamma-Poisson process, which may be viewed as a “multi-scoop” generalization of the beta-Bernoulli process. The BNB process is augmented into a beta-gamma-gamma-Poisson hierarchical structure, and applied as a nonparametric Bayesian prior for an infinite Poisson factor analysis model. A finite approximation for the beta process Levy random measure is constructed for convenient implementation. Efficient MCMC computations are performed with data augmentation and marginalization techniques. Encouraging results are shown on document count matrix factorization.}
 }
 
 
-@inproceedings{li2011integration,  author =    {Lingbo Li and Mingyuan Zhou and Guillermo Sapiro and Lawrence Carin},  title =     {On the Integration of Topic Modeling and Dictionary Learning },  booktitle = {ICML 2011: International Conference on Machine Learning},  series =    {ICML '11},  year =      {2011},  editor =    {Lise Getoor and Tobias Scheffer},  location =  {Bellevue, Washington, USA},  isbn =      {978-1-4503-0619-5},  month =     {June},  publisher = {ACM},  pages=      {625--632},  url= {http://www.icml-2011.org/papers/375_icmlpaper.pdf},  pdf= {http://www.icml-2011.org/papers/375_icmlpaper.pdf},  Abstract={A new nonparametric Bayesian model is developed to integrate dictionary learning and topic model into a unified framework. The model is employed to analyze partially annotated images, with the dictionary learning performed directly on image patches. Efficient inference is performed with a Gibbs slice sampler, and encouraging results are reported on widely used datasets.},
+@inproceedings{li2011integration, 
+author =    {Lingbo Li and Mingyuan Zhou and Guillermo Sapiro and Lawrence Carin}, 
+title =     {On the Integration of Topic Modeling and Dictionary Learning }, 
+booktitle = {ICML 2011: International Conference on Machine Learning}, 
+series =    {ICML '11}, 
+year =      {2011}, 
+editor =    {Lise Getoor and Tobias Scheffer}, 
+location =  {Bellevue, Washington, USA}, 
+isbn =      {978-1-4503-0619-5}, 
+month =     {June}, 
+publisher = {ACM}, 
+pages=      {625--632}, 
+url= {http://www.icml-2011.org/papers/375_icmlpaper.pdf}, 
+pdf= {http://www.icml-2011.org/papers/375_icmlpaper.pdf}, 
+Abstract={A new nonparametric Bayesian model is developed to integrate dictionary learning and topic model into a unified framework. The model is employed to analyze partially annotated images, with the dictionary learning performed directly on image patches. Efficient inference is performed with a Gibbs slice sampler, and encouraging results are reported on widely used datasets.},
 }
 
 @article{xing2012dictionary,
@@ -846,11 +1239,22 @@ Abstract={By developing data augmentation methods unique to the negative binomia
 	Volume = {15},
 	Year = {2011}
 	}
+	
+
+@INPROCEEDINGS{zhou2010nonparametric,
+  author={Zhou, Mingyuan and Wang, Chunping and Chen, Minhua and Paisley, John and Dunson, David and Carin, Lawrence},
+  booktitle={2010 IEEE Sensor Array and Multichannel Signal Processing Workshop}, 
+  title={Nonparametric Bayesian Matrix Completion}, 
+  year={2010},
+  pages={213-216},
+  url={https://ieeexplore.ieee.org/abstract/document/5606741},
+  abstract={The beta-binomial processes are considered for inferring missing values in matrices. The model moves beyond the low-rank assumption, modeling the matrix columns as residing in a nonlinear subspace. Large-scale problems are considered via efficient Gibbs sampling, yielding predictions as well as a measure of confidence in each prediction. Algorithm performance is considered for several datasets, with encouraging performance relative to existing approaches.}
+  }
 
 @inproceedings{zhou2009non,
 	Abstract = {Non-parametric Bayesian techniques are considered for learning dictionaries for sparse image representations, with applications in denoising, inpainting and compressive sensing (CS). The beta process is employed as a prior for learning the dictionary, and this non-parametric method naturally infers an appropriate dictionary size. The Dirichlet process and a probit stick-breaking process are also considered to exploit structure within an image. The proposed method can learn a sparse dictionary in situ; training images may be exploited if available, but they are not required. Further, the noise variance need not be known, and can be non-stationary. Another virtue of the proposed method is that sequential inference can be readily employed, thereby allowing scaling to large images. Several example results are presented, using both Gibbs and variational Bayesian inference, with comparisons to other state-of-the-art approaches.},
 	Author = {Zhou, Mingyuan and Haojun Chen and Lu Ren and Sapiro, Guillermo and Carin, Lawrence and John W. Paisley},
-	Booktitle = {NIPS 2009: Advances in Neural Information Processing Systems},
+	Booktitle = {NeurIPS 2009: Advances in Neural Information Processing Systems},
 	Editor = {Y. Bengio and D. Schuurmans and J. D. Lafferty and C. K. I. Williams and A. Culotta},
 	Note = {(Oral presentation)},
 	Pages = {2295--2303},
@@ -863,7 +1267,5 @@ Abstract={By developing data augmentation methods unique to the negative binomia
 	Url_Video = {http://videolectures.net/mingyuan_zhou/},
 	Year = {2009}
 	}
-
-
 
 
