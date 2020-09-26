@@ -1,3 +1,51 @@
+
+@inproceedings{yue2020implicit,
+  title={Implicit Distributional Reinforcement Learning},
+  author={Yue, Yuguang and Wang, Zhendong and Zhou, Mingyuan},
+booktitle = {NeurIPS 2020: Advances in Neural Information Processing Systems},
+month={Dec.},
+year = {2020},
+url={https://arxiv.org/abs/2007.06159},
+pdf={https://arxiv.org/pdf/2007.06159.pdf},
+url_arxiv={https://arxiv.org/abs/2007.06159},
+Note = {(the first two authors contributed equally)},
+  abstract={To improve the sample efficiency of policy-gradient based reinforcement learning algorithms, we propose implicit distributional actor critic (IDAC) that consists of a distributional critic, built on two deep generator networks (DGNs), and a semi-implicit actor (SIA), powered by a flexible policy distribution. We adopt a distributional perspective on the discounted cumulative return and model it with a state-action-dependent implicit distribution, which is approximated by the DGNs that take state-action pairs and random noises as their input. Moreover, we use the SIA to provide a semi-implicit policy distribution, which mixes the policy parameters with a reparameterizable distribution that is not constrained by an analytic density function. In this way, the policy's marginal distribution is implicit, providing the potential to model complex properties such as covariance structure and skewness, but its parameter and entropy can still be estimated. We incorporate these features with an off-policy algorithm framework to solve problems with continuous action space, and compare IDAC with the state-of-art algorithms on representative OpenAI Gym environments. We observe that IDAC outperforms these baselines for most tasks.}
+}
+
+
+@inproceedings{Fan2020bayesian,
+  title={Bayesian Attention Modules},
+  author={Xinjie Fan and Shujian Zhang and Bo Chen and Mingyuan Zhou},
+booktitle = {NeurIPS 2020: Advances in Neural Information Processing Systems},
+month={Dec.},
+year = {2020},
+Note = {(the first two authors contributed equally)},
+  abstract={Attention modules, as simple and effective tools, have not only enabled deep neural networks to achieve state-of-the-art results in many domains, but also enhanced their interpretability. Most current models use deterministic attention modules due to their simplicity and ease of optimization. Stochastic counterparts, on the other hand, are less popular despite their potential benefits. The main reason is that stochastic attention often introduces optimization issues or requires significant model changes. In this paper, we propose a scalable stochastic version of attention that is easy to implement and optimize. We construct simplex-constrained attention distributions by normalizing reparameterizable distributions, making the training process differentiable. We learn their parameters in a Bayesian framework where a data-dependent prior is introduced for regularization. We apply the proposed stochastic attention modules to various attention-based models, with applications to graph node classification, visual question answering, image captioning, machine translation, and language understanding. Our experiments show the proposed method brings consistent improvements over the corresponding baselines.}
+}
+
+
+@inproceedings{Chen2020bidirectional,
+  title={Bidirectional Convolutional {P}oisson Gamma Dynamical Systems},
+  author={Wenchao Chen and Chaojie Wang and Bo Chen and Yicheng Liu and Hao Zhang and Mingyuan Zhou},
+booktitle = {NeurIPS 2020: Advances in Neural Information Processing Systems},
+month={Dec.},
+year = {2020},
+Note = {(the first two authors contributed equally)},
+  abstract={Incorporating the natural document-sentence-word structure into hierarchical Bayesian modeling, we propose convolutional Poisson gamma dynamical systems (PGDS) that introduces not only word-level probabilistic convolutions, but also sentence-level stochastic temporal transitions. With word-level convolutions capturing phrase-level topics and sentence-level transitions capturing how the topic usages evolve over consecutive sentences, we aggregate the topic proportions of all sentences of a document as its feature representation. To consider not only forward but also backward sentence-level information transmissions, we further develop a bidirectional convolutional PGDS to incorporate the full contextual information to represent each sentence. For efficient inference, we construct a convolutional-recurrent inference network, which provides both sentence-level and document-level representations, and introduce a hybrid Bayesian inference scheme combining stochastic-gradient MCMC and amortized variational inference. Experimental results on a variety of document corpora demonstrate that the proposed models can extract expressive multi-level latent representations, including interpretable phrase-level topics and sentence-level temporal transitions as well as discriminative document-level features, achieving state-of-the-art document categorization performance while being memory and computation efficient.}
+}
+
+
+@inproceedings{Wang2020deep,
+  title={Deep Relational Topic Modeling via Graph {P}oisson Gamma Belief Network},
+  author={Chaojie Wang and Hao Zhang and Bo Chen and Dongsheng Wang and Zhengjue Wang and Mingyuan Zhou},
+booktitle = {NeurIPS 2020: Advances in Neural Information Processing Systems},
+month={Dec.},
+year = {2020},
+Note = {(the first two authors contributed equally)},
+  abstract={To analyze a collection of interconnected documents, relational topic models (RTMs) have been developed to describe both the link structure and document content, exploring their underlying relationships via a single-layer latent representation with limited expressive capability. To better utilize the document network, we first propose graph Poisson factor analysis (GPFA) that constructs a probabilistic model for interconnected documents and also provides closed-form Gibbs sampling update equations moving beyond sophisticated approximate assumptions of existing RTMs. Extending GPFA, we develop a novel hierarchical RTM named graph Poisson gamma belief network (GPGBN), and further introduce two different Weibull distribution based variational graph auto-encoders for efficient model inference and effective network information aggregation. Experimental results demonstrate that our models extract high-quality hierarchical latent document representations, leading to improved performance over baselines on various graph analytic tasks.}
+}
+
+
 @article{Kalantari2020graph,
   title={Graph Gamma Process Generalized Linear Dynamical Systems},
   author={Kalantari, Rahi and Zhou, Mingyuan},
@@ -18,18 +66,6 @@ consistently exhibit  good  predictive performance in comparison to a variety of
 }
 
 	
-@article{yue2020implicit,
-  title={Implicit Distributional Reinforcement Learning},
-  author={Yue, Yuguang and Wang, Zhendong and Zhou, Mingyuan},
-  journal={arXiv preprint arXiv:2007.06159},
-  month={July},
-  year={2020},
-  url={https://arxiv.org/abs/2007.06159},
-  pdf={https://arxiv.org/pdf/2007.06159.pdf},
-  url_arxiv={https://arxiv.org/abs/2007.06159},
-  Note = {(the first two authors contributed equally)},
-  abstract={To improve the sample efficiency of policy-gradient based reinforcement learning algorithms, we propose implicit distributional actor critic (IDAC) that consists of a distributional critic, built on two deep generator networks (DGNs), and a semi-implicit actor (SIA), powered by a flexible policy distribution. We adopt a distributional perspective on the discounted cumulative return and model it with a state-action-dependent implicit distribution, which is approximated by the DGNs that take state-action pairs and random noises as their input. Moreover, we use the SIA to provide a semi-implicit policy distribution, which mixes the policy parameters with a reparameterizable distribution that is not constrained by an analytic density function. In this way, the policy's marginal distribution is implicit, providing the potential to model complex properties such as covariance structure and skewness, but its parameter and entropy can still be estimated. We incorporate these features with an off-policy algorithm framework to solve problems with continuous action space, and compare IDAC with the state-of-art algorithms on representative OpenAI Gym environments. We observe that IDAC outperforms these baselines for most tasks.}
-}
 
 
 @article{yin2020probabilistic,
