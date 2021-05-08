@@ -1,4 +1,74 @@
 
+@inproceedings{Zhang2021bayesian,
+  title={Bayesian Attention Belief Networks},
+  author={Shujian Zhang and Xinjie Fan and Bo Chen and Mingyuan Zhou},
+booktitle = {ICML 2021: International Conference on Machine Learning},
+month={July},
+year={2021}
+}
+
+
+@inproceedings{dimitriev2021arms,
+title={{ARMS}: {A}ntithetic-{REINFORCE}-Multi-Sample Gradient for Binary Variables},
+author={Aleksandar Dimitriev and Mingyuan Zhou},
+booktitle={ICML 2021: International Conference on Machine Learning},
+month={July},
+year={2021}
+}
+
+
+@inproceedings{duan2021sawtooth,
+title={Sawtooth Factorial Topic Embeddings Guided Gamma Belief Network},
+author={Zhibin Duan and Dongsheng Wang and Bo Chen and Chaojie Wang and Wenchao Chen and Yewen Li and Jie Ren and Mingyuan Zhou},
+booktitle={ICML 2021: International Conference on Machine Learning},
+month={July},
+year={2021}
+}
+
+
+
+@article{zheng2021contrastive,
+      title={Contrastive Conditional Transport for Representation Learning}, 
+      author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li‖Ya Zhang and Hao Zhang and Ivor W. Tsang and Jingren Zhou and Mingyuan Zhou},
+      month={May},
+      year={2021},
+      journal={ArXiv preprint},
+      abstract={Contrastive learning (CL) has achieved remarkable success in learning data representations without label supervision. However, the conventional CL loss is sensitive to how many negative samples are included and how they are selected. This paper proposes contrastive conditional transport (CCT) that defines its CL loss over dependent sample-query pairs, which in practice is realized by drawing a random query, randomly selecting positive and negative samples, and contrastively reweighting these samples according to their distances to the query, exerting a greater force to both pull more distant positive samples towards the query and push closer negative samples away from the query. Theoretical analysis shows that this unique contrastive reweighting scheme helps in the representation space to both align the positive samples with the query and reduce the mutual information between the negative sample and query. Extensive large-scale experiments on standard vision tasks show that CCT not only consistently outperforms existing methods on benchmark datasets in contrastive representation learning, but also provides interpretable contrastive weights and latent representations. PyTorch code will be provided.}
+}
+
+
+@article{guo2021matching,
+      title={Matching Visual Features to Hierarchical Semantic Topics for Image Paragraph Captioning}, 
+      author={Dandan Guo and Ruiying Lu and Bo Chen and Zequn Zeng and Mingyuan Zhou},
+      month={May},
+      year={2021},
+      journal={ArXiv preprint},
+      abstract={Observing a set of images and their corresponding paragraph-captions,
+image paragraph captioning aims to learn how to produce a coherent story to describe the visual content of an image. Inspired by recent successes in integrating semantic topics into this task, this paper develops a plug-and-play hierarchical-topic-guided image paragraph generation framework, which couples a visual extractor with a deep topic model to guide the learning of a language model. To capture the correlations between the image and text at multiple levels of abstraction and learn the semantic topics from images, we design a variational inference network to build the mapping from image features to textual captions. To guide the paragraph generation, the learned hierarchical topics and visual features are integrated into the language model, including Long Short-Term Memory (LSTM) and Transformer, and jointly optimized. Experiments on benchmark datasets demonstrate that our proposed models outperform competing approaches and can be used to distill interpretable multi-layer topics and generate diverse and coherent captions.}
+}
+
+
+@ARTICLE{wang2021multimodal,
+  author={Wang, Chaojie and Chen, Bo and Xiao, Sucheng and Wang, Zhengjue and Zhang, Hao and Wang, Penghui and Han, Ning and Zhou, Mingyuan},
+  journal={IEEE Transactions on Cybernetics}, 
+  title={Multimodal {W}eibull Variational Autoencoder for Jointly Modeling Image-Text Data}, 
+  year={2021},
+  pages={1-16},
+  url={https://ieeexplore.ieee.org/document/9417864?denied=},
+  abstract={For multimodal representation learning, traditional black-box approaches often fall short of extracting interpretable multilayer hidden structures, which contribute to visualize the connections between different modalities at multiple semantic levels. To extract interpretable multimodal latent representations and visualize the hierarchial semantic relationships between different modalities, based on deep topic models, we develop a novel multimodal Poisson gamma belief network (mPGBN) that tightly couples the observations of different modalities via imposing sparse connections between their modality-specific hidden layers. To alleviate the time-consuming Gibbs sampler adopted by traditional topic models in the testing stage, we construct a Weibull-based variational inference network (encoder) to directly map the observations to their latent representations, and further combine it with the mPGBN (decoder), resulting in a novel multimodal Weibull variational autoencoder (MWVAE), which is fast in out-of-sample prediction and can handle large-scale multimodal datasets. Qualitative evaluations on bimodal data consisting of image-text pairs show that the developed MWVAE can successfully extract expressive multimodal latent representations for downstream tasks like missing modality imputation and multimodal retrieval. Further extensive quantitative results demonstrate that both MWVAE and its supervised extension sMWVAE achieve state-of-the-art performance on various multimodal benchmarks.}
+}
+
+
+@article{wen2021gradient,
+  title={Gradient Estimation of Information Measures in Deep Learning},
+  author={Wen, Liangjian and Bai, Haoli and He, Lirong and Zhou, Yiji and Zhou, Mingyuan and Xu, Zenglin},
+  journal={Knowledge-Based Systems},
+  pages={107046},
+  year={2021},
+  url={https://doi.org/10.1016/j.knosys.2021.107046},
+  abstract={Information measures including entropy and mutual information (MI) have been widely applied in deep learning. Despite the successes, exiting estimation methods suffer from either high variance or high bias. This may lead to unstable training or poor performance in deep learning. Since estimating information measures in themselves is very difficult, we explore an alternative appealing strategy, by directly estimating the gradients of information measures with respect to model parameters. We propose a general gradient estimation method for information measures based on the score estimation. In detail, we establish the Entropy Gradient Estimator (EGE) and the Mutual Information Gradient Estimator (MIGE) to estimate the gradient of entropy and mutual information with respect to model parameters, respectively. For dealing with the optimization of entropy and mutual information, we can directly plug in their gradient approximation with relevant parameters to enable stochastic backpropagation for stability and efficiency. Our proposed method exhibits higher accuracy and lower variance for gradient estimation of information measures. Extensive experiments on various deep learning tasks have demonstrated the superiority of our method.}
+}
+
 @inproceedings{fan2021adversarially,
 title={Adversarially Adaptive Normalization for Single Domain Generalization},
 author={Xinjie Fan and Qifei Wang and Junjie Ke and Feng Yang and Boqing Gong and Mingyuan Zhou},
