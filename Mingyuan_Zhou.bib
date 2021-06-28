@@ -5,7 +5,11 @@
 booktitle = {ICML 2021: International Conference on Machine Learning},
 month={July},
 Note = {(the first two authors contributed equally)},
-year={2021}
+year={2021},
+url={https://arxiv.org/abs/2106.05251},
+pdf={https://arxiv.org/pdf/2106.05251.pdf},
+url_arxiv={https://arxiv.org/abs/2106.05251},
+abstract={Attention-based neural networks have achieved state-of-the-art results on a wide range of tasks. Most such models use deterministic attention while stochastic attention is less explored due to the optimization difficulties or complicated model design. This paper introduces Bayesian attention belief networks, which construct a decoder network by modeling unnormalized attention weights with a hierarchy of gamma distributions, and an encoder network by stacking Weibull distributions with a deterministic-upward-stochastic-downward structure to approximate the posterior. The resulting auto-encoding networks can be optimized in a differentiable way with a variational lower bound. It is simple to convert any models with deterministic attention, including pretrained ones, to the proposed Bayesian attention belief networks. On a variety of language understanding tasks, we show that our method outperforms deterministic attention and state-of-the-art stochastic attention in accuracy, uncertainty estimation, generalization across domains, and robustness to adversarial attacks. We further demonstrate the general applicability of our method on neural machine translation and visual question answering, showing great potential of incorporating our method into various attention-related tasks.}
 }
 
 
@@ -14,8 +18,13 @@ title={{ARMS}: {A}ntithetic-{REINFORCE}-Multi-Sample Gradient for Binary Variabl
 author={Aleksandar Dimitriev and Mingyuan Zhou},
 booktitle={ICML 2021: International Conference on Machine Learning},
 month={July},
-year={2021}
+year={2021},
+url={https://arxiv.org/abs/2105.14141},
+pdf={https://arxiv.org/pdf/2105.14141.pdf},
+url_arxiv={https://arxiv.org/abs/2105.14141},
+abstract={Estimating the gradients for binary variables is a task that arises frequently in various domains, such as training discrete latent variable models. What has been commonly used is a REINFORCE based Monte Carlo estimation method that uses either independent samples or pairs of negatively correlated samples. To better utilize more than two samples, we propose ARMS, an Antithetic REINFORCE-based Multi-Sample gradient estimator. ARMS uses a copula to generate any number of mutually antithetic samples. It is unbiased, has low variance, and generalizes both DisARM, which we show to be ARMS with two samples, and the leave-one-out REINFORCE (LOORF) estimator, which is ARMS with uncorrelated samples. We evaluate ARMS on several datasets for training generative models, and our experimental results show that it outperforms competing methods. We also develop a version of ARMS for optimizing the multi-sample variational bound, and show that it outperforms both VIMCO and DisARM. The code is publicly available..}
 }
+
 
 
 @inproceedings{duan2021sawtooth,
@@ -31,7 +40,7 @@ year={2021}
 
 @article{zheng2021contrastive,
       title={Contrastive Conditional Transport for Representation Learning}, 
-      author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li‖Ya Zhang and Hao Zhang and Ivor W. Tsang and Jingren Zhou and Mingyuan Zhou},
+      author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li and Ya Zhang and Hao Zhang and Ivor W. Tsang and Jingren Zhou and Mingyuan Zhou},
       month={May},
       year={2021},
       journal={arXiv preprint arXiv:2105.03746},
