@@ -44,7 +44,7 @@ abstract={Hierarchical topic models such as the gamma belief network (GBN) have 
 
 
 @article{zheng2021contrastive,
-      title={Contrastive Conditional Transport for Representation Learning}, 
+      title={Contrastive Attraction and Contrastive Repulsion for Representation Learning}, 
       author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li and Ya Zhang and Hao Zhang and Ivor W. Tsang and Jingren Zhou and Mingyuan Zhou},
       month={May},
       year={2021},
@@ -52,7 +52,7 @@ abstract={Hierarchical topic models such as the gamma belief network (GBN) have 
   url={https://arxiv.org/abs/2105.03746},
   pdf={https://arxiv.org/pdf/2105.03746.pdf},
   url_arxiv={https://arxiv.org/abs/2105.03746},
-      abstract={Contrastive learning (CL) has achieved remarkable success in learning data representations without label supervision. However, the conventional CL loss is sensitive to how many negative samples are included and how they are selected. This paper proposes contrastive conditional transport (CCT) that defines its CL loss over dependent sample-query pairs, which in practice is realized by drawing a random query, randomly selecting positive and negative samples, and contrastively reweighting these samples according to their distances to the query, exerting a greater force to both pull more distant positive samples towards the query and push closer negative samples away from the query. Theoretical analysis shows that this unique contrastive reweighting scheme helps in the representation space to both align the positive samples with the query and reduce the mutual information between the negative sample and query. Extensive large-scale experiments on standard vision tasks show that CCT not only consistently outperforms existing methods on benchmark datasets in contrastive representation learning, but also provides interpretable contrastive weights and latent representations. PyTorch code will be provided.}
+      abstract={Contrastive learning (CL) is effective in learning data representations without label supervision, where the encoder needs to contrast each positive sample over multiple negative samples via a one-vs-many softmax cross-entropy loss. However, conventional CL is sensitive to how many negative samples are included and how they are selected. Proposed in this paper is a doubly CL strategy that contrasts positive samples and negative ones within themselves separately. We realize this strategy with contrastive attraction and contrastive repulsion (CACR) makes the query not only exert a greater force to attract more distant positive samples but also do so to repel closer negative samples. Theoretical analysis reveals the connection between CACR and CL from the perspectives of both positive attraction and negative repulsion and shows the benefits in both efficiency and robustness brought by separately contrasting within the sampled positive and negative pairs. Extensive large-scale experiments on standard vision tasks show that CACR not only consistently outperforms existing CL methods on benchmark datasets in representation learning, but also provides interpretable contrastive weights, demonstrating the efficacy of the proposed doubly contrastive strategy.}
 }
 
 
@@ -194,7 +194,7 @@ abstract={Dropout has been demonstrated as a simple and effective module to not 
 }
 
 @article{zheng2020act,
-      title={Comparing Probability Distributions with Conditional Transport}, 
+      title={Exploiting Chain Rule and Bayes' Theorem to Compare Probability Distributions}, 
       author={Huangjie Zheng and Mingyuan Zhou},
       month={Dec.},
       year={2020},
@@ -202,7 +202,7 @@ abstract={Dropout has been demonstrated as a simple and effective module to not 
       url={https://arxiv.org/abs/2012.14100},
       pdf={https://arxiv.org/pdf/2012.14100.pdf},
       url_arxiv={https://arxiv.org/abs/2012.14100},
-      abstract={To measure the difference between two probability distributions, we propose conditional transport (CT) as a new divergence and further approximate it with the amortized CT (ACT) cost to make it amenable to implicit distributions and stochastic gradient descent based optimization. ACT amortizes the computation of its conditional transport plans and comes with unbiased sample gradients that are straightforward to compute. When applied to train a generative model, ACT is shown to strike a good balance between mode covering and seeking behaviors and strongly resist mode collapse. On a wide variety of benchmark datasets for generative modeling, substituting the default statistical distance of an existing generative adversarial network with ACT is shown to consistently improve the performance.}
+      abstract={To measure the difference between two probability distributions, referred to as the source and target, respectively, we exploit both the chain rule and Bayes' theorem to construct conditional transport (CT), which is constituted by both a forward component and a backward one. The forward CT is the expected cost of moving a source data point to a target one, with their joint distribution defined by the product of the source probability density function (PDF) and a source-dependent conditional distribution, which is related to the target PDF via Bayes' theorem. The backward CT is defined by reversing the direction. The CT cost can be approximated by replacing the source and target PDFs with their discrete empirical distributions supported on mini-batches, making it amenable to implicit distributions and stochastic gradient descent-based optimization. When applied to train a generative model, CT is shown to strike a good balance between mode-covering and mode-seeking behaviors and strongly resist mode collapse. On a wide variety of benchmark datasets for generative modeling, substituting the default statistical distance of an existing generative adversarial network with CT is shown to consistently improve the performance. PyTorch-style code is provided.}
 }
 
 
