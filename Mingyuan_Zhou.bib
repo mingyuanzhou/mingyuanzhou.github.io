@@ -112,11 +112,15 @@ year = {2021}
 
 
 @inproceedings{dimitriev2021carms,
-  title={CARMS: Categorical-Antithetic-REINFORCE Multi-Sample Gradient Estimator},
+  title={{CARMS}: Categorical-Antithetic-{REINFORCE} Multi-Sample Gradient Estimator},
   author={Dimitriev, Aleksandar and Zhou, Mingyuan},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-year = {2021}
+year = {2021},
+url={https://openreview.net/forum?id=kwOjbvNyM-K},
+pdf={https://arxiv.org/pdf/2110.14002.pdf},
+url_arxiv={https://arxiv.org/abs/2110.14002?context=cs},
+abstract={Accurately backpropagating the gradient through categorical variables is a challenging task that arises in various domains, such as training discrete latent variable models. To this end, we propose CARMS, an unbiased estimator for categorical random variables based on multiple mutually negatively correlated (jointly antithetic) samples. CARMS combines REINFORCE with copula based sampling to avoid duplicate samples and reduce its variance, while keeping the estimator unbiased using importance sampling. It generalizes both the ARMS antithetic estimator for binary variables, which is CARMS for two categories, as well as LOORF/VarGrad, the leave-one-out REINFORCE estimator, which is CARMS with independent samples.  We evaluate CARMS on several benchmark datasets on a generative modeling task, as well as a structured output prediction task, and find it to outperform competing methods including a strong self-control baseline. The code is publicly available.}
 }
 
 
