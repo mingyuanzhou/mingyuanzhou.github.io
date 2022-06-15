@@ -7,6 +7,7 @@ journal={arXiv preprint arXiv:},
   url={https://arxiv.org/abs/},
   pdf={https://arxiv.org/pdf/},
   url_arxiv={https://arxiv.org/abs/},
+  Note = {(the first two authors contributed equally)},
       abstract={Learning the distribution of a continuous or categorical response variable y given its covariates x is a fundamental problem in statistics and machine learning. Deep neural network-based supervised learning algorithms have made great progress in predicting the mean of y given x, but they are often criticized for their ability to accurately capture the uncertainty of their predictions. In this paper, we introduce classification and regression diffusion (CARD) models, which combine a denoising diffusion-based conditional generative model and a pre-trained conditional mean estimator, to accurately predict the distribution of y given x.  We demonstrate the outstanding ability of CARD in conditional distribution prediction with both toy examples and real-world datasets, the experimental results on which show that CARD in general outperforms state-of-the-art methods, including Bayesian neural network-based ones that are designed for uncertainty estimation, especially when the conditional distribution of y given x is multi-modal. 
 }
 }
@@ -25,7 +26,7 @@ journal={arXiv preprint arXiv:2206.02262},
 }
 
 
-@inproceedings{duan2022bayesian,
+@inproceedings{yang2022regularizing,
 title={Regularizing a Model-based Policy Stationary Distribution to Stabilize Offline Reinforcement Learning},
 author={Shentao Yang and Yihao Feng and Shujian Zhang and Mingyuan Zhou},
 booktitle={ICML 2022: International Conference on Machine Learning},
@@ -95,9 +96,12 @@ journal={arXiv preprint arXiv:2202.09671},
   url={https://arxiv.org/abs/2202.09671},
   pdf={https://arxiv.org/pdf/2202.09671.pdf},
   url_arxiv={https://arxiv.org/abs/2202.09671},
+  url_code={https://github.com/JegZheng/truncated-diffusion-probabilistic-models
+},
       abstract={Employing a forward Markov diffusion chain to gradually map the data to a noise distribution, diffusion probabilistic models learn how to generate the data by inferring a reverse Markov diffusion chain to invert the forward diffusion process. To achieve competitive data generation performance, they demand a long diffusion chain that makes them computationally intensive in not only training but also generation. To significantly improve the computation efficiency, we propose to truncate the forward diffusion chain by abolishing the requirement of diffusing the data to random noise. Consequently, we start the inverse diffusion chain from an implicit generative distribution, rather than random noise, and learn its parameters by matching it to the distribution of the data corrupted by the truncated forward diffusion chain. Experimental results show our truncated diffusion probabilistic models provide consistent improvements over the non-truncated ones in terms of the generation performance and the number of required inverse diffusion steps.
 }
 }
+
 
 
 @article{zheng2022mixing,
@@ -138,16 +142,19 @@ booktitle={ICLR 2022: International Conference on Learning Representations},
 year={2022},
 url={https://openreview.net/forum?id=IYMuTbGzjFU},
 pdf={https://openreview.net/pdf?id=IYMuTbGzjFU},
+url_code={https://github.com/wds2014/WeTe}
 }
 
 @inproceedings{
 guo2022learning,
-title={Learning Prototype-oriented Set Representations for Meta-Learning },
+title={Learning Prototype-oriented Set Representations for Meta-Learning},
 author={Dandan Guo and Long Tian and Minghe Zhang and Mingyuan Zhou and Hongyuan Zha},
 booktitle={ICLR 2022: International Conference on Learning Representations},
 year={2022},
 url={https://openreview.net/forum?id=WH6u2SvlLp4},
-pdf={https://openreview.net/pdf?id=WH6u2SvlLp4}
+pdf={https://openreview.net/pdf?id=WH6u2SvlLp4},
+url_code={https://openreview.net/attachment?id=WH6u2SvlLp4&name=supplementary_material},
+abstract={Learning from set-structured data is a fundamental problem that has recently attracted increasing attention, where a series of summary networks are introduced to deal with the set input. In fact, many meta-learning problems can be treated as set-input tasks. Most existing summary networks aim to design different architectures for the input set in order to enforce permutation invariance. However, scant attention has been paid to the common cases where different sets in a meta distribution are closely related and share certain statistical properties. Viewing each set as a distribution over a set of global prototypes, this paper provides a novel prototype-oriented optimal transport (POT) framework to improve existing summary networks. To learn the distribution over the global prototypes, we minimize its regularized optimal transport distance to the set empirical distribution over data points, providing a natural unsupervised way to improve the summary network. Since our plug-and-play framework can be applied to many meta learning problems, we further instantiate it to the cases of few-shot classification and implicit meta generative modeling. Extensive experiments demonstrate that our framework significantly improves the existing summary networks on learning more powerful summary statistics from sets and can be successfully integrated into metric-based few-shot classification and generative modeling applications, providing a promising tool for addressing set-input and meta-learning problems.}
 }
 
 @inproceedings{
@@ -157,7 +164,9 @@ author={Haoang Chi and Feng Liu and Wenjing Yang and Long Lan and Tongliang Liu 
 booktitle={ICLR 2022: International Conference on Learning Representations},
 year={2022},
 url={https://openreview.net/forum?id=MEpKGLsY8f},
-pdf={https://openreview.net/pdf?id=MEpKGLsY8f}
+pdf={https://openreview.net/pdf?id=MEpKGLsY8f},
+url_code={https://github.com/Haoang97/MEDI},
+abstract={In novel class discovery (NCD), we are given labeled data from seen classes and unlabeled data from unseen classes, and we train clustering models for the unseen classes. However, the implicit assumptions behind NCD are still unclear. In this paper, we demystify assumptions behind NCD and find that high-level semantic features should be shared among the seen and unseen classes. Based on this finding, NCD is theoretically solvable under certain assumptions and can be naturally linked to meta-learning that has exactly the same assumption as NCD. Thus, we can empirically solve the NCD problem by meta-learning algorithms after slight modifications. This meta-learning-based methodology significantly reduces the amount of unlabeled data needed for training and makes it more practical, as demonstrated in experiments. The use of very limited data is also justified by the application scenario of NCD: since it is unnatural to label only seen-class data, NCD is sampling instead of labeling in causality. Therefore, unseen-class data should be collected on the way of collecting seen-class data, which is why they are novel and first need to be clustered.}
 }
 
 
@@ -167,9 +176,10 @@ author={Huangjie Zheng and Mingyuan Zhou},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
 year = {2021},
-url={https://arxiv.org/abs/2012.14100},
+url={https://openreview.net/forum?id=f-ggKIDTu5D},
 pdf={Papers/CT_NeurIPS2021.pdf},
 url_arxiv={https://arxiv.org/abs/2012.14100},
+url_code={https://github.com/JegZheng/CT-pytorch},
 abstract={To measure the difference between two probability distributions, referred to as the source and target, respectively, we exploit both the chain rule and Bayes' theorem to construct conditional transport (CT), which is constituted by both a forward component and a backward one. The forward CT is the expected cost of moving a source data point to a target one, with their joint distribution defined by the product of the source probability density function (PDF) and a source-dependent conditional distribution, which is related to the target PDF via Bayes' theorem. The backward CT is defined by reversing the direction. The CT cost can be approximated by replacing the source and target PDFs with their discrete empirical distributions supported on mini-batches, making it amenable to implicit distributions and stochastic gradient descent-based optimization. When applied to train a generative model, CT is shown to strike a good balance between mode-covering and mode-seeking behaviors and strongly resist mode collapse. On a wide variety of benchmark datasets for generative modeling, substituting the default statistical distance of an existing generative adversarial network with CT is shown to consistently improve the performance. PyTorch-style code is provided.}
 }
 
@@ -179,11 +189,13 @@ abstract={To measure the difference between two probability distributions, refer
   author={Korawat Tanwisuth and Xinjie Fan and Huangjie Zheng and Shujian Zhang and Hao Zhang and Bo Chen and Mingyuan Zhou},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-url={https://arxiv.org/abs/2110.12024},
+url={https://openreview.net/forum?id=yH2VrkpiCK6},
 pdf={https://arxiv.org/pdf/2110.12024.pdf},
 url_arxiv={https://arxiv.org/abs/2110.12024},
+url_code={https://github.com/korawat-tanwisuth/Proto_DA},
 Note = {(the first three authors contributed equally)},
-year = {2021}
+year = {2021},
+abstract={Existing methods for unsupervised domain adaptation often rely on minimizing some statistical distance between the source and target samples in the latent space. To avoid the sampling variability, class imbalance, and data-privacy concerns that often plague these methods, we instead provide a memory and computation-efficient probabilistic framework to extract class prototypes and align the target features with them. We demonstrate the general applicability of our method on a wide range of scenarios, including single-source, multi-source, class-imbalance, and source-private domain adaptation. Requiring no additional model parameters and having a moderate increase in computation over the source model alone, the proposed method achieves competitive performance with state-of-the-art methods.}
 }
 
 
@@ -196,6 +208,7 @@ year = {2021},
 url={https://openreview.net/forum?id=kwOjbvNyM-K},
 pdf={https://arxiv.org/pdf/2110.14002.pdf},
 url_arxiv={https://arxiv.org/abs/2110.14002?context=cs},
+url_code={https://github.com/alekdimi/carms},
 abstract={Accurately backpropagating the gradient through categorical variables is a challenging task that arises in various domains, such as training discrete latent variable models. To this end, we propose CARMS, an unbiased estimator for categorical random variables based on multiple mutually negatively correlated (jointly antithetic) samples. CARMS combines REINFORCE with copula based sampling to avoid duplicate samples and reduce its variance, while keeping the estimator unbiased using importance sampling. It generalizes both the ARMS antithetic estimator for binary variables, which is CARMS for two categories, as well as LOORF/VarGrad, the leave-one-out REINFORCE estimator, which is CARMS with independent samples.  We evaluate CARMS on several benchmark datasets on a generative modeling task, as well as a structured output prediction task, and find it to outperform competing methods including a strong self-control baseline. The code is publicly available.}
 }
 
@@ -208,12 +221,14 @@ abstract={Accurately backpropagating the gradient through categorical variables 
 },
   author={Mohammadreza Armandpour and Ali Sadeghian and Mingyuan Zhou
 },
-url={https://arxiv.org/abs/2010.11266},
+url={https://openreview.net/forum?id=MvGKpmPsN7c},
 pdf={https://arxiv.org/pdf/2010.11266.pdf},
 url_arxiv={https://arxiv.org/abs/2010.11266},
+url_code={https://github.com/rezaarmand/Convex_Polytope_Trees},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-year = {2021}
+year = {2021},
+abstract={A decision tree is commonly restricted to use a single hyperplane to split the covariate space at each of its internal nodes. It often requires a large number of nodes to achieve high accuracy. In this paper, we propose convex polytope trees (CPT) to expand the family of decision trees by an interpretable generalization of their decision boundary. The splitting function at each node of CPT is based on the logical disjunction of a community of differently weighted probabilistic linear decision-makers, which also geometrically corresponds to a convex polytope in the covariate space. We use a nonparametric Bayesian prior at each node to infer the community's size, encouraging simpler decision boundaries by shrinking the number of polytope facets. We develop a greedy method to efficiently construct CPT and scalable end-to-end training algorithms for the tree parameters when the tree structure is given. We empirically demonstrate the efficiency of CPT over existing state-of-the-art decision trees in several real-world classification and regression tasks from diverse domains.}
 }
 
 
@@ -221,12 +236,14 @@ year = {2021}
   title={Alignment Attention by Matching Key and Query Distributions},
   author={Shujian Zhang and Xinjie Fan and Huangjie Zheng and Korawat Tanwisuth and Mingyuan Zhou
 },
-url={https://arxiv.org/abs/2110.12567},
+url={https://openreview.net/forum?id=th788unrdTj},
 pdf={https://arxiv.org/pdf/2110.12567.pdf},
 url_arxiv={https://arxiv.org/abs/2110.12567},
+url_code={https://github.com/szhang42/alignment_attention},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-year = {2021} 
+year = {2021},
+abstract={The neural attention mechanism has been incorporated into deep neural networks to achieve state-of-the-art performance in various domains. Most such models use multi-head self-attention which is appealing for the ability to attend to information from different perspectives. This paper introduces alignment attention that explicitly encourages self-attention to match the distributions of the key and query within each head. The resulting alignment attention networks can be optimized as an unsupervised regularization in the existing attention framework. It is simple to convert any models with self-attention, including pre-trained ones, to the proposed alignment attention. On a variety of language understanding tasks, we show the effectiveness of our method in accuracy, uncertainty estimation, generalization across domains, and robustness to adversarial attacks. We further demonstrate the general applicability of our approach on graph attention and visual question answering, showing the great potential of incorporating our alignment method into various attention-related tasks.}
 }
 
 
@@ -235,7 +252,12 @@ year = {2021}
   author={Zhibin Duan and Yishi Xu  and Bo Chen and Dongsheng Wang and Chaojie Wang and Mingyuan Zhou},
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-year = {2021}
+year = {2021},
+url={https://openreview.net/forum?id=ZB8Du-E1KUz},
+pdf={https://openreview.net/pdf?id=ZB8Du-E1KUz},
+url_arxiv={https://arxiv.org/abs/2110.14286},
+url_code={https://github.com/BoChenGroup/TopicNet},
+abstract={Existing deep hierarchical topic models are able to extract semantically meaningful topics from a text corpus  in an unsupervised manner and automatically organize them into a topic hierarchy.  However, it is unclear how to incorporate prior belief such as knowledge graph to guide the learning of the topic hierarchy. To address this issue, we introduce TopicNet as a deep hierarchical topic model that can inject prior structural knowledge as inductive bias to influence the learning. TopicNet represents each topic as a Gaussian-distributed embedding vector, projects the topics of all layers into a shared embedding space, and explores both the symmetric and asymmetric similarities between Gaussian embedding vectors to incorporate prior semantic hierarchies. With a variational auto-encoding inference network,  the model parameters are optimized by minimizing the evidence lower bound and supervised loss via stochastic gradient descent. Experiments on widely used benchmark show that TopicNet outperforms related deep topic models on discovering deeper interpretable topics and mining better document representations.}
 }
 
 @inproceedings{wang2021probabilistic,
@@ -245,7 +267,12 @@ year = {2021}
 },
 booktitle = {NeurIPS 2021: Neural Information Processing Systems},
 month={Dec.},
-year = {2021}
+year = {2021},
+url={https://openreview.net/forum?id=rg8gNkvs3u},
+pdf={https://openreview.net/pdf?id=rg8gNkvs3u},
+url_arxiv={https://arxiv.org/abs/2106.07904},
+url_code={https://github.com/QizhouWang/MAIL},
+abstract={Reweighting adversarial data during training has been recently shown to improve adversarial robustness, where data closer to the current decision boundaries are regarded as more critical and given larger weights. However, existing methods measuring the closeness are not very reliable: they are discrete and can take only a few values, and they are path-dependent, i.e., they may change given the same start and end points with different attack paths. In this paper, we propose three types of probabilistic margin (PM), which are continuous and path-independent, for measuring the aforementioned closeness and reweighing adversarial data. Specifically, a PM is defined as the difference between two estimated class-posterior probabilities, e.g., such a probability of the true label minus the probability of the most confusing label given some natural data. Though different PMs capture different geometric properties, all three PMs share a negative correlation with the vulnerability of data: data with larger/smaller PMs are safer/riskier and should have smaller/larger weights. Experiments demonstrated that PMs are reliable and PM-based reweighting methods outperformed state-of-the-art counterparts.}
 }
 
 
@@ -257,13 +284,18 @@ year = {2021}
   volume={},
   number={},
   pages={1-13},
-  doi={10.1109/TNNLS.2021.3113297}}
+  doi={10.1109/TNNLS.2021.3113297},
+  url={https://ieeexplore.ieee.org/document/9555254},
+  pdf={https://ieeexplore.ieee.org/document/9555254},
+  abstract={Organizing the implicit topology of a document as a graph, and further performing feature extraction via the graph convolutional network (GCN), has proven effective in document analysis. However, existing document graphs are often restricted to expressing single-level relations, which are predefined and independent of downstream learning. A set of learnable hierarchical graphs are built to explore multilevel sentence relations, assisted by a hierarchical probabilistic topic model. Based on these graphs, multiple parallel GCNs are used to extract multilevel semantic features, which are aggregated by an attention mechanism for different document-comprehension tasks. Equipped with variational inference, the graph construction and GCN are learned jointly, allowing the graphs to evolve dynamically to better match the downstream task. The effectiveness and efficiency of the proposed multilevel sentence relation graph convolutional network (MuserGCN) is demonstrated via experiments on document classification, abstractive summarization, and matching.}
+  }
 
 
 @article{UnniYaoHanZhouZheng+2021+4057+4065,
 author = {Rohit Unni and Kan Yao and Xizewen Han and Mingyuan Zhou and Yuebing Zheng},
 doi = {doi:10.1515/nanoph-2021-0392},
 url = {https://doi.org/10.1515/nanoph-2021-0392},
+pdf={https://www.degruyter.com/document/doi/10.1515/nanoph-2021-0392/pdf},
 title = {A mixture-density-based tandem optimization network for on-demand inverse design of thin-film high reflectors},
 journal = {Nanophotonics},
 number = {16},
@@ -282,7 +314,7 @@ booktitle = {ICML 2021: International Conference on Machine Learning},
 month={July},
 Note = {(the first two authors contributed equally)},
 year={2021},
-url={https://arxiv.org/abs/2106.05251},
+url={http://proceedings.mlr.press/v139/zhang21f.html},
 pdf={https://arxiv.org/pdf/2106.05251.pdf},
 url_arxiv={https://arxiv.org/abs/2106.05251},
 abstract={Attention-based neural networks have achieved state-of-the-art results on a wide range of tasks. Most such models use deterministic attention while stochastic attention is less explored due to the optimization difficulties or complicated model design. This paper introduces Bayesian attention belief networks, which construct a decoder network by modeling unnormalized attention weights with a hierarchy of gamma distributions, and an encoder network by stacking Weibull distributions with a deterministic-upward-stochastic-downward structure to approximate the posterior. The resulting auto-encoding networks can be optimized in a differentiable way with a variational lower bound. It is simple to convert any models with deterministic attention, including pretrained ones, to the proposed Bayesian attention belief networks. On a variety of language understanding tasks, we show that our method outperforms deterministic attention and state-of-the-art stochastic attention in accuracy, uncertainty estimation, generalization across domains, and robustness to adversarial attacks. We further demonstrate the general applicability of our method on neural machine translation and visual question answering, showing great potential of incorporating our method into various attention-related tasks.}
@@ -298,6 +330,7 @@ year={2021},
 url={https://proceedings.mlr.press/v139/dimitriev21a.html},
 pdf={http://proceedings.mlr.press/v139/dimitriev21a/dimitriev21a.pdf},
 url_arxiv={https://arxiv.org/abs/2105.14141},
+url_code={https://github.com/alekdimi/arms},
 abstract={Estimating the gradients for binary variables is a task that arises frequently in various domains, such as training discrete latent variable models. What has been commonly used is a REINFORCE based Monte Carlo estimation method that uses either independent samples or pairs of negatively correlated samples. To better utilize more than two samples, we propose ARMS, an Antithetic REINFORCE-based Multi-Sample gradient estimator. ARMS uses a copula to generate any number of mutually antithetic samples. It is unbiased, has low variance, and generalizes both DisARM, which we show to be ARMS with two samples, and the leave-one-out REINFORCE (LOORF) estimator, which is ARMS with uncorrelated samples. We evaluate ARMS on several datasets for training generative models, and our experimental results show that it outperforms competing methods. We also develop a version of ARMS for optimizing the multi-sample variational bound, and show that it outperforms both VIMCO and DisARM. The code is publicly available.}
 }
 
@@ -312,6 +345,7 @@ year={2021},
 url={https://arxiv.org/abs/2107.02757},
 pdf={https://arxiv.org/pdf/2107.02757.pdf},
 url_arxiv={https://arxiv.org/abs/2107.02757},
+url_code={https://github.com/BoChenGroup/SawETM},
 Note = {(the first two authors contributed equally)},
 abstract={Hierarchical topic models such as the gamma belief network (GBN) have delivered promising results in mining multi-layer document representations and discovering interpretable topic taxonomies. However, they often assume in the prior that the topics at each layer are independently drawn from the Dirichlet distribution, ignoring the dependencies between the topics both at the same layer and across different layers. To relax this assumption, we propose sawtooth factorial topic embedding guided GBN, a deep generative model of documents that captures the dependencies and semantic similarities between the topics in the embedding space. Specifically, both the words and topics are represented as embedding vectors of the same dimension. The topic matrix at a layer is factorized into the product of a factor loading matrix and a topic embedding matrix, the transpose of which is set as the factor loading matrix of the layer above. Repeating this particular type of factorization, which shares components between adjacent layers, leads to a structure referred to as sawtooth factorization. An auto-encoding variational inference network is constructed to optimize the model parameter via stochastic gradient descent. Experiments on big corpora show that our models outperform other neural topic models on extracting deeper interpretable topics and deriving better document representations.}
 }
@@ -332,15 +366,20 @@ abstract={Hierarchical topic models such as the gamma belief network (GBN) have 
 }
 
 
-@article{guo2021matching,
-      title={Matching Visual Features to Hierarchical Semantic Topics for Image Paragraph Captioning}, 
-      author={Dandan Guo and Ruiying Lu and Bo Chen and Zequn Zeng and Mingyuan Zhou},
-      year={2022},
-      journal={to appear in International Journal of Computer Vision},
-  url={https://arxiv.org/abs/2105.04143},
+
+
+@article{guo2022matching,
+  title={Matching Visual Features to Hierarchical Semantic Topics for Image Paragraph Captioning},
+  author={Guo, Dandan and Lu, Ruiying and Chen, Bo and Zeng, Zequn and Zhou, Mingyuan},
+  journal={International Journal of Computer Vision},
+  pages={1--18},
+  year={2022},
+    url={https://link.springer.com/article/10.1007/s11263-022-01624-6},
   pdf={https://arxiv.org/pdf/2105.04143.pdf},
   url_arxiv={https://arxiv.org/abs/2105.04143},
-      abstract={Observing a set of images and their corresponding paragraph-captions, a challenging task is to learn how to produce a semantically coherent paragraph to describe the visual content of an image. Inspired by recent successes in integrating semantic topics into this task, this paper develops a plug-and-play hierarchical-topic-guided image paragraph generation framework, which couples a visual extractor with a deep topic model to guide the learning of a language model. To capture the correlations between the image and text at multiple levels of abstraction and learn the semantic topics from images, we design a variational inference network to build the mapping from image features to textual captions. To guide the paragraph generation, the learned hierarchical topics and visual features are integrated into the language model, including Long Short-Term Memory (LSTM) and Transformer, and jointly optimized. Experiments on public dataset demonstrate that the proposed models, which are competitive with many state-of-the-art approaches in terms of standard evaluation metrics, can be used to both distill interpretable multi-layer topics and generate diverse and coherent captions.}
+  Note = {(the first three authors contributed equally)},
+      abstract={Observing a set of images and their corresponding paragraph-captions, a challenging task is to learn how to produce a semantically coherent paragraph to describe the visual content of an image. Inspired by recent successes in integrating semantic topics into this task, this paper develops a plug-and-play hierarchical-topic-guided image paragraph generation framework, which couples a visual extractor with a deep topic model to guide the learning of a language model. To capture the correlations between the image and text at multiple levels of abstraction and learn the semantic topics from images, we design a variational inference network to build the mapping from image features to textual captions. To guide the paragraph generation, the learned hierarchical topics and visual features are integrated into the language model, including Long Short-Term Memory and Transformer, and jointly optimized. Experiments on public datasets demonstrate that the proposed models, which are competitive with many state-of-the-art approaches in terms of standard evaluation metrics, can be used to both distill interpretable multi-layer semantic topics and generate diverse and coherent captions.},
+  publisher={Springer}
 }
 
 
@@ -350,6 +389,9 @@ title={{EnsLM}: Ensemble Language Model for Data Diversity by Semantic Clusterin
 author={Zhibin Duan and Hao Zhang and Chaojie Wang and Zhengjue Wang and Bo Chen and Mingyuan Zhou
 },
 booktitle={ACL-IJCNLP 2021: The Joint Conference of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing},
+url={https://aclanthology.org/2021.acl-long.230/},
+pdf={https://aclanthology.org/2021.acl-long.230.pdf},
+url_code={https://github.com/bochengroup/enslm},
 month={Aug.},
 year={2021}
 }
@@ -391,32 +433,34 @@ abstract={Single domain generalization aims to learn a model that performs well 
 
 
 
-
-
 @inproceedings{armandpour2021partition,
 title={Partition-Guided GANs},
 author={Mohammadreza Armandpour and Ali Sadeghian and  Chunyuan Li and  Mingyuan Zhou},
 booktitle={CVPR 2021: Conference on Computer Vision and Pattern Recognition},
 month={June},
 year={2021},
-url={https://arxiv.org/abs/2104.00816},
+url={https://www.computer.org/csdl/proceedings-article/cvpr/2021/450900f095/1yeI3P6bZQc},
 pdf={https://arxiv.org/pdf/2104.00816.pdf},
 url_arxiv={https://arxiv.org/abs/2104.00816},
+url_code={https://github.com/alisadeghian/PGMGAN},
 abstract={Despite the success of Generative Adversarial Networks (GANs), their training suffers from several well-known problems, including mode collapse and difficulties learning a disconnected set of manifolds. In this paper, we break down the challenging task of learning complex high dimensional distributions, supporting diverse data samples, to simpler sub-tasks. Our solution relies on designing a partitioner that breaks the space into smaller regions, each having a simpler distribution, and training a different generator for each partition. This is done in an unsupervised manner without requiring any labels. We formulate two desired criteria for the space partitioner that aid the training of our mixture of generators: 1) to produce connected partitions and 2) provide a proxy of distance between partitions and data samples, along with a direction for reducing that distance. These criteria are developed to avoid producing samples from places with non-existent data density, and also facilitate training by providing additional direction to the generators. We develop theoretical constraints for a space partitioner to satisfy the above criteria. Guided by our theoretical analysis, we design an effective neural architecture for the space partitioner that empirically assures these conditions. Experimental results on various standard benchmarks show that the proposed unsupervised model outperforms several recent methods.}
 }
 
 
-@article {Cramer2021.02.03.21250974,
-	author = {Cramer et al.},
-	title = {Evaluation of individual and ensemble probabilistic forecasts of {COVID-19} mortality in the {US}},
-	elocation-id = {2021.02.03.21250974},
-	year = {2021},
-	doi = {10.1101/2021.02.03.21250974},
-	publisher = {Cold Spring Harbor Laboratory Press},
-	abstract = {Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. In 2020, the COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. Half of the models evaluated showed better accuracy than a na{\"\i}ve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.Competing Interest StatementAV, MC, and APP report grants from Metabiota Inc outside the submitted work.Funding StatementFor teams that reported receiving funding for their work, we report the sources and disclosures below. CMU-TimeSeries: CDC Center of Excellence, gifts from Google and Facebook. CU-select: NSF DMS-2027369 and a gift from the Morris-Singer Foundation. COVIDhub: This work has been supported by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS or the National Institutes of Health. Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information\&amp; Data Science Pilot Project. Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation. DDS-NBDS: NSF III-1812699. EPIFORECASTS-ENSEMBLE1: Wellcome Trust (210758/Z/18/Z) GT_CHHS-COVID19: William W. George Endowment, Virginia C. and Joseph C. Mello Endowments, NSF DGE-1650044, NSF MRI 1828187, research cyberinfrastructure resources and services provided by the Partnership for an Advanced Computing Environment (PACE) at Georgia Tech, and the following benefactors at Georgia Tech: Andrea Laliberte, Joseph C. Mello, Richard Rick E. \&amp; Charlene Zalesky, and Claudia \&amp; Paul Raines GT-DeepCOVID: CDC MInD-Healthcare U01CK000531-Supplement. NSF (Expeditions CCF-1918770, CAREER IIS-2028586, RAPID IIS-2027862, Medium IIS-1955883, NRT DGE-1545362), CDC MInD program, ORNL and funds/computing resources from Georgia Tech and GTRI. IHME: This work was supported by the Bill \&amp; Melinda Gates Foundation, as well as funding from the state of Washington and the National Science Foundation (award no. FAIN: 2031096). IowaStateLW-STEM: Iowa State University Plant Sciences Institute Scholars Program, NSF DMS-1916204, NSF CCF-1934884, Laurence H. Baker Center for Bioinformatics and Biological Statistics. JHU_IDD-CovidSP: State of California, US Dept of Health and Human Services, US Dept of Homeland Security, US Office of Foreign Disaster Assistance, Johns Hopkins Health System, Office of the Dean at Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Modeling and Policy Hub, Centers for Disease Control and Prevention (5U01CK000538-03), University of Utah Immunology, Inflammation, \&amp; Infectious Disease Initiative (26798 Seed Grant). LANL-GrowthRate: LANL LDRD 20200700ER. MOBS-GLEAM_COVID: COVID Supplement CDC-HHS-6U01IP001137-01. NotreDame-mobility and NotreDame-FRED: NSF RAPID DEB 2027718 UA-EpiCovDA: NSF RAPID Grant $\#$ 2028401. UCSB-ACTS: NSF RAPID IIS 2029626. UCSD-NEU: Google Faculty Award, DARPA W31P4Q-21-C-0014, COVID Supplement CDC-HHS-6U01IP001137-01. UMass-MechBayes: NIGMS R35GM119582, NSF 1749854. UMich-RidgeTfReg: The University of Michigan Physics Department and the University of Michigan Office of Research.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:UMass-Amherst IRBAll necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.YesAll data and code referred to in the manuscript are publicly available. https://github.com/reichlab/covid19-forecast-hub/ https://github.com/reichlab/covidEnsembles https://zoltardata.com/project/44},
-	URL = {https://www.medrxiv.org/content/early/2021/02/05/2021.02.03.21250974},
-	eprint = {https://www.medrxiv.org/content/early/2021/02/05/2021.02.03.21250974.full.pdf},
-	journal = {medRxiv}
+
+
+@article{cramer2022evaluation,
+  title={Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States},
+  author={Cramer et al.},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={119},
+  number={15},
+  pages={e2113561119},
+  year={2022},
+  publisher={National Acad Sciences},
+  url={https://www.pnas.org/doi/abs/10.1073/pnas.2113561119},
+  url_arxiv={https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3},
+  abstract={Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. Starting in April 2020, the US COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized tens of millions of specific predictions from more than 90 different academic, industry, and independent research groups. A multimodel ensemble forecast that combined predictions from dozens of groups every week provided the most consistently accurate probabilistic forecasts of incident deaths due to COVID-19 at the state and national level from April 2020 through October 2021. The performance of 27 individual models that submitted complete forecasts of COVID-19 deaths consistently throughout this year showed high variability in forecast skill across time, geospatial units, and forecast horizons. Two-thirds of the models evaluated showed better accuracy than a naïve baseline model. Forecast accuracy degraded as models made predictions further into the future, with probabilistic error at a 20-wk horizon three to five times larger than when predicting at a 1-wk horizon. This project underscores the role that collaboration and active coordination between governmental public-health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.}
 }
 
 
@@ -439,6 +483,7 @@ abstract={We introduce graph gamma process (GGP) linear dynamical systems to mod
 year={2021},
 url={http://proceedings.mlr.press/v130/lotfi-rezaabad21a.html},
 pdf={http://proceedings.mlr.press/v130/lotfi-rezaabad21a/lotfi-rezaabad21a.pdf},
+url_code={https://github.com/utcsilab/ESI_HGE},
 abstract={Hyperbolic graph embedding with enhanced semi-implicit variational inference.
 AbstractEfficient modeling of relational data arising in physical, social, and information sciences is challenging due to complicated dependencies within the data. In this work we build off of semi-implicit graph variational auto-encoders to capture higher order statistics in a low-dimensional graph latent representation. We incorporate hyperbolic geometry in the latent space through a poincare embedding to efficiently represent graphs exhibiting hierarchical structure. To address the naive posterior latent distribution assumptions in classical variational inference, we use semi-implicit hierarchical variational Bayes to implicitly capture posteriors of given graph data, which may exhibit heavy tails, multiple modes, skewness, and highly correlated latent structures. We show that the existing semi-implicit variational inference objective provably reduces information in the observed graph. Based on this observation, we estimate and add an additional mutual information term to the semi-implicit variational inference learning objective to capture rich correlations arising between the input and latent spaces. We show that the inclusion of this regularization term in conjunction with the poincare embedding boosts the quality of learned high-level representations and enables more flexible and faithful graphical modeling. We experimentally demonstrate that our approach outperforms existing graph variational auto-encoders both in Euclidean and in hyperbolic spaces for edge link prediction and node classification.}
 }
@@ -453,6 +498,7 @@ year={2021},
 url={https://openreview.net/forum?id=ct8_a9h1M},
 pdf={https://openreview.net/pdf?id=ct8_a9h1M},
 url_arxiv={https://arxiv.org/abs/2103.04181},
+url_code={https://github.com/szhang42/Contextual_dropout_release},
 abstract={Dropout has been demonstrated as a simple and effective module to not only regularize the training process of deep neural networks, but also provide the uncertainty estimation for prediction. However, the quality of uncertainty estimation is highly dependent on the dropout probabilities. Most current models use the same dropout distributions across all data samples due to its simplicity.  Despite the potential gains in the flexibility of modeling uncertainty, sample-dependent dropout, on the other hand, is less explored as it often encounters scalability issues or involves non-trivial model changes.  In this paper, we propose contextual dropout with an efficient structural design as a simple and scalable sample-dependent dropout module, which can be applied to a wide range of models at the expense of only slightly increased memory and computational cost. We learn the dropout probabilities with a variational objective, compatible with both Bernoulli dropout and Gaussian dropout. We apply the contextual dropout module to various models with applications to image classification and visual question answering and demonstrate the scalability of the method with large-scale datasets, such as ImageNet and VQA 2.0. Our experimental results show that the proposed method outperforms baseline methods in terms of both accuracy and quality of uncertainty estimation.}
 }
 
@@ -551,12 +597,15 @@ pdf={https://aclanthology.org/2020.emnlp-main.35.pdf
       title={Variational Temporal Deep Generative Model for Radar {HRRP} Target Recognition}, 
       author={Dandan Guo and Bo Chen and Wenchao Chen and Chaojie Wang and Hongwei Liu and Mingyuan Zhou},
       year={2020},
-      journal={To appear in IEEE Trans. Signal Processing},
+      journal={IEEE Transactions on Signal Processing},
+  volume={68},
+  pages={5795--5809},
       url={https://arxiv.org/abs/2009.13011},
     pdf={https://arxiv.org/pdf/2009.13011.pdf},
     url_arxiv={https://arxiv.org/abs/2009.13011},
     abstract={We develop a recurrent gamma belief network (rGBN) for radar automatic target recognition (RATR) based on high-resolution range profile (HRRP), which characterizes the temporal dependence across the range cells of HRRP. The proposed rGBN adopts a hierarchy of gamma distributions to build its temporal deep generative model. For scalable training and fast out-of-sample prediction, we propose the hybrid of a stochastic-gradient Markov chain Monte Carlo (MCMC) and a recurrent variational inference model to perform posterior inference. To utilize the label information to extract more discriminative latent representations, we further propose supervised rGBN to jointly model the HRRP samples and their corresponding labels. Experimental results on synthetic and measured HRRP data show that the proposed models are efficient in computation, have good classification accuracy and generalization ability, and provide highly interpretable multi-stochastic-layer latent structure.}
 }
+
 
 
 
@@ -583,15 +632,16 @@ consistently exhibit  good  predictive performance in comparison to a variety of
 	
 
 
-@article{yin2020probabilistic,
+@article{yin2022probabilistic,
   title={Probabilistic Best Subset Selection by Gradient-Based Optimization},
   author={Yin, Mingzhang and Ho, Nhat and Yan, Bowei and Qian, Xiaoning and Zhou, Mingyuan},
   journal={arXiv preprint arXiv:2006.06448},
-  year={2020},
+  mon={June},
+  year={2022},
   url={https://arxiv.org/abs/2006.06448},
   pdf={https://arxiv.org/pdf/2006.06448.pdf},
   url_arxiv={https://arxiv.org/abs/2006.06448},
-  abstract={In high-dimensional statistics, variable selection is an optimization problem aiming to recover the latent sparse pattern from all possible covariate combinations. In this paper, we transform the optimization problem from a discrete space to a continuous one via reparameterization. The new objective function is a reformulation of the exact L0-regularized regression problem (a.k.a. best subset selection). In the framework of stochastic gradient descent, we propose a family of unbiased and efficient gradient estimators that are used to optimize the best subset selection objective and its variational lower bound. Under this family, we identify the estimator with non-vanishing signal-to-noise ratio and uniformly minimum variance. Theoretically we study the general conditions under which the method is guaranteed to converge to the ground truth in expectation. In a wide variety of synthetic and real data sets, the proposed method outperforms existing ones based on penalized regression or best subset selection, in both sparse pattern recovery and out-of-sample prediction. Our method can find the true regression model from thousands of covariates in a couple of seconds.}
+  abstract={In high-dimensional statistics, variable selection recovers the latent sparse patterns from all possible covariate combinations. This paper proposes a novel optimization method to solve the exact L0-regularized regression problem, which is also known as the best subset selection. We reformulate the optimization problem from a discrete space to a continuous one via probabilistic reparameterization. The new objective function is differentiable but its gradient often cannot be computed in a closed form. Then we propose a family of unbiased gradient estimators to optimize the best subset selection objectives by the stochastic gradient descent. Within this family, we identify the estimator with uniformly minimum variance. Theoretically, we study the general conditions under which the method is guaranteed to converge to the ground truth in expectation. The proposed method can find the true regression model from thousands of covariates in seconds. In a wide variety of synthetic and semi-synthetic data, the proposed method outperforms existing variable selection tools based on the relaxed penalties, coordinate descent, and mixed integer optimization in both sparse pattern recovery and out-of-sample prediction.}
 }
 
 
@@ -599,13 +649,19 @@ consistently exhibit  good  predictive performance in comparison to a variety of
 @article{zhang2020deep,
   title={Deep Autoencoding Topic Model with Scalable Hybrid {B}ayesian Inference},
   author={Zhang, Hao and Chen, Bo and Cong, Yulai and Guo, Dandan and Liu, Hongwei and Zhou, Mingyuan},
-  journal={To appear in IEEE TPAMI},
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={43},
+  number={12},
+  pages={4306--4322},
   year={2020},
-  url={http://arxiv.org/abs/2006.08804},
+  url={https://ieeexplore.ieee.org/document/9121755},
   pdf={Papers/DATM_PAMI2020.pdf},
   url_arxiv={http://arxiv.org/abs/2006.08804},
   abstract={To build a flexible and interpretable model for document analysis, we develop deep autoencoding topic model (DATM) that uses a hierarchy of gamma distributions to construct its multi-stochastic-layer generative network. In order to provide scalable posterior inference for the parameters of the generative network, we develop topic-layer-adaptive stochastic gradient Riemannian MCMC that jointly learns simplex-constrained global parameters across all layers and topics, with topic and layer specific learning rates. Given a posterior sample of the global parameters, in order to efficiently infer the local latent representations of a document under DATM across all stochastic layers, we propose a Weibull upward-downward variational encoder that deterministically propagates information upward via a deep neural network, followed by a Weibull distribution based stochastic downward generative model. To jointly model documents and their associated labels, we further propose supervised DATM that enhances the discriminative power of its latent representations. The efficacy and scalability of our models are demonstrated on both unsupervised and supervised learning tasks on big corpora.}
 }
+
+
+
 
 
 @article{li2020semi,
@@ -685,6 +741,7 @@ consistently exhibit  good  predictive performance in comparison to a variety of
   url={https://arxiv.org/abs/2006.04064},
   url_arxiv={https://arxiv.org/abs/2006.04064},
   url_pdf={https://arxiv.org/pdf/2006.04064.pdf},
+  url_code={https://github.com/armanihm/GDC},
   abstract={We propose a unified framework for adaptive connection sampling in graph neural networks (GNNs) that generalizes existing stochastic regularization methods for training GNNs. The proposed framework not only alleviates over-smoothing and over-fitting tendencies of deep GNNs, but also enables learning with uncertainty in graph analytic tasks with GNNs. Instead of using fixed sampling rates or hand-tuning them as model hyperparameters in existing stochastic regularization methods, our adaptive connection sampling can be trained jointly with GNN model parameters in both global and local fashions. GNN training with adaptive connection sampling is shown to be mathematically equivalent to an efficient approximation of training Bayesian GNNs. Experimental results with ablation studies on benchmark datasets validate that adaptively learning the sampling rate given graph training data is the key to boost the performance of GNNs in semi-supervised node classification, less prone to over-smoothing and over-fitting with more robust prediction.}
 }
 
@@ -795,7 +852,7 @@ year={2020},
 url={https://openreview.net/forum?id=r1lOgyrKDS},
 pdf={Papers/ACMC_ICLR2020.pdf},
 url_arxiv={https://arxiv.org/abs/1912.13151},
-url_code={https://github.com/xinjiefan/ACMC_ICL},
+url_code={https://github.com/xinjiefan/ACMC_ICLR},
 abstract={Sequence generation models are commonly refined with reinforcement learning over user-defined metrics. However, high gradient variance hinders the practical use of this method. To stabilize this method, we adapt to contextual generation of categorical sequences a policy gradient estimator, which evaluates a set of correlated Monte Carlo (MC) rollouts for variance control. Due to the correlation, the number of unique rollouts is random and adaptive to model uncertainty; those rollouts naturally become baselines for each other, and hence are combined to effectively reduce gradient variance. We also demonstrate the use of correlated MC rollouts for binary-tree softmax models, which reduce the high generation cost in large vocabulary scenarios by decomposing each categorical action into a sequence of binary actions. We evaluate our methods on both neural program synthesis and image captioning. The proposed methods yield lower gradient variance and consistent improvement over related baselines.}
 }
 
@@ -1058,7 +1115,6 @@ year = {2018},
 url = {https://papers.nips.cc/paper/8064-deep-poisson-gamma-dynamical-systems.html},
 pdf={Papers/Guo_DPGDS_NIPS2018.pdf},
 url_arxiv={https://arxiv.org/abs/1810.11209},
-url_code={https://github.com/BoChenGroup/DPGDS},
 abstract={We develop deep Poisson-gamma dynamical systems (DPGDS) to model sequentially observed multivariate count data, improving previously proposed models by not only mining deep hierarchical latent structure from the data, but also capturing both first-order and long-range temporal dependencies. Using sophisticated but simple-to-implement data augmentation techniques, we derived closed-form Gibbs sampling update equations by first backward and upward propagating auxiliary latent counts, and then forward and downward sampling latent variables. Moreover, we develop stochastic gradient MCMC inference that is scalable to very long multivariate count time series. Experiments on both synthetic and a variety of real-world data demonstrate that the proposed model not only has excellent predictive performance, but also provides highly interpretable multilayer latent structure to represent hierarchical and temporal information propagation.}
 }
 
@@ -1452,6 +1508,7 @@ url_arxiv={https://arxiv.org/abs/1606.01855},
 url_slide={http://www.columbia.edu/~as5530/ScheinZhouBleiWallach2016_slides.pdf},
 url_video={http://techtalks.tv/talks/bayesian-poisson-tucker-decomposition-for-learning-the-structure-of-international-relations/62411/},
 url_poster={http://www.columbia.edu/~as5530/ScheinZhouBleiWallach2016_poster.pdf},
+url_code={https://github.com/aschein/bptd},
 abstract = 	 {We introduce Bayesian Poisson Tucker decomposition (BPTD) for modeling country–country interaction event data. These data consist of interaction events of the form “country i took action a toward country j at time t.” BPTD discovers overlapping country–community memberships, including the number of latent communities. In addition, it discovers directed community–community interaction networks that are specific to “topics” of action types and temporal “regimes.” We show that BPTD yields an efficient MCMC inference algorithm and achieves better predictive performance than related models. We also demonstrate that it discovers interpretable latent structure that agrees with our knowledge of international relations.}
 }
 
