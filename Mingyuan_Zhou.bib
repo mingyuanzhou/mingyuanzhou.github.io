@@ -10,6 +10,35 @@
 }
 
 
+@article{wang2022diffusion,
+      title={Diffusion-{GAN}: Training {GANs} with Diffusion}, 
+      author={Zhendong Wang and Huangjie Zheng and Pengcheng He and Weizhu Chen and Mingyuan Zhou},
+      year={2022},
+journal={arXiv preprint arXiv:2206.02262},
+  url={https://arxiv.org/abs/2206.02262},
+  pdf={https://arxiv.org/pdf/2206.02262.pdf},
+  url_arxiv={https://arxiv.org/abs/2206.02262},
+    url_code={https://github.com/Zhendong-Wang/Diffusion-GAN},
+      abstract={Generative adversarial networks (GANs) are challenging to train stably, and a promising remedy of injecting instance noise into the discriminator input has not been very effective in practice.  In this paper, we propose Diffusion-GAN, a novel GAN framework that leverages a forward diffusion chain to generate Gaussian-mixture distributed instance noise. Diffusion-GAN consists of three components, including an adaptive diffusion process, a diffusion timestep-dependent discriminator, and a generator. Both the observed and generated data are diffused by the adaptive diffusion process via different noise-to-data ratios at each timestep. The timestep-dependent discriminator learns to distinguish the diffused real data from the diffused generated data at each diffusion timestep. The generator learns from the discriminator's feedback by backpropagating through the forward diffusion chain, whose length is adaptively adjusted to balance the noise and data levels. We theoretically show that the discriminator's timestep-dependent strategy gives consistent and helpful guidance to the generator, enabling it to match the true data distribution. We demonstrate the advantages of Diffusion-GAN over strong GAN baselines on various datasets, showing that it can produce more realistic images with higher stability and data efficiency than state-of-the-art GANs.
+}
+}
+
+
+
+@article{zheng2022truncated,
+      title={Truncated Diffusion Probabilistic Models and Diffusion-based Adversarial Auto-Encoders}, 
+      author={Huangjie Zheng and Pengcheng He and Weizhu Chen and Mingyuan Zhou},
+      year={2022},
+journal={arXiv preprint arXiv:2202.09671},
+  url={https://arxiv.org/abs/2202.09671},
+  pdf={https://arxiv.org/pdf/2202.09671.pdf},
+  url_arxiv={https://arxiv.org/abs/2202.09671},
+  url_code={https://github.com/JegZheng/truncated-diffusion-probabilistic-models
+},
+      abstract={Employing a forward diffusion chain to gradually map the data to a  noise distribution, diffusion-based generative models learn how to generate the data by inferring a reverse diffusion chain. However, this approach is slow and costly because it needs many forward and reverse steps. We propose a faster and cheaper approach that adds noise not until the data become pure random noise, but until they reach a hidden noisy-data distribution that we can confidently learn. Then, we use fewer reverse steps to generate data by starting from this hidden distribution that is made similar to the noisy data. We reveal that the proposed model can be cast as an adversarial auto-encoder empowered by both the diffusion process and a learnable implicit prior. Experimental results show even with a significantly smaller number of reverse diffusion steps, the proposed truncated diffusion probabilistic models can provide consistent improvements over the non-truncated ones in terms of performance in both unconditional and text-guided image generations.}
+}
+
+
 
 @inproceedings{han2022card,
       title={{CARD}: Classification and Regression Diffusion Models}, 
@@ -128,19 +157,6 @@ abstract={This paper proposes probabilistic conformal prediction (PCP), a predic
 
 
 
-@article{wang2022diffusion,
-      title={Diffusion-{GAN}: Training {GANs} with Diffusion}, 
-      author={Zhendong Wang and Huangjie Zheng and Pengcheng He and Weizhu Chen and Mingyuan Zhou},
-      year={2022},
-journal={arXiv preprint arXiv:2206.02262},
-  url={https://arxiv.org/abs/2206.02262},
-  pdf={https://arxiv.org/pdf/2206.02262.pdf},
-  url_arxiv={https://arxiv.org/abs/2206.02262},
-    url_code={https://github.com/Zhendong-Wang/Diffusion-GAN},
-      abstract={For stable training of generative adversarial networks (GANs), injecting instance noise into the input of the discriminator is considered as a theoretically sound solution, which, however, has not yet delivered on its promise in practice. This paper introduces Diffusion-GAN that employs a Gaussian mixture distribution, defined over all the diffusion steps of a forward diffusion chain, to inject instance noise. A random sample from the mixture, which is diffused from an observed or generated data, is fed as the input to the discriminator. The generator is updated by backpropagating its gradient through the forward diffusion chain, whose length is adaptively adjusted to control the maximum noise-to-data ratio allowed at each training step. Theoretical analysis verifies the soundness of the proposed Diffusion-GAN, which provides model- and domain-agnostic differentiable augmentation. A rich set of experiments on diverse datasets show that Diffusion-GAN can provide stable and data-efficient GAN training, bringing consistent performance improvement over strong GAN baselines for synthesizing photo-realistic images.
-}
-}
-
 
 @inproceedings{yang2022regularizing,
 title={Regularizing a Model-based Policy Stationary Distribution to Stabilize Offline Reinforcement Learning},
@@ -205,20 +221,6 @@ journal={arXiv preprint arXiv:2202.09673},
 }
 }
 
-
-@article{zheng2022truncated,
-      title={Truncated Diffusion Probabilistic Models}, 
-      author={Huangjie Zheng and Pengcheng He and Weizhu Chen and Mingyuan Zhou},
-      year={2022},
-journal={arXiv preprint arXiv:2202.09671},
-  url={https://arxiv.org/abs/2202.09671},
-  pdf={https://arxiv.org/pdf/2202.09671.pdf},
-  url_arxiv={https://arxiv.org/abs/2202.09671},
-  url_code={https://github.com/JegZheng/truncated-diffusion-probabilistic-models
-},
-      abstract={Employing a forward Markov diffusion chain to gradually map the data to a noise distribution, diffusion probabilistic models learn how to generate the data by inferring a reverse Markov diffusion chain to invert the forward diffusion process. To achieve competitive data generation performance, they demand a long diffusion chain that makes them computationally intensive in not only training but also generation. To significantly improve the computation efficiency, we propose to truncate the forward diffusion chain by abolishing the requirement of diffusing the data to random noise. Consequently, we start the inverse diffusion chain from an implicit generative distribution, rather than random noise, and learn its parameters by matching it to the distribution of the data corrupted by the truncated forward diffusion chain. Experimental results show our truncated diffusion probabilistic models provide consistent improvements over the non-truncated ones in terms of the generation performance and the number of required inverse diffusion steps.
-}
-}
 
 
 
