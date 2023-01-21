@@ -52,6 +52,29 @@ booktitle={ICLR 2023: International Conference on Learning Representations},
 
 
 
+@inproceedings{wang2022probabilistic,
+      title = {Probabilistic Conformal Prediction Using Conditional Random Samples},
+      author={Wang, Zhendong and Gao, Ruijiang and Yin, Mingzhang and Zhou, Mingyuan and Blei, David M.},
+      year={2023},
+booktitle={AISTATS 2023: International Conference on Artificial Intelligence and Statistics},
+  url = {https://arxiv.org/abs/2206.06584},
+  pdf={https://arxiv.org/pdf/2206.06584},
+  url_arxiv={https://arxiv.org/abs/2206.06584},
+  Note = {(the first three authors contributed equally)},
+abstract={This paper proposes probabilistic conformal prediction (PCP), a predictive inference algorithm that estimates a target variable by a discontinuous predictive set. Given inputs, PCP constructs the predictive set based on random samples from an estimated generative model. It is efficient and compatible with conditional generative models with either explicit or implicit density functions. We show that PCP guarantees correct marginal coverage with finite samples and give empirical evidence of conditional coverage. We study PCP on a variety of simulated and real datasets. Compared to existing conformal prediction methods, PCP provides sharper predictive sets.}
+}
+
+@inproceedings{wang2023uncertainty,
+  title={Uncertainty-aware Unsupervised Video Hashing},
+  author={Yucheng Wang and Xiaoning Qian and Mingyuan Zhou and Yu Sun
+},
+  booktitle={AISTATS 2023: International Conference on Artificial Intelligence and Statistics},
+year={2023},
+abstract={Learning to hash has become popular for video retrieval due to its fast speed and low storage consumption. Previous efforts formulate video hashing as training a binary auto-encoder, for which noncontinuous latent representations are optimized by the biased straight-through(ST) back-propagation heuristic. We propose to formulate video hashing as learning a discrete variational auto-encoder with the factorized Bernoulli latent distribution, termed as Bernoulli variational auto-encoder(BerVAE). The corresponding evidence lower bound(ELBO) in our BerVAE implementation leads to closed-form gradient expression and other unbiased gradient estimators to achieve principled training. BerVAE enables uncertainty-aware video hashing by predicting the probability distribution of video hash code-words, thus providing reliable uncertainty quantification. Experiments on both simulated and real-world large-scale video data demonstrate that our BerVAE trained with unbiased gradient estimators can achieve the state-of-the-art retrieval performance. Furthermore, we show that quantified uncertainty of our BerVAE is highly correlated to video retrieval performances, which can be leveraged to further improve the retrieval accuracy.}
+}
+
+
+
 @inproceedings{han2022card,
       title={{CARD}: Classification and Regression Diffusion Models}, 
       author={Xizewen Han and Huangjie Zheng and Mingyuan Zhou},
@@ -158,17 +181,6 @@ year = {2022}
 
 
 
-@article{wang2022probabilistic,
-      title = {Probabilistic Conformal Prediction Using Conditional Random Samples},
-      author={Wang, Zhendong and Gao, Ruijiang and Yin, Mingzhang and Zhou, Mingyuan and Blei, David M.},
-      year={2022},
-journal={arXiv preprint arXiv:2206.06584},
-  url = {https://arxiv.org/abs/2206.06584},
-  pdf={https://arxiv.org/pdf/2206.06584},
-  url_arxiv={https://arxiv.org/abs/2206.06584},
-  Note = {(the first three authors contributed equally)},
-abstract={This paper proposes probabilistic conformal prediction (PCP), a predictive inference algorithm that estimates a target variable by a discontinuous predictive set. Given inputs, PCP construct the predictive set based on random samples from an estimated generative model. It is efficient and compatible with either explicit or implicit conditional generative models. Theoretically, we show that PCP guarantees correct marginal coverage with finite samples. Empirically, we study PCP on a variety of simulated and real datasets. Compared to existing methods for conformal inference, PCP provides sharper predictive sets.}
-}
 
 
 
