@@ -232,6 +232,11 @@ booktitle = {NeurIPS 2022: Neural Information Processing Systems},
   author={Shentao Yang and Yihao Feng and Shujian Zhang and Mingyuan Zhou},
   booktitle = {NeurIPS 2022: Neural Information Processing Systems},
   month={Dec.},
+  url={https://openreview.net/forum?id=5yjM1sQ1uKZ},
+  pdf={https://openreview.net/pdf?id=5yjM1sQ1uKZ},
+  url_arxiv={https://arxiv.org/abs/2210.05922},
+  url_code={https://github.com/Shentao-YANG/AMPL_NeurIPS2022},
+  abstract = {In offline model-based reinforcement learning (offline MBRL), we learn a dynamic model from historically collected data, and subsequently utilize the learned model and fixed datasets for policy learning, without further interacting with the environment. Offline MBRL algorithms can improve the efficiency and stability of policy learning over the model-free algorithms. However, in most of the existing offline MBRL algorithms, the learning objectives for the dynamic models and the policies are isolated from each other. Such an objective mismatch may lead to inferior performance of the learned agents. In this paper, we address this issue by developing an iterative offline MBRL framework, where we maximize a lower bound of the true expected return, by alternating between dynamic-model training and policy learning. With the proposed unified model-policy learning framework, we achieve competitive performance on a wide range of continuous-control offline reinforcement learning datasets. Source code is released at https://github.com/Shentao-YANG/AMPL_NeurIPS2022.},
   year={2022}
 }
 
@@ -241,6 +246,11 @@ booktitle = {NeurIPS 2022: Neural Information Processing Systems},
   title={Adaptive Distribution Calibration for Few-Shot Learning with Hierarchical Optimal Transport},
   author={Dandan Guo and Long Tian and He Zhao and Mingyuan Zhou and Hongyuan Zha},
   booktitle = {NeurIPS 2022: Neural Information Processing Systems},
+  url={https://openreview.net/forum?id=qOgSCLE5E8},
+  pdf = {https://openreview.net/pdf?id=qOgSCLE5E8},
+  url_arxiv = {https://arxiv.org/abs/2210.04144},
+  url_code = {https://github.com/DandanGuo1993/Adaptive-Distribution-Calibration-for-Few-Shot-Learning-with-Hierarchical-Optimal-Transport},
+  abstract = {Few-shot classification aims to learn a classifier to recognize unseen classes during training, where the learned model can easily become over-fitted based on the biased distribution formed by only a few training examples. A recent solution to this problem is calibrating the distribution of these few sample classes by transferring statistics from the base classes with sufficient examples, where how to decide the transfer weights from base classes to novel classes is the key. However, principled approaches for learning the transfer weights have not been carefully studied. To this end, we propose a novel distribution calibration method by learning the adaptive weight matrix between novel samples and base classes, which is built upon a hierarchical Optimal Transport (H-OT) framework. By minimizing the high-level OT distance between novel samples and base classes, we can view the learned transport plan as the adaptive weight information for transferring the statistics of base classes. The learning of the cost function between a base class and novel class in the high-level OT leads to the introduction of the low-level OT, which considers the weights of all the data samples in the base class. Experimental results on standard benchmarks demonstrate that our proposed plug-and-play model outperforms competing approaches and owns desired cross-domain generalization ability, indicating the effectiveness of the learned adaptive weights.},
   month={Dec.},
   year={2022}
 }
@@ -250,10 +260,12 @@ booktitle = {NeurIPS 2022: Neural Information Processing Systems},
   title={Learning to Re-weight Examples with Optimal Transport for Imbalanced Classification},
   author={Guo, Dandan and Li, Zhuo and Zheng, Meixi and Zhao, He and Zhou, Mingyuan and Zha, Hongyuan},
   booktitle = {NeurIPS 2022: Neural Information Processing Systems},
-  url ={https://arxiv.org/abs/2208.02951},
+  url ={https://openreview.net/forum?id=Dh7eLBlTXb5},
   url_arxiv ={https://arxiv.org/abs/2208.02951},
-  pdf={https://arxiv.org/pdf/2208.02951},
+  url_code = {https://github.com/DandanGuo1993/reweight-imbalance-classification-with-OT},
+  pdf={https://openreview.net/pdf?id=Dh7eLBlTXb5},
   month={Dec.},
+  abstract = {Imbalanced data pose challenges for deep learning based classification models. One of the most widely-used approaches for tackling imbalanced data is re-weighting, where training samples are associated with different weights in the loss function. Most of existing re-weighting approaches treat the example weights as the learnable parameter and optimize the weights on the meta set, entailing expensive bilevel optimization. In this paper, we propose a novel re-weighting method based on optimal transport (OT) from a distributional point of view. Specifically, we view the training set as an imbalanced distribution over its samples, which is transported by OT to a balanced distribution obtained from the meta set. The weights of the training samples are the probability mass of the imbalanced distribution and learned by minimizing the OT distance between the two distributions. Compared with existing methods, our proposed one disengages the dependence of the weight learning on the concerned classifier at each iteration. Experiments on image, text and point cloud datasets demonstrate that our proposed re-weighting method has excellent performance, achieving state-of-the-art results in many cases and providing a promising tool for addressing the imbalanced classification issue. The code has been made available at https://github.com/DandanGuo1993/reweight-imbalance-classification-with-OT.}
   year={2022}
 }
 
