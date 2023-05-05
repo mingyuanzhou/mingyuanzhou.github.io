@@ -332,18 +332,16 @@ year = {2022}
 
 
 
-
-
-
 @inproceedings{yang2022regularizing,
 title={Regularizing a Model-based Policy Stationary Distribution to Stabilize Offline Reinforcement Learning},
 author={Shentao Yang and Yihao Feng and Shujian Zhang and Mingyuan Zhou},
 booktitle={ICML 2022: International Conference on Machine Learning},
 month={July},
 year={2022},
-url={https://arxiv.org/abs/2206.07166},
+url={https://proceedings.mlr.press/v162/yang22b},
 pdf={https://arxiv.org/pdf/2206.07166},
 url_arxiv={https://arxiv.org/abs/2206.07166},
+url_code={https://github.com/Shentao-YANG/SDM-GAN_ICML2022},
 abstract={Offline reinforcement learning (RL) extends the paradigm of classical RL algorithms to purely learning from static datasets, without interacting with the underlying environment during the learning process. A key challenge of offline RL is the instability of policy training, caused by the mismatch between the distribution of the offline data and the undiscounted stationary state-action distribution of the learned policy. To avoid the detrimental impact of distribution mismatch, we regularize the undiscounted stationary distribution of the current policy towards the offline data during the policy optimization process. Further, we train a dynamics model to both implement this regularization and better estimate the stationary distribution of the current policy, reducing the error induced by distribution mismatch. On a wide range of continuous-control offline RL datasets, our method indicates competitive performance, which validates our algorithm. The code is publicly available.}
 }
 
@@ -354,10 +352,10 @@ booktitle={ICML 2022: International Conference on Machine Learning},
 month={July},
 year={2022},
 Note = {(the first two authors contributed equally)},
-url={},
-pdf={},
-url_arxiv={},
-abstract={}
+url={https://proceedings.mlr.press/v162/chen22x.html},
+pdf={https://proceedings.mlr.press/v162/chen22x/chen22x.pdf},
+url_code={https://github.com/BoChenGroup/DVGCRN},
+abstract={Anomaly detection within multivariate time series (MTS) is an essential task in both data mining and service quality management. Many recent works on anomaly detection focus on designing unsupervised probabilistic models to extract robust normal patterns of MTS. In this paper, we model sensor dependency and stochasticity within MTS by developing an embedding-guided probabilistic generative network. We combine it with adaptive variational graph convolutional recurrent network %and get variational GCRN (VGCRN) to model both spatial and temporal fine-grained correlations in MTS. To explore hierarchical latent representations, we further extend VGCRN into a deep variational network, which captures multilevel information at different layers and is robust to noisy time series. Moreover, we develop an upward-downward variational inference scheme that considers both forecasting-based and reconstruction-based losses, achieving an accurate posterior approximation of latent variables with better MTS representations. The experiments verify the superiority of the proposed method over current state-of-the-art methods.}
 }
 
 @inproceedings{duan2022bayesian,
@@ -367,10 +365,9 @@ booktitle={ICML 2022: International Conference on Machine Learning},
 month={July},
 year={2022},
 Note = {(the first two authors contributed equally)},
-url={},
-pdf={},
-url_arxiv={},
-abstract={}
+url={https://proceedings.mlr.press/v162/duan22d.html},
+pdf={https://proceedings.mlr.press/v162/duan22d.pdf},
+abstract={Existing deep topic models are effective in capturing the latent semantic structures in textual data but usually rely on a plethora of documents. This is less than satisfactory in practical applications when only a limited amount of data is available. In this paper, we propose a novel framework that efficiently solves the problem of topic modeling under the small data regime. Specifically, the framework involves two innovations: a bi-level generative model that aims to exploit the task information to guide the document generation, and a topic meta-learner that strives to learn a group of global topic embeddings so that fast adaptation to the task-specific topic embeddings can be achieved with a few examples. We apply the proposed framework to a hierarchical embedded topic model and achieve better performance than various baseline models on diverse experiments, including few-shot topic discovery and few-shot document classification.}
 }
 
 
@@ -382,6 +379,7 @@ year={2022},
 url={https://arxiv.org/abs/2205.04980},
 pdf={https://arxiv.org/pdf/2205.04980.pdf},
 url_arxiv={https://arxiv.org/abs/2205.04980},
+url_code={https://github.com/szhang42/allsh},
       abstract={Active learning, which effectively collects informative unlabeled data for annotation, reduces the demand for labeled data. In this work, we propose to retrieve unlabeled samples with a local sensitivity and hardness-aware acquisition function. The proposed method generates data copies through local perturbations and selects data points whose predictive likelihoods diverge the most from their copies. We further empower our acquisition function by injecting the select-worst case perturbation. Our method achieves consistent gains over the commonly used active learning strategies in various classification tasks. Furthermore, we observe consistent improvements over the baselines on the study of prompt selection in prompt-based few-shot learning. These experiments demonstrate that our acquisition guided by local sensitivity and hardness can be effective and beneficial for many NLP tasks.}
 }
 
@@ -426,6 +424,7 @@ journal={arXiv preprint arXiv:2202.06510},
   year={2022},
   url={https://ieeexplore.ieee.org/abstract/document/9738490},
   publisher={IEEE},
+  url_code={https://github.com/BoChenGroup/ISPGDS},
   abstract={To model sequentially observed multivariate nonstationary count data, we propose a switching Poisson-gamma dynamical systems (SPGDS), a dynamic probabilistic network with switching mechanism. Different from previous models, SPGDS assigns its latent variables into mixture of gamma distributed parameters to model complex sequences and describe the nonlinear dynamics, meanwhile, capture various temporal dependencies. Moreover, SPGDS can model all discrete and nonnegative real data by linking them to latent counts. To take advantage of Bayesian nonparametrics in handling the unknown number of mixture components, we integrate Dirichlet process (DP) mixture into SPGDS and develop an infinite switching Poisson-gamma dynamical systems (iSPGDS). For efficient and nonparametric inference, we develop a infinite switching recurrent variational inference network, combined with a scalable hybrid stochastic gradient-MCMC and variational inference method, which is scalable to large scale sequences and fast in out-of-sample prediction. Besides, to handle the time-series categorization task, we further propose an supervised attention iSPGDS (attn-iSPGDS), which combines the representation power of iSPGDS, discriminative power of deep neural networks, and selection power of the attention mechanism under a principled probabilistic framework. Experiments on both unsupervised and supervised tasks demonstrate that the proposed model not only has excellent fitting and prediction performance on complex sequences, but also separates different dynamical patterns within them.}
 }
 
