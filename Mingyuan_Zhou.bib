@@ -277,6 +277,11 @@ author={Yishi Xu and Dongsheng Wang and Bo Chen and Ruiying Lu and Zhibin Duan a
 },
 booktitle = {NeurIPS 2022: Neural Information Processing Systems},
 month={Dec.},
+url={https://openreview.net/forum?id=ITqTRTJ-nAg},
+pdf={https://openreview.net/pdf?id=ITqTRTJ-nAg},
+url_code={https://github.com/NoviceStone/HyperMiner},
+url_arxiv = {https://arxiv.org/abs/2210.10625},
+abstract = {Embedded topic models are able to learn interpretable topics even with large and heavy-tailed vocabularies. However, they generally hold the Euclidean embedding space assumption, leading to a basic limitation in capturing hierarchical relations. To this end, we present a novel framework that introduces hyperbolic embeddings to represent words and topics. With the tree-likeness property of hyperbolic space, the underlying semantic hierarchy among words and topics can be better exploited to mine more interpretable topics. Furthermore, due to the superiority of hyperbolic geometry in representing hierarchical data, tree-structure knowledge can also be naturally injected to guide the learning of a topic hierarchy. Therefore, we further develop a regularization term based on the idea of contrastive learning to inject prior structural knowledge efficiently. Experiments on both topic taxonomy discovery and document representation demonstrate that the proposed framework achieves improved performance against existing embedded topic models.},
 year = {2022}
 }
 
@@ -286,6 +291,10 @@ title={Alleviating "Posterior Collapse" in Deep Topic Models via Policy Gradient
 author={Yewen Li and Chaojie Wang and Zhibin Duan and Dongsheng Wang and Bo Chen and Bo An and Mingyuan Zhou},
 booktitle = {NeurIPS 2022: Neural Information Processing Systems},
 month={Dec.},
+url={https://openreview.net/forum?id=LKPtAaJcuLx},
+url_code={https://github.com/yewen99/dc-ETM},
+pdf ={https://openreview.net/pdf?id=LKPtAaJcuLx},
+abstract = {Deep topic models have been proven as a promising way to extract hierarchical latent representations from documents represented as high-dimensional bag-of-words vectors. However, the representation capability of existing deep topic models is still limited by the phenomenon of "posterior collapse", which has been widely criticized in deep generative models, resulting in the higher-level latent representations exhibiting similar or meaningless patterns. To this end, in this paper, we first develop a novel deep-coupling generative process for existing deep topic models, which incorporates skip connections into the generation of documents, enforcing strong links between the document and its multi-layer latent representations. After that, utilizing data augmentation techniques, we reformulate the deep-coupling generative process as a Markov decision process and develop a corresponding Policy Gradient (PG) based training algorithm, which can further alleviate the information reduction at higher layers. Extensive experiments demonstrate that our developed methods can effectively alleviate "posterior collapse" in deep topic models, contributing to providing higher-quality latent document representations.},
 year = {2022}
 }
 
@@ -295,6 +304,11 @@ author={Dongsheng Wang and Yishi Xu and Miaoge Li and Zhibin Duan and Chaojie Wa
 },
 booktitle = {NeurIPS 2022: Neural Information Processing Systems},
 month={Dec.},
+url={https://openreview.net/forum?id=N2AGw9s-wvX},
+pdf={https://openreview.net/pdf?id=N2AGw9s-wvX},
+url_code = {https://github.com/wds2014/TopicKG},
+url_arxiv={https://arxiv.org/abs/2209.14228},
+abstract = {We propose a Bayesian generative model for incorporating prior domain knowledge into hierarchical topic modeling. Although embedded topic models (ETMs) and its variants have gained promising performance in text analysis, they mainly focus on mining word co-occurrence patterns, ignoring potentially easy-to-obtain prior topic hierarchies that could help enhance topic coherence. While several knowledge-based topic models have recently been proposed, they are either only applicable to shallow hierarchies or sensitive to the quality of the provided prior knowledge. To this end, we develop a novel deep ETM that jointly models the documents and the given prior knowledge by embedding the words and topics into the same space. Guided by the provided domain knowledge, the proposed model tends to discover topic hierarchies that are organized into interpretable taxonomies. Moreover, with a technique for adapting a given graph, our extended version allows the structure of the prior knowledge to be fine-tuned to match the target corpus. Extensive experiments show that our proposed model efficiently integrates the prior knowledge and improves both hierarchical topic discovery and document representation.},
 year = {2022}
 }
 
