@@ -37,12 +37,18 @@ year={2023}
 
 
 @inproceedings{chen2023learning,
-title={Learning to Jump: Thinning and Thickening Latent Counts as a General Method for Generative Modeling},
+title={Learning to Jump: Thinning and Thickening Latent Counts for Generative Modeling},
 author={Tianqi Chen and Mingyuan Zhou},
 booktitle={ICML 2023: International Conference on Machine Learning},
 month={July},
+url = {http://arxiv.org/abs/2305.18375},
+url_arxiv ={http://arxiv.org/abs/2305.18375},
+url_code = {https://github.com/tqch/poisson-jump},
+pdf = {http://arxiv.org/pdf/2305.18375},
+abstract = {Learning to denoise has emerged as a prominent paradigm to design state-of-the-art deep generative models for natural images. How to use it to model the distributions of both continuous real-valued data and categorical data has been well studied in recently proposed diffusion models. However, it is found in this paper to have limited ability in modeling some other types of data, such as count and non-negative continuous data, that are often highly sparse, skewed, heavy-tailed, and/or overdispersed. To this end, we propose learning to jump as a general recipe for generative modeling of various types of data. Using a forward count thinning process to construct learning objectives to train a deep neural network, it employs a reverse count thickening process to iteratively refine its generation through that network. We demonstrate when learning to jump is expected to perform comparably to learning to denoise, and when it is expected to perform better. For example, learning to jump is recommended when the training data is non-negative and exhibits strong sparsity, skewness, heavy-tailedness, and/or heterogeneity.},
 year={2023}
 }
+
 
 
 @inproceedings{tanwisuth2023pouf,
