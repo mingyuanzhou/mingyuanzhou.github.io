@@ -1,3 +1,46 @@
+
+@article{
+zheng2023contrastive,
+title={Contrastive Attraction and Contrastive Repulsion for Representation Learning},
+author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li and Ya Zhang and Hao Zhang and Ivor Tsang and Jingren Zhou and Mingyuan Zhou},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2023},
+url={https://openreview.net/forum?id=f39UIDkwwc},
+url_code={https://github.com/JegZheng/CACR-SSL},
+pdf={https://openreview.net/pdf?id=f39UIDkwwc},
+url_arxiv={https://arxiv.org/abs/2105.03746},
+abstract={Contrastive learning (CL) methods effectively learn data representations in a self-supervision manner, where the encoder contrasts each positive sample over multiple negative samples via a one-vs-many softmax cross-entropy loss. By leveraging large amounts of unlabeled image data, recent CL methods have achieved promising results when pretrained on large-scale datasets, such as ImageNet. However, most of them consider the augmented views from the same instance are positive pairs, while views from other instances are negative ones. Such binary partition insufficiently considers the relation between samples and tends to yield worse performance when generalized on images in the wild. In this paper, to further improve the performance of CL and enhance its robustness on various datasets, we propose a doubly CL strategy that contrasts positive samples and negative ones within themselves separately. We realize this strategy with contrastive attraction and contrastive repulsion (CACR), which makes the query not only exert a greater force to attract more distant positive samples but also do so to repel closer negative samples. Theoretical analysis reveals that CACR generalizes CL's behavior by positive attraction and negative repulsion. It further considers the intra-contrastive relation within the positive and negative pairs to narrow the gap between the sampled and true distribution, which is important when datasets are less curated. Extensive large-scale experiments on standard vision tasks show that CACR not only consistently outperforms existing CL methods on benchmark datasets, but also shows better robustness when generalized on imbalanced image datasets.}
+}
+
+@article{zhang2019weibull,
+  title={Weibull Racing Survival Analysis with Competing Events, Left Truncation, and Time-varying Covariates},
+  author={Zhang, Quan and Yanxun Xu and Mei-Cheng Wang and Zhou, Mingyuan},
+  journal={To appear in Journal of Machine Learning Research},
+  url={https://arxiv.org/abs/1911.01827},
+  url_arxiv={https://arxiv.org/abs/1911.01827},
+  pdf={https://arxiv.org/pdf/1911.01827.pdf},
+  year={2023},
+  abstract={We propose Bayesian nonparametric Weibull delegate racing (WDR) for survival analysis with competing events and achieve both model interpretability and flexibility. Utilizing a natural mechanism of surviving competing events, we assume a race among a potentially infinite number of sub-events. In doing this, WDR accommodates nonlinear covariate effects with no need of data transformation. Moreover, WDR is able to handle left truncation, time-varying covariates, different types of censoring, and missing event times or types. We develop an efficient MCMC algorithm based on Gibbs sampling for Bayesian inference and provide an R package. Synthetic data analysis and comparison with benchmark approaches demonstrate WDR's outstanding performance and parsimonious nonlinear modeling capacity. In addition, we analyze two real data sets and showcase advantages of WDR. Specifically, we study time to death of three types of lymphoma and show the potential of WDR in modeling nonlinear covariate effects and discovering new diseases. We also use WDR to investigate the age at onset of mild cognitive impairment and interpret the accelerating or decelerating effects of biomarkers on the progression of Alzheimer's disease.}
+}
+
+@article{zhang2023bayestme,
+  title={Bayes{TME}: An end-to-end method for multiscale spatial transcriptional profiling of the tissue microenvironment},
+  author={Zhang, Haoran and Hunter, Miranda V and Chou, Jacqueline and Quinn, Jeffrey F and Zhou, Mingyuan and White, Richard M and Tansey, Wesley},
+  journal={Cell Systems},
+  volume={14},
+  number={7},
+  pages={605--619},
+  year={2023},
+  url={https://www.sciencedirect.com/science/article/pii/S2405471223001564},
+  pdf={https://www.cell.com/cell-systems/pdf/S2405-4712(23)00156-4.pdf},
+  url_code={https://github.com/tansey-lab/bayestme},
+  url_arxiv={https://www.biorxiv.org/content/10.1101/2022.07.08.499377v1},
+  publisher={Elsevier},
+  abstract={Spatial variation in cellular phenotypes underlies heterogeneity in immune recognition and response to therapy in cancer and many other diseases. Spatial transcriptomics holds the potential to quantify such variation, but existing analysis methods are limited by their focus on individual tasks such as spot deconvolution. We present BayesTME, an end-to-end Bayesian method for analyzing spatial transcriptomics data. BayesTME unifies several previously distinct analysis goals under a single, holistic generative model. This unified approach enables BayesTME to deconvolve spots into cell phenotypes without any need for paired single-cell RNA-seq. BayesTME then goes beyond spot deconvolution to uncover spatial expression patterns among coordinated subsets of genes within phenotypes, which we term spatial transcriptional programs. BayesTME achieves state-of-the-art performance across myriad benchmarks. On human and zebrafish melanoma tissues, BayesTME identifies spatial transcriptional programs that capture fundamental biological phenomena such as bilateral symmetry and tumor-associated fibroblast and macrophage reprogramming. BayesTME is open source.}
+}
+
+
 @article{yang2023preference,
       title={Preference-grounded Token-level Guidance for Language Model Fine-tuning}, 
       author={Shentao Yang and Shujian Zhang and Congying Xia and Yihao Feng and Caiming Xiong and Mingyuan Zhou},
@@ -160,6 +203,8 @@ author={Yihao Feng and Shentao Yang and Shujian Zhang and Jianguo Zhang and Caim
 booktitle={ICLR 2023: International Conference on Learning Representations},
 year={2023},
 url={https://openreview.net/forum?id=086pmarAris},
+url_arxiv={https://arxiv.org/abs/2302.10342},
+pdf={https://openreview.net/pdf?id=086pmarAris},
 url_code={https://github.com/Shentao-YANG/Fantastic_Reward_ICLR2023},
 abstract={When learning task-oriented dialogue (TOD) agents, one can naturally utilize reinforcement learning (RL) techniques to train dialogue strategies to achieve user-specific goals. Prior works mainly focus on adopting advanced RL techniques to train the TOD agents, while the design of the reward function is not well studied. This paper aims at answering the question of how to efficiently learn and leverage a reward function for training end-to-end TOD agents. Specifically, we introduce two generalized objectives for reward-function learning, inspired from the classical learning-to-rank literature. Further, we utilize the learned reward-function to guide the training of the end-to-end TOD agent. With the proposed techniques, we achieve competitive results on the end-to-end response-generation task on the Multiwoz 2.0 dataset.}
 }
@@ -214,6 +259,9 @@ abstract={This paper proposes probabilistic conformal prediction (PCP), a predic
   author={Yucheng Wang and Xiaoning Qian and Mingyuan Zhou and Yu Sun
 },
   booktitle={AISTATS 2023: International Conference on Artificial Intelligence and Statistics},
+  url={https://proceedings.mlr.press/v206/wang23i.html},
+  pdf={https://proceedings.mlr.press/v206/wang23i/wang23i.pdf},
+  url_code={https://github.com/wangyucheng1234/BerVAE},
 year={2023},
 abstract={Learning to hash has become popular for video retrieval due to its fast speed and low storage consumption. Previous efforts formulate video hashing as training a binary auto-encoder, for which noncontinuous latent representations are optimized by the biased straight-through(ST) back-propagation heuristic. We propose to formulate video hashing as learning a discrete variational auto-encoder with the factorized Bernoulli latent distribution, termed as Bernoulli variational auto-encoder(BerVAE). The corresponding evidence lower bound(ELBO) in our BerVAE implementation leads to closed-form gradient expression and other unbiased gradient estimators to achieve principled training. BerVAE enables uncertainty-aware video hashing by predicting the probability distribution of video hash code-words, thus providing reliable uncertainty quantification. Experiments on both simulated and real-world large-scale video data demonstrate that our BerVAE trained with unbiased gradient estimators can achieve the state-of-the-art retrieval performance. Furthermore, we show that quantified uncertainty of our BerVAE is highly correlated to video retrieval performances, which can be leveraged to further improve the retrieval accuracy.}
 }
@@ -668,19 +716,6 @@ abstract={Hierarchical topic models such as the gamma belief network (GBN) have 
 }
 
 
-
-
-@article{zheng2021contrastive,
-      title={Contrastive Attraction and Contrastive Repulsion for Representation Learning}, 
-      author={Huangjie Zheng and Xu Chen and Jiangchao Yao and Hongxia Yang and Chunyuan Li and Ya Zhang and Hao Zhang and Ivor W. Tsang and Jingren Zhou and Mingyuan Zhou},
-      month={May},
-      year={2021},
-      journal={arXiv preprint arXiv:2105.03746},
-  url={https://arxiv.org/abs/2105.03746},
-  pdf={https://arxiv.org/pdf/2105.03746.pdf},
-  url_arxiv={https://arxiv.org/abs/2105.03746},
-      abstract={Contrastive learning (CL) is effective in learning data representations without label supervision, where the encoder needs to contrast each positive sample over multiple negative samples via a one-vs-many softmax cross-entropy loss. However, conventional CL is sensitive to how many negative samples are included and how they are selected. Proposed in this paper is a doubly CL strategy that contrasts positive samples and negative ones within themselves separately. We realize this strategy with contrastive attraction and contrastive repulsion (CACR) makes the query not only exert a greater force to attract more distant positive samples but also do so to repel closer negative samples. Theoretical analysis reveals the connection between CACR and CL from the perspectives of both positive attraction and negative repulsion and shows the benefits in both efficiency and robustness brought by separately contrasting within the sampled positive and negative pairs. Extensive large-scale experiments on standard vision tasks show that CACR not only consistently outperforms existing CL methods on benchmark datasets in representation learning, but also provides interpretable contrastive weights, demonstrating the efficacy of the proposed doubly contrastive strategy.}
-}
 
 
 
@@ -1217,15 +1252,7 @@ abstract={Mutual Information (MI) plays an important role in representation lear
 }
 
 
-@article{zhang2019weibull,
-  title={Weibull Racing Survival Analysis with Competing Events, Left Truncation, and Time-varying Covariates},
-  author={Zhang, Quan and Yanxun Xu and Mei-Cheng Wang and Zhou, Mingyuan},
-  journal={arXiv preprint arXiv:1911.01827},
-  url={https://arxiv.org/abs/1911.01827},
-  pdf={https://arxiv.org/pdf/1911.01827.pdf},
-  year={2022},
-  abstract={We propose Bayesian nonparametric Weibull delegate racing (WDR) for survival analysis with competing events and achieve both model interpretability and flexibility. Utilizing a natural mechanism of surviving competing events, we assume a race among a potentially infinite number of sub-events. In doing this, WDR accommodates nonlinear covariate effects with no need of data transformation. Moreover, WDR is able to handle left truncation, time-varying covariates, different types of censoring, and missing event times or types. We develop an efficient MCMC algorithm based on Gibbs sampling for Bayesian inference and provide an R package. Synthetic data analysis and comparison with benchmark approaches demonstrate WDR's outstanding performance and parsimonious nonlinear modeling capacity. In addition, we analyze two real data sets and showcase advantages of WDR. Specifically, we study time to death of three types of lymphoma and show the potential of WDR in modeling nonlinear covariate effects and discovering new diseases. We also use WDR to investigate the age at onset of mild cognitive impairment and interpret the accelerating or decelerating effects of biomarkers on the progression of Alzheimer's disease.}
-}
+
 
 
 @inproceedings{schein2019poisso,
