@@ -1,3 +1,18 @@
+@article{
+zhou2023beta,
+title={Beta Diffusion},
+author={Mingyuan Zhou and  Tianqi Chen and Zhendong Wang and Huangjie Zheng},
+journal={ArXiv preprint ArXiv:2309.07867},
+year={2023},
+url={https://arxiv.org/abs/2309.07867},
+url_code={https://github.com/mingyuanzhou/BetaDiffusion},
+pdf={https://arxiv.org/abs/2309.07867},
+url_arxiv={https://arxiv.org/abs/2309.07867},
+abstract={We introduce beta diffusion, a novel generative modeling method that integrates demasking and denoising to generate data within bounded ranges. Using scaled and shifted beta distributions, beta diffusion utilizes multiplicative transitions over time to create both forward and reverse diffusion processes, maintaining beta distributions in both the forward marginals and the reverse conditionals, given the data at any point in time. Unlike traditional diffusion-based generative models relying on additive Gaussian noise and reweighted evidence lower bounds (ELBOs), beta diffusion is multiplicative and optimized with KL-divergence upper bounds (KLUBs) derived from the convexity of the KL divergence. We demonstrate that the proposed KLUBs are more effective for optimizing beta diffusion compared to negative ELBOs, which can also be derived as the KLUBs of the same KL divergence with its two arguments swapped. The loss function of beta diffusion, expressed in terms of Bregman divergence, further supports the efficacy of KLUBs for optimization. Experimental results on both synthetic data and natural images demonstrate the unique capabilities of beta diffusion in generative modeling of range-bounded data and validate the effectiveness of KLUBs in optimizing diffusion models, thereby making them valuable additions to the family of diffusion-based generative models and the optimization techniques used to train them.}
+}
+
+
+
 
 @article{
 zheng2023contrastive,
@@ -23,6 +38,29 @@ abstract={Contrastive learning (CL) methods effectively learn data representatio
   year={2023},
   abstract={We propose Bayesian nonparametric Weibull delegate racing (WDR) for survival analysis with competing events and achieve both model interpretability and flexibility. Utilizing a natural mechanism of surviving competing events, we assume a race among a potentially infinite number of sub-events. In doing this, WDR accommodates nonlinear covariate effects with no need of data transformation. Moreover, WDR is able to handle left truncation, time-varying covariates, different types of censoring, and missing event times or types. We develop an efficient MCMC algorithm based on Gibbs sampling for Bayesian inference and provide an R package. Synthetic data analysis and comparison with benchmark approaches demonstrate WDR's outstanding performance and parsimonious nonlinear modeling capacity. In addition, we analyze two real data sets and showcase advantages of WDR. Specifically, we study time to death of three types of lymphoma and show the potential of WDR in modeling nonlinear covariate effects and discovering new diseases. We also use WDR to investigate the age at onset of mild cognitive impairment and interpret the accelerating or decelerating effects of biomarkers on the progression of Alzheimer's disease.}
 }
+
+@inproceedings{li2023aligning,
+title={Patch{CT}: Aligning Patch Set and Label Set with Conditional Transport for Multi-Label Image Classification
+},
+author={Miaoge Li and
+Dongsheng Wang and
+Xinyang Liu and
+Zequn Zeng and
+Ruiying Lu and
+Bo Chen and
+Mingyuan Zhou},
+booktitle={ICCV 2023: International Conference on Computer Vision},
+month={Oct.},
+url = {},
+url_arxiv ={},
+url_code = {},
+pdf = {},
+year={2023}
+}
+
+
+
+
 
 @article{zhang2023bayestme,
   title={Bayes{TME}: An end-to-end method for multiscale spatial transcriptional profiling of the tissue microenvironment},
