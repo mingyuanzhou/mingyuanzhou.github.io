@@ -1,3 +1,37 @@
+
+
+@inproceedings{zheng2023learning,
+      title={Learning Stackable and Skippable {LEGO} Bricks for Efficient, Reconfigurable, and Variable-Resolution Diffusion Modeling}, 
+      author={Huangjie Zheng and Zhendong Wang and Jianbo Yuan and Guanghan Ning and Pengcheng He and Quanzeng You and Hongxia Yang and Mingyuan Zhou},
+      booktitle={ICLR 2024: International Conference on Learning Representations},
+      url={https://openreview.net/forum?id=qmXedvwrT1},
+      pdf = {https://arxiv.org/pdf/2310.06389},
+      url_arxiv={https://arxiv.org/abs/2310.06389},
+        year={2024},
+      abstract = {Diffusion models excel at generating photo-realistic images but come with significant computational costs in both training and sampling. While various techniques address these computational challenges, a less-explored issue is designing an efficient and adaptable network backbone for iterative refinement. Current options like U-Net and Vision Transformer often rely on resource-intensive deep networks and lack the flexibility needed for generating images at variable resolutions or with a smaller network than used in training. This study introduces LEGO bricks, which seamlessly integrate Local-feature Enrichment and Global-content Orchestration. These bricks can be stacked to create a test-time reconfigurable diffusion backbone, allowing selective skipping of bricks to reduce sampling costs and generate higher-resolution images than the training data. LEGO bricks enrich local regions with an MLP and transform them using a Transformer block while maintaining a consistent full-resolution image across all bricks. Experimental results demonstrate that LEGO bricks enhance training efficiency, expedite convergence, and facilitate variable-resolution image generation while maintaining strong generative performance. Moreover, LEGO significantly reduces sampling time compared to other methods, establishing it as a valuable enhancement for diffusion models.}
+}
+
+
+
+@inproceedings{
+li2024transformermodulated,
+title={Transformer-Modulated Diffusion Models for Probabilistic Multivariate  Time Series Forecasting},
+author={Yuxin Li and  Wenchao Chen and Xinyue Hu and Bo Chen and Baolin Sun and Mingyuan Zhou},
+booktitle={ICLR 2024: International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=qae04YACHs}
+}
+
+@inproceedings{
+zhang2024longtailed,
+title={Long-tailed Diffusion Models with Oriented Calibration},
+author={Tianjiao Zhang and Huangjie Zheng and Jiangchao Yao and Xiangfeng Wang and Mingyuan Zhou and Ya Zhang and Yanfeng Wang},
+booktitle={ICLR 2024: International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=NW2s5XXwXU}
+}
+
+
 @article{chen2023improving,
   title={Improving In-Context Learning in Diffusion Models with Visual Context-Modulated Prompts},
   author={Chen, Tianqi and Liu, Yongfei and Wang, Zhendong and Yuan, Jianbo and You, Quanzeng and Yang, Hongxia and Zhou, Mingyuan},
@@ -19,18 +53,6 @@
   pages={1-12},
   doi={10.1109/TASLP.2023.3339344}
   }
-
-
-@article{zheng2023learning,
-      title={Learning Stackable and Skippable {LEGO} Bricks for Efficient, Reconfigurable, and Variable-Resolution Diffusion Modeling}, 
-      author={Huangjie Zheng and Zhendong Wang and Jianbo Yuan and Guanghan Ning and Pengcheng He and Quanzeng You and Hongxia Yang and Mingyuan Zhou},
-      journal={arXiv preprint 2310.06389},
-      year={2023},
-      url = {https://arxiv.org/abs/2310.06389},
-      pdf = {https://arxiv.org/pdf/2310.06389},
-      url_arxiv={https://arxiv.org/abs/2310.06389},
-      abstract = {Diffusion models excel at generating photo-realistic images but come with significant computational costs in both training and sampling. While various techniques address these computational challenges, a less-explored issue is designing an efficient and adaptable network backbone for iterative refinement. Current options like U-Net and Vision Transformer often rely on resource-intensive deep networks and lack the flexibility needed for generating images at variable resolutions or with a smaller network than used in training. This study introduces LEGO bricks, which seamlessly integrate Local-feature Enrichment and Global-content Orchestration. These bricks can be stacked to create a test-time reconfigurable diffusion backbone, allowing selective skipping of bricks to reduce sampling costs and generate higher-resolution images than the training data. LEGO bricks enrich local regions with an MLP and transform them using a Transformer block while maintaining a consistent full-resolution image across all bricks. Experimental results demonstrate that LEGO bricks enhance training efficiency, expedite convergence, and facilitate variable-resolution image generation while maintaining strong generative performance. Moreover, LEGO significantly reduces sampling time compared to other methods, establishing it as a valuable enhancement for diffusion models.}
-}
 
 
 @inproceedings{
