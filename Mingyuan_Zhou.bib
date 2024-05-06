@@ -1,13 +1,50 @@
-@article{zhou2024score,
-title={Score identity Distillation: Exponentially Fast Distillation of Pretrained Diffusion Models for One-Step Generation},
-author={Mingyuan Zhou and Huangjie Zheng and Zhendong Wang and Mingzhang Yin and Hai Huang},
-journal={ArXiv 2404.04057},
-year={2024},
-url={https://arxiv.org/abs/2404.04057},
-url_code={},
-pdf={https://arxiv.org/pdf/2404.04057},
-url_arxiv={https://arxiv.org/abs/2404.04057},
-abstract={We introduce Score identity Distillation (SiD), an innovative data-free method that distills the generative capabilities of pretrained diffusion models into a single-step generator. SiD not only  facilitates an exponentially fast reduction in FrÃ©chet inception distance (FID) during distillation but also approaches or even exceeds the FID performance of the original teacher diffusion models. By reformulating forward diffusion processes as semi-implicit distributions, we leverage three score-related identities to create an innovative loss mechanism. This mechanism achieves rapid FID reduction by training the generator using its own synthesized images, eliminating the need for real data or reverse-diffusion-based generation, all accomplished within significantly shortened generation time. Upon evaluation across four benchmark datasets, the SiD algorithm demonstrates high iteration efficiency during distillation and surpasses competing distillation approaches, whether they are one-step or few-step, data-free, or dependent on training data, in terms of generation quality. This achievement not only redefines the benchmarks for efficiency and effectiveness in diffusion distillation but also in the broader field of diffusion-based generation. Our PyTorch implementation will be publicly accessible on GitHub.}
+
+@inproceedings{zhou2024score,
+  title={Score Identity Distillation: Exponentially Fast Distillation of Pretrained Diffusion Models for One-Step Generation},
+  author={Mingyuan Zhou and Huangjie Zheng and Zhendong Wang and Mingzhang Yin and Hai Huang},
+  booktitle={ICML 2024: International Conference on Machine Learning},
+  year={2024},
+  url={https://arxiv.org/abs/2404.04057},
+  pdf={https://arxiv.org/pdf/2404.04057},
+  abstract={We introduce Score Identity Distillation (SiD), an innovative data-free method that distills the generative capabilities of pretrained diffusion models into a single-step generator. SiD not only facilitates an exponentially fast reduction in Fréchet Inception Distance (FID) during distillation but also approaches or even exceeds the FID performance of the original teacher diffusion models. By reformulating forward diffusion processes as semi-implicit distributions, we leverage three score-related identities to create an innovative loss mechanism. This mechanism achieves rapid FID reduction by training the generator using its own synthesized images, eliminating the need for real data or reverse-diffusion-based generation, all accomplished within significantly shortened generation time. Upon evaluation across four benchmark datasets, the SiD algorithm demonstrates high iteration efficiency during distillation and surpasses competing distillation approaches, whether they are one-step or few-step, data-free, or dependent on training data, in terms of generation quality. This achievement not only redefines the benchmarks for efficiency and effectiveness in diffusion distillation but also in the broader field of diffusion-based generation. Our PyTorch implementation will be publicly accessible on GitHub.}
+}
+
+@inproceedings{yang2024dense,
+  title={A Dense Reward View on Aligning Text-to-Image Diffusion with Preference},
+  author={Shentao Yang and Tianqi Chen and Mingyuan Zhou},
+  booktitle={ICML 2024: International Conference on Machine Learning},
+  year={2024},
+  url={https://arxiv.org/abs/2402.08265},
+  url_code={https://github.com/Shentao-YANG/Dense_Reward_T2I},
+  pdf={https://arxiv.org/pdf/2402.08265.pdf},
+  abstract={Aligning text-to-image diffusion model (T2I) with preference has been gaining increasing research attention. While prior works exist on directly optimizing T2I by preference data, these methods are developed under the bandit assumption of a latent reward on the entire diffusion reverse chain, while ignoring the sequential nature of the generation process. From literature, this may harm the efficacy and efficiency of alignment. In this paper, we take on a finer dense reward perspective and derive a tractable alignment objective that emphasizes the initial steps of the T2I reverse chain. In particular, we introduce temporal discounting into the DPO-style explicit-reward-free loss, to break the temporal symmetry therein and suit the T2I generation hierarchy. In experiments on single and multiple prompt generation, our method is competitive with strong relevant baselines, both quantitatively and qualitatively. Further studies are conducted to illustrate the insight of our approach.}
+}
+
+
+@inproceedings{li2024vague,
+  title={Vague Prototype-Oriented Diffusion Model for Multi-Class Anomaly Detection},
+  author={Yuxin Li and Yaoxuan Feng and Wenchao Chen and Yubiao Wang and Xinyue Hu and Baolin Sun and Chunhui Qu and Bo Chen and Mingyuan Zhou},
+  booktitle={ICML 2024: International Conference on Machine Learning},
+  year={2024},
+  url={https://openreview.net/forum?id=FvLd8Gr7xq}
+}
+
+@inproceedings{zhang2024switchable,
+  title={Switchable Decision: Dynamic Neural Generation Networks},
+  author={Shujian Zhang and Korawat Tanwisuth and Chengyue Gong and Pengcheng He and Mingyuan Zhou},
+  booktitle={ICML 2024: International Conference on Machine Learning},
+  year={2024},
+  url={https://openreview.net/forum?id=LGhtl9ktop}
+}
+
+@inproceedings{liu2023patch,
+  title={Patch-Prompt Aligned {B}ayesian Prompt Tuning for Vision-Language Models},
+  author={Xinyang Liu and Dongsheng Wang and Miaoge Li and Zhibin Duan and Yishi Xu and Bo Chen and Mingyuan Zhou},
+  booktitle={Proceedings of the 40th Conference on Uncertainty in Artificial Intelligence (UAI 2024)},
+  year={2024},
+  url={https://openreview.net/forum?id=DJa8rxF67Y},
+  url_arxiv ={https://arxiv.org/abs/2303.09100},
+  pdf = {https://arxiv.org/pdf/2303.09100}
 }
 
 @article{unni2024advancing,
@@ -19,6 +56,7 @@ abstract={We introduce Score identity Distillation (SiD), an innovative data-fre
   year={2024},
   publisher={Elsevier}
 }
+
 
 @inproceedings{an2024improving,
 title={Improving Unsupervised Hierarchical Representation with Reinforcement Learning},
@@ -42,18 +80,6 @@ abstract={In the field of large language models (LLMs), aligning models with the
 }
 
 
-
-@article{yang2024dense,
-      title={A Dense Reward View on Aligning Text-to-Image Diffusion with Preference}, 
-      author={Shentao Yang and Tianqi Chen and Mingyuan Zhou},
-      year={2024},
-      journal={ArXiv:2402.08265},
-	url={https://arxiv.org/abs/2402.08265},
-	url_code={https://github.com/Shentao-YANG/Dense_Reward_T2I},
-	pdf={https://arxiv.org/pdf/2402.08265.pdf},
-	url_arxiv={https://arxiv.org/abs/2402.08265},
-	abstract={Aligning text-to-image diffusion model (T2I) with preference has been gaining increasing research attention. While prior works exist on directly optimizing T2I by preference data, these methods are developed under the bandit assumption of a latent reward on the entire diffusion reverse chain, while ignoring the sequential nature of the generation process. From literature, this may harm the efficacy and efficiency of alignment. In this paper, we take on a finer dense reward perspective and derive a tractable alignment objective that emphasizes the initial steps of the T2I reverse chain. In particular, we introduce temporal discounting into the DPO-style explicit-reward-free loss, to break the temporal symmetry therein and suit the T2I generation hierarchy. In experiments on single and multiple prompt generation, our method is competitive with strong relevant baselines, both quantitatively and qualitatively. Further studies are conducted to illustrate the insight of our approach.}
-}
 
 @inproceedings{zheng2023learning,
       title={Learning Stackable and Skippable {LEGO} Bricks for Efficient, Reconfigurable, and Variable-Resolution Diffusion Modeling}, 
@@ -328,15 +354,9 @@ year={2023}
       year={2023}
 }
 
-@article{liu2023patch,
-      title={Patch-Token Aligned {B}ayesian Prompt Learning for Vision-Language Models}, 
-      author={Xinyang Liu and Dongsheng Wang and Miaoge Li and Zhibin Duan and Yishi Xu and Bo Chen and Mingyuan Zhou},
-      journal={arXiv preprint arXiv:2303.09100},
-      url_arxiv ={https://arxiv.org/abs/2303.09100},
-      url = {https://arxiv.org/abs/2303.09100},
-      pdf = {https://arxiv.org/pdf/2303.09100},
-      year={2023}
-}
+
+
+
 
 
 @inproceedings{qin2023classbalancing,
