@@ -16,12 +16,13 @@ abstract={Diffusion-based text-to-image generation models trained on extensive t
 
 
 @inproceedings{zhou2024score,
-  title={Score Identity Distillation: Exponentially Fast Distillation of Pretrained Diffusion Models for One-Step Generation},
+  title={Score identity Distillation: Exponentially Fast Distillation of Pretrained Diffusion Models for One-Step Generation},
   author={Mingyuan Zhou and Huangjie Zheng and Zhendong Wang and Mingzhang Yin and Hai Huang},
   booktitle={ICML 2024: International Conference on Machine Learning},
   year={2024},
   url={https://arxiv.org/abs/2404.04057},
   pdf={https://arxiv.org/pdf/2404.04057},
+  url_arxiv ={https://arxiv.org/abs/2404.04057},
   url_code={https://github.com/mingyuanzhou/SiD},
   abstract={We introduce Score identity Distillation (SiD), an innovative data-free method that distills the generative capabilities of pretrained diffusion models into a single-step generator. SiD not only  facilitates an exponentially fast reduction in Fréchet inception distance (FID) during distillation but also approaches or even exceeds the FID performance of the original teacher diffusion models. By reformulating forward diffusion processes as semi-implicit distributions, we leverage three score-related identities to create an innovative loss mechanism. This mechanism achieves rapid FID reduction by training the generator using its own synthesized images, eliminating the need for real data or reverse-diffusion-based generation, all accomplished within significantly shortened generation time. Upon evaluation across four benchmark datasets, the SiD algorithm demonstrates high iteration efficiency during distillation and surpasses competing distillation approaches, whether they are one-step or few-step, data-free, or dependent on training data, in terms of generation quality. This achievement not only redefines the benchmarks for efficiency and effectiveness in diffusion distillation but also in the broader field of diffusion-based generation. The PyTorch implementation is available at https://github.com/mingyuanzhou/SiD}
 }
