@@ -1,6 +1,8 @@
 
 
 
+
+
 @article{zhou2024long,
 title={Long and Short Guidance in Score identity Distillation for One-Step Text-to-Image Generation},
 author={Mingyuan Zhou and Zhendong Wang and Huangjie Zheng and Hai Huang},
@@ -12,6 +14,34 @@ pdf={https://arxiv.org/pdf/},
 url_arxiv={https://arxiv.org/abs/},
 abstract={Diffusion-based text-to-image generation models trained on extensive text-image pairs have shown the capacity to generate photorealistic images consistent with textual descriptions. However, a significant limitation of these models is their slow sample generation, which requires iterative refinement through the same network. In this paper, we enhance Score identity Distillation (SiD) by developing long and short classifier-free guidance (LSG) to efficiently distill pretrained Stable Diffusion models without using real training data. SiD aims to optimize a model-based explicit score matching loss, utilizing a score-identity based approximation along with the proposed LSG for practical computation. By training exclusively with fake images synthesized with its one-step generator, SiD equipped with LSG rapidly improves FID and CLIP scores, achieving state-of-the-art performance after processing fewer than 10 million fake images. This equates to fewer than 20,000 iterations with a batch size of 512. We will make our PyTorch implementation and distilled Stable Diffusion one-step generators available at https://github.com/mingyuanzhou/SiD-LSG}
 }
+
+
+@article{chen2024diffusion,
+title={Diffusion Policies creating a Trust Region for Offline Reinforcement Learning},
+author={Tianyu Chen and Zhendong Wang and Mingyuan Zhou},
+journal={ArXiv 2405.19690},
+year={2024},
+url={https://arxiv.org/abs/2405.19690},
+url_code={https://github.com/TianyuCodings/Diffusion_Trusted_Q_Learning},
+pdf={https://arxiv.org/pdf/2405.19690},
+url_arxiv={https://arxiv.org/abs/2405.19690},
+abstract={Offline reinforcement learning (RL) leverages pre-collected datasets to train optimal policies. Diffusion Q-Learning (DQL), introducing diffusion models as a powerful and expressive policy class, significantly boosts the performance of offline RL. However, its reliance on iterative denoising sampling to generate actions slows down both training and inference. While several recent attempts have tried to accelerate diffusion-QL, the improvement in training and/or inference speed often results in degraded performance. In this paper, we introduce a dual policy approach, Diffusion Trusted Q-Learning (DTQL), which comprises a diffusion policy for pure behavior cloning and a practical one-step policy. We bridge the two polices by a newly introduced diffusion trust region loss. The diffusion policy maintains expressiveness, while the trust region loss directs the one-step policy to explore freely and seek modes within the region defined by the diffusion policy. DTQL eliminates the need for iterative denoising sampling during both training and inference, making it remarkably computationally efficient. We evaluate its effectiveness and algorithmic characteristics against popular Kullback-Leibler (KL) based distillation methods in 2D bandit scenarios and gym tasks. We then show that DTQL could not only outperform other methods on the majority of the D4RL benchmark tasks but also demonstrate efficiency in training and inference speeds. The PyTorch implementation will be made available.}
+}
+
+@article{yin2024self-augmented,
+title={Self-Augmented Preference Optimization: Off-Policy Paradigms for Language Model Alignment},
+author={Yueqin Yin and Zhendong Wang and Yujia Xie and Weizhu Chen and Mingyuan Zhou},
+journal={ArXiv 2405.20830},
+year={2024},
+url={https://arxiv.org/abs/2405.20830},
+url_code={https://github.com/yinyueqin/SAPO},
+pdf={https://arxiv.org/pdf/2405.20830},
+url_arxiv={https://arxiv.org/abs/2405.20830},
+abstract={Traditional language model alignment methods, such as Direct Preference Optimization (DPO), are limited by their dependence on static, pre-collected paired preference data, which hampers their adaptability and practical applicability. To overcome this limitation, we introduce Self-Augmented Preference Optimization (SAPO), an effective and scalable training paradigm that does not require existing paired data. Building on the self-play concept, which autonomously generates negative responses, we further incorporate an off-policy learning pipeline to enhance data exploration and exploitation. Specifically, we employ an Exponential Moving Average (EMA) model in conjunction with a replay buffer to enable dynamic updates of response segments, effectively integrating real-time feedback with insights from historical data. Our comprehensive evaluations of the LLaMA3-8B and Mistral-7B models across benchmarks, including the Open LLM Leaderboard, IFEval, AlpacaEval 2.0, and MT-Bench, demonstrate that SAPO matches or surpasses established offline contrastive baselines, such as DPO and Odds Ratio Preference Optimization, and outperforms offline self-play methods like SPIN. Our code is available at https://github.com/yinyueqin/SAPO}
+}
+
+
+
 
 @article{he2024advancing,
 title={Advancing Graph Generation through Beta Diffusion},
