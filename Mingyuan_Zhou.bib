@@ -6,14 +6,16 @@
 @article{zhou2024long,
 title={Long and Short Guidance in Score identity Distillation for One-Step Text-to-Image Generation},
 author={Mingyuan Zhou and Zhendong Wang and Huangjie Zheng and Hai Huang},
-journal={ArXiv },
+journal={ArXiv 2406.01561},
 year={2024},
-url={https://arxiv.org/abs/},
+url={https://arxiv.org/abs/2406.01561},
 url_code={https://github.com/mingyuanzhou/SiD-LSG},
-pdf={https://arxiv.org/pdf/},
-url_arxiv={https://arxiv.org/abs/},
-abstract={Diffusion-based text-to-image generation models trained on extensive text-image pairs have shown the capacity to generate photorealistic images consistent with textual descriptions. However, a significant limitation of these models is their slow sample generation, which requires iterative refinement through the same network. In this paper, we enhance Score identity Distillation (SiD) by developing long and short classifier-free guidance (LSG) to efficiently distill pretrained Stable Diffusion models without using real training data. SiD aims to optimize a model-based explicit score matching loss, utilizing a score-identity based approximation along with the proposed LSG for practical computation. By training exclusively with fake images synthesized with its one-step generator, SiD equipped with LSG rapidly improves FID and CLIP scores, achieving state-of-the-art performance after processing fewer than 10 million fake images. This equates to fewer than 20,000 iterations with a batch size of 512. We will make our PyTorch implementation and distilled Stable Diffusion one-step generators available at https://github.com/mingyuanzhou/SiD-LSG}
+pdf={https://arxiv.org/pdf/2406.01561},
+url_arxiv={https://arxiv.org/abs/2406.01561},
+abstract={Diffusion-based text-to-image generation models trained on extensive text-image pairs have shown the capacity to generate photorealistic images consistent with textual descriptions. However, a significant limitation of these models is their slow sample generation, which requires iterative refinement through the same network. In this paper, we enhance Score identity Distillation (SiD) by developing long and short classifier-free guidance (LSG) to efficiently distill pretrained Stable Diffusion models without using real training data. SiD aims to optimize a model-based explicit score matching loss, utilizing a score-identity-based approximation alongside the proposed LSG for practical computation. By training exclusively with fake images synthesized with its one-step generator, SiD equipped with LSG rapidly improves FID and CLIP scores, achieving state-of-the-art FID performance while maintaining a competitive CLIP score. Specifically, its data-free distillation of Stable Diffusion 1.5 achieves a record low FID of \textbf{8.15} on the COCO-2014 validation set, with a CLIP score of 0.304 at an LSG scale of 1.5, and a FID of 9.56 with a CLIP score of 0.313 at an LSG scale of 2. We will make our PyTorch implementation and distilled Stable Diffusion one-step generators available at https://github.com/mingyuanzhou/SiD-LSG}
 }
+
+
 
 
 @article{chen2024diffusion,
