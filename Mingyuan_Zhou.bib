@@ -16,14 +16,27 @@ abstract={Diffusion-based text-to-image generation models trained on extensive t
 }
 
 
+@article{gu2024diffusionrpo,
+      title={Diffusion-RPO: Aligning Diffusion Models through Relative Preference Optimization}, 
+      author={Yi Gu and Zhendong Wang and Yueqin Yin and Yujia Xie and Mingyuan Zhou},
+      year={2024},
+       journal={ArXiv 2406.06382},
+       year={2024},
+	url={https://arxiv.org/abs/2406.06382},
+	pdf={https://arxiv.org/pdf/2406.06382},
+	url_arxiv={https://arxiv.org/abs/2406.01813},
+abstract={Aligning large language models with human preferences has emerged as a critical focus in language modeling research. Yet, integrating preference learning into Text-to-Image (T2I) generative models is still relatively uncharted territory. The Diffusion-DPO technique made initial strides by employing pairwise preference learning in diffusion models tailored for specific text prompts. We introduce Diffusion-RPO, a new method designed to align diffusion-based T2I models with human preferences more effectively. This approach leverages both prompt-image pairs with identical prompts and those with semantically related content across various modalities. Furthermore, we have developed a new evaluation metric, style alignment, aimed at overcoming the challenges of high costs, low reproducibility, and limited interpretability prevalent in current evaluations of human preference alignment. Our findings demonstrate that Diffusion-RPO outperforms established methods such as Supervised Fine-Tuning and Diffusion-DPO in tuning Stable Diffusion versions 1.5 and XL-1.0, achieving superior results in both automated evaluations of human preferences and style alignment. Our code is available at https://github.com/yigu1008/Diffusion-RPO.}
+    }
+
+
 @article{han2024diffusion,
       title={Diffusion Boosted Trees}, 
       author={Xizewen Han and Mingyuan Zhou},
       year={2024},
-      journal={2406.01813},
+      journal={ArXiv 2406.01813},
 year={2024},
 url={https://arxiv.org/abs/2406.01813},
-pdf={https://arxiv.org/pdf/2405.19690},
+pdf={https://arxiv.org/pdf/2406.01813},
 url_arxiv={https://arxiv.org/abs/2406.01813},
 abstract={Combining the merits of both denoising diffusion probabilistic models and gradient boosting, the diffusion boosting paradigm is introduced for tackling supervised learning problems. We develop Diffusion Boosted Trees (DBT), which can be viewed as both a new denoising diffusion generative model parameterized by decision trees (one single tree for each diffusion timestep), and a new boosting algorithm that combines the weak learners into a strong learner of conditional distributions without making explicit parametric assumptions on their density forms. We demonstrate through experiments the advantages of DBT over deep neural network-based diffusion models as well as the competence of DBT on real-world regression tasks, and present a business application (fraud detection) of DBT for classification on tabular data with the ability of learning to defer.}
 }
