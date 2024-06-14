@@ -16,6 +16,17 @@ abstract={Diffusion-based text-to-image generation models trained on extensive t
 }
 
 
+@article{han2024diffusion,
+      title={Diffusion Boosted Trees}, 
+      author={Xizewen Han and Mingyuan Zhou},
+      year={2024},
+      journal={2406.01813},
+year={2024},
+url={https://arxiv.org/abs/2406.01813},
+pdf={https://arxiv.org/pdf/2405.19690},
+url_arxiv={https://arxiv.org/abs/2406.01813},
+abstract={Combining the merits of both denoising diffusion probabilistic models and gradient boosting, the diffusion boosting paradigm is introduced for tackling supervised learning problems. We develop Diffusion Boosted Trees (DBT), which can be viewed as both a new denoising diffusion generative model parameterized by decision trees (one single tree for each diffusion timestep), and a new boosting algorithm that combines the weak learners into a strong learner of conditional distributions without making explicit parametric assumptions on their density forms. We demonstrate through experiments the advantages of DBT over deep neural network-based diffusion models as well as the competence of DBT on real-world regression tasks, and present a business application (fraud detection) of DBT for classification on tabular data with the ability of learning to defer.}
+}
 
 
 @article{chen2024diffusion,
@@ -48,13 +59,13 @@ abstract={Traditional language model alignment methods, such as Direct Preferenc
 @article{he2024advancing,
 title={Advancing Graph Generation through Beta Diffusion},
 author={Yilin He and Xinyang Liu and Bo Chen and Mingyuan Zhou},
-journal={ArXiv },
+journal={ArXiv 2406.09357}
 year={2024},
-url={https://arxiv.org/abs/},
-url_code={https://github.com/},
-pdf={https://arxiv.org/pdf/},
-url_arxiv={https://arxiv.org/abs/},
-abstract={Diffusion models have demonstrated effectiveness for generating natural images and have since been adapted to generate diverse types of data, including graphs. While this emerging family of diffusion-based graph generative models has shown remarkable performance gains over predecessors that rely on variational autoencoders or generative adversarial networks, it is important to note that the majority of these models utilize Gaussian or categorical-based diffusion processes, which may encounter difficulties when modeling sparse and long-tailed data distributions. In our work, we introduce Graph Beta Diffusion (GBD), a diffusion-based generative model adept at modeling diverse graph structures. Focusing on the sparse and range-bounded characteristics of graph adjacency matrices, GBD employs a beta diffusion process to ensure that the initial distribution aligns with the beta distribution, which is well-suited for modeling such data types. To enhance the realism of generated graphs further, we introduce a modulation technique that stabilizes the generation of important graph structures while maintaining flexibility for the rest. The superior performance of GBD in generating graphs, as demonstrated across three generic graph benchmarks and two biochemical graph benchmarks, underscores its effectiveness in capturing the complexities of real-world graph data.}
+url={https://arxiv.org/abs/2406.09357},
+url_code={https://github.com/YH-UtMSB/Graph_Beta_Diffusion},
+pdf={https://arxiv.org/pdf/2406.09357},
+url_arxiv={https://arxiv.org/abs/2406.09357},
+abstract={Diffusion models have demonstrated effectiveness in generating natural images and have been extended to generate diverse data types, including graphs. This new generation of diffusion-based graph generative models has demonstrated significant performance improvements over methods that rely on variational autoencoders or generative adversarial networks. It's important to recognize, however, that most of these models employ Gaussian or categorical diffusion processes, which can struggle with sparse and long-tailed data distributions. In our work, we introduce Graph Beta Diffusion (GBD), a diffusion-based generative model particularly adept at capturing diverse graph structures. GBD utilizes a beta diffusion process, tailored for the sparse and range-bounded characteristics of graph adjacency matrices. Furthermore, we have developed a modulation technique that enhances the realism of the generated graphs by stabilizing the generation of critical graph structures, while preserving flexibility elsewhere. The outstanding performance of GBD across three general graph benchmarks and two biochemical graph benchmarks highlights its capability to effectively capture the complexities of real-world graph data. The code will be made available at https://github.com/YH-UtMSB/Graph_Beta_Diffusion.}
 }
 
 
