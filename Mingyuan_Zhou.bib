@@ -24,6 +24,7 @@ abstract={Diffusion-based text-to-image generation models trained on extensive t
        year={2024},
 	url={https://arxiv.org/abs/2406.06382},
 	pdf={https://arxiv.org/pdf/2406.06382},
+	Note = {(the first two authors contributed equally)},
 	url_arxiv={https://arxiv.org/abs/2406.01813},
 abstract={Aligning large language models with human preferences has emerged as a critical focus in language modeling research. Yet, integrating preference learning into Text-to-Image (T2I) generative models is still relatively uncharted territory. The Diffusion-DPO technique made initial strides by employing pairwise preference learning in diffusion models tailored for specific text prompts. We introduce Diffusion-RPO, a new method designed to align diffusion-based T2I models with human preferences more effectively. This approach leverages both prompt-image pairs with identical prompts and those with semantically related content across various modalities. Furthermore, we have developed a new evaluation metric, style alignment, aimed at overcoming the challenges of high costs, low reproducibility, and limited interpretability prevalent in current evaluations of human preference alignment. Our findings demonstrate that Diffusion-RPO outperforms established methods such as Supervised Fine-Tuning and Diffusion-DPO in tuning Stable Diffusion versions 1.5 and XL-1.0, achieving superior results in both automated evaluations of human preferences and style alignment. Our code is available at https://github.com/yigu1008/Diffusion-RPO.}
     }
@@ -51,6 +52,7 @@ url={https://arxiv.org/abs/2405.19690},
 url_code={https://github.com/TianyuCodings/Diffusion_Trusted_Q_Learning},
 pdf={https://arxiv.org/pdf/2405.19690},
 url_arxiv={https://arxiv.org/abs/2405.19690},
+Note = {(the first two authors contributed equally)},
 abstract={Offline reinforcement learning (RL) leverages pre-collected datasets to train optimal policies. Diffusion Q-Learning (DQL), introducing diffusion models as a powerful and expressive policy class, significantly boosts the performance of offline RL. However, its reliance on iterative denoising sampling to generate actions slows down both training and inference. While several recent attempts have tried to accelerate diffusion-QL, the improvement in training and/or inference speed often results in degraded performance. In this paper, we introduce a dual policy approach, Diffusion Trusted Q-Learning (DTQL), which comprises a diffusion policy for pure behavior cloning and a practical one-step policy. We bridge the two polices by a newly introduced diffusion trust region loss. The diffusion policy maintains expressiveness, while the trust region loss directs the one-step policy to explore freely and seek modes within the region defined by the diffusion policy. DTQL eliminates the need for iterative denoising sampling during both training and inference, making it remarkably computationally efficient. We evaluate its effectiveness and algorithmic characteristics against popular Kullback-Leibler (KL) based distillation methods in 2D bandit scenarios and gym tasks. We then show that DTQL could not only outperform other methods on the majority of the D4RL benchmark tasks but also demonstrate efficiency in training and inference speeds. The PyTorch implementation will be made available.}
 }
 
@@ -63,6 +65,7 @@ url={https://arxiv.org/abs/2405.20830},
 url_code={https://github.com/yinyueqin/SAPO},
 pdf={https://arxiv.org/pdf/2405.20830},
 url_arxiv={https://arxiv.org/abs/2405.20830},
+Note = {(the first two authors contributed equally)},
 abstract={Traditional language model alignment methods, such as Direct Preference Optimization (DPO), are limited by their dependence on static, pre-collected paired preference data, which hampers their adaptability and practical applicability. To overcome this limitation, we introduce Self-Augmented Preference Optimization (SAPO), an effective and scalable training paradigm that does not require existing paired data. Building on the self-play concept, which autonomously generates negative responses, we further incorporate an off-policy learning pipeline to enhance data exploration and exploitation. Specifically, we employ an Exponential Moving Average (EMA) model in conjunction with a replay buffer to enable dynamic updates of response segments, effectively integrating real-time feedback with insights from historical data. Our comprehensive evaluations of the LLaMA3-8B and Mistral-7B models across benchmarks, including the Open LLM Leaderboard, IFEval, AlpacaEval 2.0, and MT-Bench, demonstrate that SAPO matches or surpasses established offline contrastive baselines, such as DPO and Odds Ratio Preference Optimization, and outperforms offline self-play methods like SPIN. Our code is available at https://github.com/yinyueqin/SAPO}
 }
 
@@ -78,6 +81,7 @@ url={https://arxiv.org/abs/2406.09357},
 url_code={https://github.com/YH-UtMSB/Graph_Beta_Diffusion},
 pdf={https://arxiv.org/pdf/2406.09357},
 url_arxiv={https://arxiv.org/abs/2406.09357},
+Note = {(the first two authors contributed equally)},
 abstract={Diffusion models have demonstrated effectiveness in generating natural images and have been extended to generate diverse data types, including graphs. This new generation of diffusion-based graph generative models has demonstrated significant performance improvements over methods that rely on variational autoencoders or generative adversarial networks. It's important to recognize, however, that most of these models employ Gaussian or categorical diffusion processes, which can struggle with sparse and long-tailed data distributions. In our work, we introduce Graph Beta Diffusion (GBD), a diffusion-based generative model particularly adept at capturing diverse graph structures. GBD utilizes a beta diffusion process, tailored for the sparse and range-bounded characteristics of graph adjacency matrices. Furthermore, we have developed a modulation technique that enhances the realism of the generated graphs by stabilizing the generation of critical graph structures, while preserving flexibility elsewhere. The outstanding performance of GBD across three general graph benchmarks and two biochemical graph benchmarks highlights its capability to effectively capture the complexities of real-world graph data. The code will be made available at https://github.com/YH-UtMSB/Graph_Beta_Diffusion.}
 }
 
@@ -104,6 +108,7 @@ abstract={Diffusion models have demonstrated effectiveness in generating natural
   url={https://arxiv.org/abs/2402.08265},
   url_code={https://github.com/Shentao-YANG/Dense_Reward_T2I},
   pdf={https://arxiv.org/pdf/2402.08265.pdf},
+  Note = {(the first two authors contributed equally)},
   abstract={Aligning text-to-image diffusion model (T2I) with preference has been gaining increasing research attention. While prior works exist on directly optimizing T2I by preference data, these methods are developed under the bandit assumption of a latent reward on the entire diffusion reverse chain, while ignoring the sequential nature of the generation process. From literature, this may harm the efficacy and efficiency of alignment. In this paper, we take on a finer dense reward perspective and derive a tractable alignment objective that emphasizes the initial steps of the T2I reverse chain. In particular, we introduce temporal discounting into the DPO-style explicit-reward-free loss, to break the temporal symmetry therein and suit the T2I generation hierarchy. In experiments on single and multiple prompt generation, our method is competitive with strong relevant baselines, both quantitatively and qualitatively. Further studies are conducted to illustrate the insight of our approach.}
 }
 
@@ -129,6 +134,7 @@ abstract={Diffusion models have demonstrated effectiveness in generating natural
   author={Xinyang Liu and Dongsheng Wang and Miaoge Li and Zhibin Duan and Yishi Xu and Bo Chen and Mingyuan Zhou},
   booktitle={Proceedings of the 40th Conference on Uncertainty in Artificial Intelligence (UAI 2024)},
   year={2024},
+  Note = {(the first two authors contributed equally)},
   url={https://openreview.net/forum?id=DJa8rxF67Y},
   url_arxiv ={https://arxiv.org/abs/2303.09100},
   pdf = {https://arxiv.org/pdf/2303.09100}
@@ -165,6 +171,7 @@ url={https://arxiv.org/abs/2402.10958},
 url_code={https://github.com/yinyueqin/relative-preference-optimization},
 pdf={https://arxiv.org/pdf/2402.10958},
 url_arxiv={https://arxiv.org/abs/2402.10958},
+  Note = {(the first two authors contributed equally)},
 abstract={In the field of large language models (LLMs), aligning models with the diverse preferences of users is a critical challenge. Direct Preference Optimization (DPO) has played a key role in this area. It works by using pairs of preferences derived from the same prompts, and it functions without needing an additional reward model. However, DPO does not fully reflect the complex nature of human learning, which often involves understanding contrasting responses to not only identical but also similar questions. To overcome this shortfall, we propose Relative Preference Optimization (RPO). RPO is designed to discern between more and less preferred responses derived from both identical and related prompts. It introduces a contrastive weighting mechanism, enabling the tuning of LLMs using a broader range of preference data, including both paired and unpaired sets. This approach expands the learning capabilities of the model, allowing it to leverage insights from a more varied set of prompts. Through empirical tests, including dialogue and summarization tasks, and evaluations using the AlpacaEval2.0 leaderboard, RPO has demonstrated a superior ability to align LLMs with user preferences and to improve their adaptability during the training process. The PyTorch code necessary to reproduce the results presented in the paper will be made available on GitHub for public access.}
 }
 
