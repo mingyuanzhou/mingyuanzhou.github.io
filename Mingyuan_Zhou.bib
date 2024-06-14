@@ -137,8 +137,10 @@ title={Improving Unsupervised Hierarchical Representation with Reinforcement Lea
 author={Ruyi An and Yewen Li and Xu He and Pengjie Gu and Mengcheng Zhao and Dong Li and Jianye Hao and Chaojie Wang and Bo An and Mingyuan Zhou},
 booktitle={Conference on Computer Vision and Pattern Recognition 2024},
 year={2024},
-pdf={https://openreview.net/pdf?id=VHIPgvXrN2},
-url={https://openreview.net/forum?id=VHIPgvXrN2}
+url_code={https://github.com/ruyianry/rep_hierarchy_rl},
+pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/An_Improving_Unsupervised_Hierarchical_Representation_with_Reinforcement_Learning_CVPR_2024_paper.pdf},
+url={https://openaccess.thecvf.com/content/CVPR2024/papers/An_Improving_Unsupervised_Hierarchical_Representation_with_Reinforcement_Learning_CVPR_2024_paper.pdf},
+abstract={Learning representations to capture the very fundamental understanding of the world is a key challenge in machine learning. The hierarchical structure of explanatory factors hidden in data is such a general representation and could be potentially achieved with a hierarchical VAE. However, training a hierarchical VAE always suffers from the “posterior collapse”, where the data information is hard to propagate to the higher-level latent variables, hence resulting in a bad hierarchical representation. To address this issue, we first analyze the shortcomings of existing methods for mitigating the posterior collapse from an information theory perspective, then highlight the necessity of regularization for explicitly propagating data information to higher-level latent variables while maintaining the dependency between different levels. This naturally leads to formulating the inference of the hierarchical latent representation as a sequential decision process, which could benefit from applying reinforcement learning (RL). Aligning RL’s objective with the regularization, we first introduce a skip-generative path to acquire a reward for evaluating the information content of an inferred latent representation, and then the developed Q-value function based on it could have a consistent optimization direction of the regularization. Finally, policy gradient, one of the typical RL methods, is employed to train a hierarchical VAE without introducing a gradient estimator. Experimental results firmly support our analysis and demonstrate that our proposed method effectively mitigates the posterior collapse issue, learns an informative hierarchy, acquires explainable latent representations, and significantly outperforms other hierarchical VAE-based methods in downstream tasks}
 }
 
 @article{yin2024rpo,
@@ -160,6 +162,7 @@ abstract={In the field of large language models (LLMs), aligning models with the
       author={Huangjie Zheng and Zhendong Wang and Jianbo Yuan and Guanghan Ning and Pengcheng He and Quanzeng You and Hongxia Yang and Mingyuan Zhou},
       booktitle={ICLR 2024: International Conference on Learning Representations},
       url={https://openreview.net/forum?id=qmXedvwrT1},
+      url_code={https://huangjiezheng.com/LEGODiffusion/},
       pdf = {https://arxiv.org/pdf/2310.06389},
       url_arxiv={https://arxiv.org/abs/2310.06389},
         year={2024},
