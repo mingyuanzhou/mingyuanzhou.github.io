@@ -1280,7 +1280,7 @@ if (!window.jQuery || !window.moment) {
         jq.type = 'text/javascript';
         // jq.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
         // jq.src = 'https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js';
-        jq.src = 'jquery.min.js';
+        jq.src = 'Papers/jquery.min.js';
         document.getElementsByTagName('head')[0].appendChild(jq);
     }
     if (!window.moment) {
@@ -1288,7 +1288,7 @@ if (!window.jQuery || !window.moment) {
         var mo = document.createElement('script');
         mo.type = 'text/javascript';
         // mo.src = 'https://cdn.jsdelivr.net/gh/moment/moment@2.22.2/min/moment.min.js';
-        mo.src = 'moment.min.js';
+        mo.src = 'Papers/moment.min.js';
         document.getElementsByTagName('head')[0].appendChild(mo);
     }
 
