@@ -1,3 +1,6 @@
+
+
+
 @article{chen2024score,
 title={Score Forgetting Distillation: A Swift, Data-Free Method for Machine Unlearning in Diffusion Models},
 author={Tianqi Chen and Shujian Zhang and Mingyuan Zhou},
@@ -9,6 +12,32 @@ pdf={https://arxiv.org/pdf/2409.11219},
 url_arxiv={https://arxiv.org/abs/2409.11219},
 abstract={The machine learning community is increasingly recognizing the importance of fostering trust and safety in modern generative AI (GenAI) models. We posit machine unlearning (MU) as a crucial foundation for developing safe, secure, and trustworthy GenAI models. Traditional MU methods often rely on stringent assumptions and require access to real data. This paper introduces Score Forgetting Distillation (SFD), an innovative MU approach that promotes the forgetting of undesirable information in diffusion models by aligning the conditional scores of ``unsafe'' classes or concepts with those of ``safe'' ones. To eliminate the need for real data, our SFD framework incorporates a score-based MU loss into the score distillation objective of a pretrained diffusion model. This serves as a regularization term that preserves desired generation capabilities while enabling the production of synthetic data through a one-step generator. Our experiments on pretrained label-conditional and text-to-image diffusion models demonstrate that our method effectively accelerates the forgetting of target classes or concepts during generation, while preserving the quality of other classes or concepts. This unlearned and distilled diffusion not only pioneers a novel concept in MU but also accelerates the generation speed of diffusion models. Our experiments and studies on a range of diffusion models and datasets confirm that our approach is generalizable, effective, and advantageous for MU in diffusion models.}
 }
+
+
+@inproceedings{chen2024diffusion,
+title={Diffusion Policies creating a Trust Region for Offline Reinforcement Learning},
+author={Tianyu Chen and Zhendong Wang and Mingyuan Zhou},
+booktitle={NeurIPS 2024: Neural Information Processing Systems},
+year={2024},
+url={https://openreview.net/forum?id=74c9EOng9C},
+url_code={https://github.com/TianyuCodings/Diffusion_Trusted_Q_Learning},
+pdf={https://arxiv.org/pdf/2405.19690},
+url_arxiv={https://arxiv.org/abs/2405.19690},
+Note = {(the first two authors contributed equally)},
+abstract={Offline reinforcement learning (RL) leverages pre-collected datasets to train optimal policies. Diffusion Q-Learning (DQL), introducing diffusion models as a powerful and expressive policy class, significantly boosts the performance of offline RL. However, its reliance on iterative denoising sampling to generate actions slows down both training and inference. While several recent attempts have tried to accelerate diffusion-QL, the improvement in training and/or inference speed often results in degraded performance. In this paper, we introduce a dual policy approach, Diffusion Trusted Q-Learning (DTQL), which comprises a diffusion policy for pure behavior cloning and a practical one-step policy. We bridge the two polices by a newly introduced diffusion trust region loss. The diffusion policy maintains expressiveness, while the trust region loss directs the one-step policy to explore freely and seek modes within the region defined by the diffusion policy. DTQL eliminates the need for iterative denoising sampling during both training and inference, making it remarkably computationally efficient. We evaluate its effectiveness and algorithmic characteristics against popular Kullback-Leibler (KL) based distillation methods in 2D bandit scenarios and gym tasks. We then show that DTQL could not only outperform other methods on the majority of the D4RL benchmark tasks but also demonstrate efficiency in training and inference speeds. The PyTorch implementation will be made available.}
+}
+
+@inproceedings{
+peng2024pseudoprivate,
+title={Pseudo-Private Data Guided Model Inversion Attacks},
+author={Xiong Peng and Bo Han and Feng Liu and Tongliang Liu and Mingyuan Zhou},
+booktitle={NeurIPS 2024: Neural Information Processing Systems},
+year={2024},
+url={https://openreview.net/forum?id=pyqPUf36D2},
+pdf={https://openreview.net/pdf?id=pyqPUf36D2},
+abstract={In model inversion attacks (MIAs), adversaries attempt to recover private training data by exploiting access to a well-trained target model. Recent advancements have improved MIA performance using a two-stage generative framework. This approach first employs a generative adversarial network to learn a fixed distributional prior, which is then used to guide the inversion process during the attack. However, in this paper, we observed a phenomenon that such a fixed prior would lead to a low probability of sampling actual private data during the inversion process due to the inherent distribution gap between the prior distribution and the private data distribution, thereby constraining attack performance. To address this limitation, we propose increasing the density around high-quality pseudo-private data—recovered samples through model inversion that exhibit characteristics of the private training data—by slightly tuning the generator. This strategy effectively increases the probability of sampling actual private data that is close to these pseudo-private data during the inversion process. After integrating our method, the generative model inversion pipeline is strengthened, leading to improvements over state-of-the-art MIAs. This paves the way for new research directions in generative MIAs.}
+}
+
 
 
 @article{zhou2024long,
@@ -51,18 +80,6 @@ abstract={Combining the merits of both denoising diffusion probabilistic models 
 }
 
 
-@article{chen2024diffusion,
-title={Diffusion Policies creating a Trust Region for Offline Reinforcement Learning},
-author={Tianyu Chen and Zhendong Wang and Mingyuan Zhou},
-journal={ArXiv 2405.19690},
-year={2024},
-url={https://arxiv.org/abs/2405.19690},
-url_code={https://github.com/TianyuCodings/Diffusion_Trusted_Q_Learning},
-pdf={https://arxiv.org/pdf/2405.19690},
-url_arxiv={https://arxiv.org/abs/2405.19690},
-Note = {(the first two authors contributed equally)},
-abstract={Offline reinforcement learning (RL) leverages pre-collected datasets to train optimal policies. Diffusion Q-Learning (DQL), introducing diffusion models as a powerful and expressive policy class, significantly boosts the performance of offline RL. However, its reliance on iterative denoising sampling to generate actions slows down both training and inference. While several recent attempts have tried to accelerate diffusion-QL, the improvement in training and/or inference speed often results in degraded performance. In this paper, we introduce a dual policy approach, Diffusion Trusted Q-Learning (DTQL), which comprises a diffusion policy for pure behavior cloning and a practical one-step policy. We bridge the two polices by a newly introduced diffusion trust region loss. The diffusion policy maintains expressiveness, while the trust region loss directs the one-step policy to explore freely and seek modes within the region defined by the diffusion policy. DTQL eliminates the need for iterative denoising sampling during both training and inference, making it remarkably computationally efficient. We evaluate its effectiveness and algorithmic characteristics against popular Kullback-Leibler (KL) based distillation methods in 2D bandit scenarios and gym tasks. We then show that DTQL could not only outperform other methods on the majority of the D4RL benchmark tasks but also demonstrate efficiency in training and inference speeds. The PyTorch implementation will be made available.}
-}
 
 @article{yin2024self-augmented,
 title={Self-Augmented Preference Optimization: Off-Policy Paradigms for Language Model Alignment},
