@@ -1,3 +1,34 @@
+@article{song2025iwdd,
+title={A Generative Framework for Causal Estimation via Importance-Weighted Diffusion Distillation}, 
+author={Xinran Song and Tianyu Chen and Mingyuan Zhou},
+journal={arXiv 2505.11444},
+year={2025},
+url={https://arxiv.org/pdf/2505.11444},
+url_arxiv={https://arxiv.org/pdf/2505.11444},
+Note = {(the first two authors contributed equally)},
+abstract = {Estimating individualized treatment effects from observational data is a central challenge in causal inference, largely due to covariate imbalance and confounding bias from non-randomized treatment assignment. While inverse probability weighting (IPW) is a well-established solution to this problem, its integration into modern deep learning frameworks remains limited. In this work, we propose Importance-Weighted Diffusion Distillation (IWDD), a novel generative framework that combines the pretraining of diffusion models with importance-weighted score distillation to enable accurate and fast causal estimation-including potential outcome prediction and treatment effect estimation. We demonstrate how IPW can be naturally incorporated into the distillation of pretrained diffusion models, and further introduce a randomization-based adjustment that eliminates the need to compute IPW explicitly-thereby simplifying computation and, more importantly, provably reducing the variance of gradient estimates. Empirical results show that IWDD achieves state-of-the-art out-of-sample prediction performance, with the highest win rates compared to other baselines, significantly improving causal estimation and supporting the development of individualized treatment strategies. We will release our PyTorch code for reproducibility and future research.}
+}
+
+
+@inproceedings{wang2024onestepdiffusionpolicyfast,
+      title={{OmiAD}: One-Step Adaptive Masked Diffusion Model for Multi-class Anomaly Detection via Adversarial Distillation
+}, 
+      author={Yaoxuan Feng and Wenchao Chen and Yuxin Li and Bo Chen and Yubiao Wang and Zixuan Zhao and Hongwei Liu and Mingyuan Zhou},                         
+      year={2025},
+      booktitle={ICML 2025: International Conference on Machine Learning},
+}
+
+@inproceedings{wang2024onestepdiffusionpolicyfast,
+      title={One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation}, 
+      author={Zhendong Wang and Max Li and Ajay Mandlekar and Zhenjia Xu and Jiaojiao Fan and Yashraj Narang and Linxi Fan and Yuke Zhu and Yogesh Balaji and Mingyuan Zhou and Ming-Yu Liu and Yu Zeng},                         
+      year={2025},
+      booktitle={ICML 2025: International Conference on Machine Learning},
+      url={https://arxiv.org/abs/2410.21257},
+      url_arxiv={https://arxiv.org/abs/2410.21257},
+      pdf={https://arxiv.org/pdf/2410.21257},
+abstract={Diffusion models, praised for their success in generative tasks, are increasingly being applied to robotics, demonstrating exceptional performance in behavior cloning. However, their slow generation process stemming from iterative denoising steps poses a challenge for real-time applications in resource-constrained robotics setups and dynamically changing environments. In this paper, we introduce the One-Step Diffusion Policy (\ours), a novel approach that distills knowledge from pre-trained diffusion policies into a single-step action generator, significantly accelerating response times for robotic control tasks. We ensure the distilled generator closely aligns with the original policy distribution by minimizing the Kullback-Leibler (KL) divergence along the diffusion chain, requiring only additional pre-training cost for convergence. We evaluated \ours on 6 challenging simulation tasks as well as 4 self-designed real-world tasks using the Franka robot. The results demonstrate that \ours not only achieves state-of-the-art success rates but also delivers an order-of-magnitude improvement in inference speed, boosting action prediction frequency from 1.5 Hz to 62 Hz, establishing its potential for dynamic and computationally constrained robotic applications. A video demo is provided \href{https://drive.google.com/file/d/1eIa11gw6DwYKG9CKERy41bjE1ruklRtT/view?usp=sharing}{\textit{here}}, and the code will be publicly available soon.}
+}
+
 
 
 @article{
@@ -109,17 +140,6 @@ url={https://openreview.net/forum?id=cc4v6v310f},
 note={}
 }
 
-
-
-@misc{wang2024onestepdiffusionpolicyfast,
-      title={One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation}, 
-      author={Zhendong Wang and Zhaoshuo Li and Ajay Mandlekar and Zhenjia Xu and Jiaojiao Fan and Yashraj Narang and Linxi Fan and Yuke Zhu and Yogesh Balaji and Mingyuan Zhou and Ming-Yu Liu and Yu Zeng},
-      year={2024},
-      eprint={2410.21257},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2410.21257}, 
-}
 
 
 
