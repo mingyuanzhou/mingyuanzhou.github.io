@@ -1,3 +1,18 @@
+
+@article{zhou2025fewstep,
+title={Few-Step Diffusion via Score identity Distillation}, 
+author={Mingyuan Zhou and Yi Gu and Zhendong Wang},
+journal={arXiv 2505.12674},
+year={2025},
+url={https://arxiv.org/abs/2505.12674},
+pdf={https://arxiv.org/pdf/2505.12674},
+url_arxiv={https://arxiv.org/abs/2505.12674},
+abstract = {Diffusion distillation has emerged as a promising strategy for accelerating text-to-image (T2I) diffusion models by distilling a pretrained score network into a one- or few-step generator. While existing methods have made notable progress, they often rely on real or teacher-synthesized images to perform well when distilling high-resolution T2I diffusion models such as Stable Diffusion XL (SDXL), and their use of classifier-free guidance (CFG) introduces a persistent trade-off between text-image alignment and generation diversity. We address these challenges by optimizing Score identity Distillation (SiD) -- a data-free, one-step distillation framework -- for few-step generation. Backed by theoretical analysis that justifies matching a uniform mixture of outputs from all generation steps to the data distribution, our few-step distillation algorithm avoids step-specific networks and integrates seamlessly into existing pipelines, achieving state-of-the-art performance on SDXL at 1024x1024 resolution. To mitigate the alignment-diversity trade-off when real text-image pairs are available, we introduce a Diffusion GAN-based adversarial loss applied to the uniform mixture and propose two new guidance strategies: Zero-CFG, which disables CFG in the teacher and removes text conditioning in the fake score network, and Anti-CFG, which applies negative CFG in the fake score network. This flexible setup improves diversity without sacrificing alignment. Comprehensive experiments on SD1.5 and SDXL demonstrate state-of-the-art performance in both one-step and few-step generation settings, along with robustness to the absence of real images. Our efficient PyTorch implementation, along with the resulting one- and few-step distilled generators, will be released publicly as a separate branch at https://github.com/mingyuanzhou/SiD-LSG}
+}
+
+
+
+
 @article{song2025iwdd,
 title={A Generative Framework for Causal Estimation via Importance-Weighted Diffusion Distillation}, 
 author={Xinran Song and Tianyu Chen and Mingyuan Zhou},
@@ -9,6 +24,23 @@ url_arxiv={https://arxiv.org/pdf/2505.11444},
 Note = {(the first two authors contributed equally)},
 abstract = {Estimating individualized treatment effects from observational data is a central challenge in causal inference, largely due to covariate imbalance and confounding bias from non-randomized treatment assignment. While inverse probability weighting (IPW) is a well-established solution to this problem, its integration into modern deep learning frameworks remains limited. In this work, we propose Importance-Weighted Diffusion Distillation (IWDD), a novel generative framework that combines the pretraining of diffusion models with importance-weighted score distillation to enable accurate and fast causal estimation-including potential outcome prediction and treatment effect estimation. We demonstrate how IPW can be naturally incorporated into the distillation of pretrained diffusion models, and further introduce a randomization-based adjustment that eliminates the need to compute IPW explicitly-thereby simplifying computation and, more importantly, provably reducing the variance of gradient estimates. Empirical results show that IWDD achieves state-of-the-art out-of-sample prediction performance, with the highest win rates compared to other baselines, significantly improving causal estimation and supporting the development of individualized treatment strategies. We will release our PyTorch code for reproducibility and future research.}
 }
+
+
+@article{
+zhang2025restoration,
+title={Restoration Score Distillation: From Corrupted Diffusion Pretraining to One-Step High-Quality Generation}, 
+author={Yasi Zhang and Tianyu Chen and Zhendong Wang and Ying Nian Wu and Mingyuan Zhou and and Oscar Leong},
+journal={arXiv 2505.13377},
+year={2025},
+url={https://arxiv.org/abs/2505.13377},
+url_arxiv={https://arxiv.org/abs/2505.13377},
+pdf={https://arxiv.org/pdf/2505.13377}
+Note = {(the first two authors contributed equally)},
+abstract = {Learning generative models from corrupted data is a fundamental yet persistently challenging task across scientific disciplines, particularly when access to clean data is limited or expensive. Denoising Score Distillation (DSD) \cite{chen2025denoising} recently introduced a novel and surprisingly effective strategy that leverages score distillation to train high-fidelity generative models directly from noisy observations. Building upon this foundation, we propose \textit{Restoration Score Distillation} (RSD), a principled generalization of DSD that accommodates a broader range of corruption types, such as blurred, incomplete, or low-resolution images. RSD operates by first pretraining a teacher diffusion model solely on corrupted data and subsequently distilling it into a single-step generator that produces high-quality reconstructions. Empirically, RSD consistently surpasses its teacher model across diverse restoration tasks on both natural and scientific datasets. Moreover, beyond standard diffusion objectives, the RSD framework is compatible with several corruption-aware training techniques such as Ambient Tweedie, Ambient Diffusion, and its Fourier-space variant, enabling flexible integration with recent advances in diffusion modeling. Theoretically, we demonstrate that in a linear regime, RSD recovers the eigenspace of the clean data covariance matrix from linear measurements, thereby serving as an implicit regularizer. This interpretation recasts score distillation not only as a sampling acceleration technique but as a principled approach to enhancing generative performance in severely degraded data regimes.
+}
+}
+
+
 
 
 @inproceedings{feng2025omiad,
@@ -40,6 +72,7 @@ journal={arXiv 2503.07578},
 year={2025},
 url={https://arxiv.org/abs/2503.07578},
 url_arxiv={https://arxiv.org/abs/2503.07578},
+pdf={https://arxiv.org/pdf/2503.07578},
 Note = {(the first two authors contributed equally)},
 abstract = {Diffusion models have achieved remarkable success in generating high-resolution, realistic images across diverse natural distributions. However, their performance heavily relies on high-quality training data, making it challenging to learn meaningful distributions from corrupted samples. This limitation restricts their applicability in scientific domains where clean data is scarce or costly to obtain. In this work, we introduce denoising score distillation (DSD), a surprisingly effective and novel approach for training high-quality generative models from low-quality data. DSD first pretrains a diffusion model exclusively on noisy, corrupted samples and then distills it into a one-step generator capable of producing refined, clean outputs. While score distillation is traditionally viewed as a method to accelerate diffusion models, we show that it can also significantly enhance sample quality, particularly when starting from a degraded teacher model. Across varying noise levels and datasets, DSD consistently improves generative performancewe summarize our empirical evidence in Fig. 1. Furthermore, we provide theoretical insights showing that, in a linear model setting, DSD identifies the eigenspace of the clean data distributions covariance matrix, implicitly regularizing the generator. This perspective reframes score distillation as not only a tool for efficiency but also a mechanism for improving generative models, particularly in low-quality data settings.}
 }
