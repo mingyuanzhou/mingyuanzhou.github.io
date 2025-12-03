@@ -2,6 +2,9 @@
   title={Distilled Protein Backbone Generation},
   author={Liyang Xie and Haoran Zhang and Zhendong Wang and Wesley Tansey and Mingyuan Zhou},
   journal={arXiv preprint arXiv:2510.03095},
+  url={https://arxiv.org/abs/2510.03095},
+  url_code={https://github.com/LY-Xie/SiD_Protein},
+  abstract={Diffusion- and flow-based generative models have recently demonstrated strong performance in protein backbone generation tasks, offering unprecedented capabilities for de novo protein design. However, while achieving notable performance in generation quality, these models are limited by their generating speed, often requiring hundreds of iterative steps in the reverse-diffusion process. This computational bottleneck limits their practical utility in large-scale protein discovery, where thousands to millions of candidate structures are needed. To address this challenge, we explore the techniques of score distillation, which has shown great success in reducing the number of sampling steps in the vision domain while maintaining high generation quality. However, a straightforward adaptation of these methods results in unacceptably low designability. Through extensive study, we have identified how to appropriately adapt Score identity Distillation (SiD), a state-of-the-art score distillation strategy, to train few-step protein backbone generators which significantly reduce sampling time, while maintaining comparable performance to their pretrained teacher model. In particular, multistep generation combined with inference time noise modulation is key to the success. We demonstrate that our distilled few-step generators achieve more than a 20-fold improvement in sampling speed, while achieving similar levels of designability, diversity, and novelty as the Proteina teacher model. This reduction in inference cost enables large-scale in silico protein design, thereby bringing diffusion-based models closer to real-world protein engineering applications. The PyTorch implementation is available at https://github.com/LY-Xie/SiD_Protein},
   year={2025}
 }
 
@@ -9,6 +12,8 @@
   title={Continuously augmented discrete diffusion model for categorical generative modeling},
   author={Zheng, Huangjie and Gong, Shansan and Zhang, Ruixiang and Chen, Tianrong and Gu, Jiatao and Zhou, Mingyuan and Jaitly, Navdeep and Zhang, Yizhe},
   journal={arXiv preprint arXiv:2510.01329},
+  url={https://arxiv.org/abs/2510.01329},
+  abstract={Standard discrete diffusion models treat all unobserved states identically by mapping them to an absorbing [MASK] token. This creates an 'information void' where semantic information that could be inferred from unmasked tokens is lost between denoising steps. We introduce Continuously Augmented Discrete Diffusion (CADD), a framework that augments the discrete state space with a paired diffusion in a continuous latent space. This yields graded, gradually corrupted states in which masked tokens are represented by noisy yet informative latent vectors rather than collapsed 'information voids'. At each reverse step, CADD may leverage the continuous latent as a semantic hint to guide discrete denoising. The design is clean and compatible with existing discrete diffusion training. At sampling time, the strength and choice of estimator for the continuous latent vector enables a controlled trade-off between mode-coverage (generating diverse outputs) and mode-seeking (generating contextually precise outputs) behaviors. Empirically, we demonstrate CADD improves generative quality over mask-based diffusion across text generation, image synthesis, and code modeling, with consistent gains on both qualitative and quantitative metrics against strong discrete baselines.},
   year={2025}
 }
 
@@ -16,6 +21,7 @@
   title={Score Distillation of Flow Matching Models},
   author={Zhou, Mingyuan and Gu, Yi and Zheng, Huangjie and Song, Liangchen and He, Guande and Zhang, Yizhe and Hu, Wenze and Yang, Yinfei},
   journal={arXiv preprint arXiv:2509.25127},
+  url={https://yigu1008.github.io/SiD-DiT}
   url_code={https://yigu1008.github.io/SiD-DiT},
   year={2025}
 }
@@ -24,6 +30,8 @@
   title={EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing},
   author={Chen, Tianyu and Zhang, Yasi and Zhang, Zhi and Yu, Peiyu and Wang, Shu and Wang, Zhendong and Lin, Kevin and Wang, Xiaofei and Yang, Zhengyuan and Li, Linjie and others},
   journal={arXiv preprint arXiv:2509.13399},
+  url={https://arxiv.org/abs/2509.13399},
+  abstract={Instruction-based image editing has advanced rapidly, yet reliable and interpretable evaluation remains a bottleneck. Current protocols either (i) depend on paired reference images-resulting in limited coverage and inheriting biases from prior generative models-or (ii) rely solely on zero-shot vision-language models (VLMs), whose prompt-based assessments of instruction following, content consistency, and visual quality are often imprecise. To address this, we introduce EdiVal-Agent, an automated and fine-grained evaluation framework grounded in an object-centric perspective, designed to assess not only standard single-turn but also multi-turn instruction-based editing with precision. Given an input image, EdiVal-Agent first decomposes it into semantically meaningful objects, then synthesizes diverse, context-aware editing instructions while dynamically updating object pools across turns. These two stages enable two novel object-centric metrics tailored for multi-turn evaluation and one global metric of visual quality: (1) EdiVal-IF, which measures instruction following by combining open-vocabulary object detectors for symbolic checks with VLMs for semantic verification on detector-guided crops; (2) EdiVal-CC, which evaluates content consistency by calculating semantic similarity of unchanged objects and background using the evolving object pools; and (3) EdiVal-VQ, which quantifies changes in overall visual quality with human preference models. Instantiating this pipeline, we build EdiVal-Bench, a multi-turn editing benchmark covering 9 instruction types and 13 state-of-the-art editing models spanning in-context, flow-matching, and diffusion paradigms. We demonstrate that EdiVal-Agent can be used to identify existing failure modes, thereby informing the development of the next generation of editing models.},
   year={2025}
 }
 
@@ -42,6 +50,27 @@ title={Generative Data Augmentation via Diffusion Distillation, Adversarial Alig
 author={Ruyi An and Haicheng Huang and Huangjie Zheng and Mingyuan Zhou},
 booktitle={NeurIPS2025: Neural Information Processing Systems},
 year={2025},
+abstract={Generative data augmentation (GDA) leverages generative models to enrich training sets with entirely new samples drawn from the modeled data distribution to
+achieve performance gains. However, the usage of the mighty contemporary diffusion models in GDA remains impractical: i) their thousand-step sampling loop
+inflates wall-time and energy cost per image augmentation; and ii) the divergence
+between synthetic and real distributions is unknown–classifier trained on synthetic
+receive biased gradients. We propose DAR-GDA, a three-stage augmentation
+pipeline that unites model Distillation, Adversarial alignment, and importanceReweighting that makes diffusion-quality augmentation both fast and optimized
+for improving downstream learning outcomes. In particular, a teacher diffusion
+model is compressed into a one-step student via score distillation, slashing the time
+per-image cost by > 100× while preserving FID. During this distillation (D), the
+student model additionally undergoes adversarial alignment (A) by receiving direct
+training signals against real images, supplementing the teacher’s guidance to better
+match the true data distribution. The discriminator from this adversarial process
+inherently learns to assess the synthetic-to-real data gap. Its calibrated probabilistic
+outputs are then employed in reweighting (R) by importance weights that quantify
+the distributional gap and adjust the empirical loss when training downstream
+models; we show that reweighting yields an unbiased stochastic estimator of the
+real-data risk, fostering training dynamics akin to those of genuine samples. Experiments validate DAR-GDA’s synergistic design through progressive accuracy
+gains with each D-A-R stage. Our approach not only surpasses conventional nonfoundation-model GDA baselines but also remarkably matches or exceeds the GDA
+performance of large, web-pretrained text-to-image models, despite using solely
+in-domain data. DAR-GDA thus offers diffusion-fidelity GDA samples efficiently,
+while correcting synthetic-to-real bias to benefit downstream tasks.},
 url={https://openreview.net/forum?id=fGOZjuzvJb}
 }
 
